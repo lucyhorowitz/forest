@@ -1,0 +1,6 @@
+[forest]
+prefixes = []
+trees = ["trees"]
+assets = ["assets"]
+url = "http://localhost:8080/"
+home = "index"

@@ -1,1 +1,1 @@
-fswatch -or trees role | xargs -n1 -I{} ./forester build --dev
+fswatch -or trees role | xargs -n1 -I{} sh -c './forester build --dev && rsync -az --delete output/~lucy/* lucy@login.math.berkeley.edu:~/public_html/'

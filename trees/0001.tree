@@ -1,5 +1,6 @@
-\date{2025-06-03T17:25:05Z}
-\title{Reasons for Logic, Logic for Reasons}
-\taxon{Reference}
+\date{2025-06-03T22:27:40Z}
+\taxon{definition}
+\title{vocabulary} 
+\source{rllr}
 
-\p{A book}
+\p{A \strong{vocabulary} is a collection of expressions (from a [lexicon]()) together with the reason relations that hold among sets of them.}

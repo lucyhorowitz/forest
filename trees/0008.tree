@@ -1,0 +1,9 @@
+\date{2025-06-03T23:51:04Z}
+\taxon{definition}
+\author{lucy}
+\title{implication frame}
+\import{macros}
+
+\p{An \strong{implication frame} is a pair #{\langle\frakB,\bbI\rangle} of a set #{\frakB} of [[0005]] and #{\bbI} the [implications](0007) among them.}
+
+\p{From [Reasons for Logic, Logic for Reasons](rllr)}

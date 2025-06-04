@@ -1,0 +1,13 @@
+\date{2025-06-03T23:43:50Z}
+\taxon{definition}
+\author{lucy}
+\title{implication space}
+\import{macros}
+
+\p{The \strong{implication space} of a set #{\frakB} of [implicational role-bearers](0005) is the set #{S = \calP(\frakB)\times\calP(\frakB)}. Its members are called \strong{candidate implications}. The first coordinate of a candidate implication is the set of its \strong{premises} and the second coordinate is the set of its \strongP{conclusions}.}
+
+\p{Implication space contains a minimal element #{\langle\emptyset,\emptyset\rangle} and a maximal element #{\langle\frakB,\frakB\rangle}.}
+
+\p{Note that not all candidate implications will "hold." The ones that do (i.e. those that satisfy the [implication](0007) relation) are called \strong{good}.}
+
+\p{From [Reasons for Logic, Logic for Reasons](rllr)}

@@ -1,0 +1,20 @@
+\date{2025-06-03T23:54:26Z}
+\taxon{definition}
+\author{lucy}
+\title{implicational role}
+\import{macros}
+
+\p{Let #{\varphi} be a [bearer](0005) of an implicational role from the set #{\frakB}. Then its **implicational role** #{R(\varphi)} is comprised of the premisory and conclusory roles.}
+
+\p{The \strong{premisory role} of #{\varphi} is the collection of subsets #{X,Y\subseteq\frakB} for which #{\langle X\cup{\varphi\},Y\rangle}  is a "good" [[0007]]. In other words, it is the collection of good implications in which #{\varphi} is a premise. }
+
+\p{The \strong{conclusory role} is defined analogously: it is the collection of subsets #{X,Y\subseteq\frakB} for which #{\langle X,Y\cup\{\varphi\}} is a "good" [[0007]], or the collection of good implications in which #{\varphi} is a conclusion. It is also essentially the [RSR](000A) of the pair #{\langle\emptyset,\{\varphi\}\rangle}.}
+
+\p{The implicational role of the bearer #{\varphi} is completely determined by its [implication equivalence class](000B). That is,
+\ol{
+  \li{If #{a\subseteq S}, then #{R(a) = \{x\mid a\simeq x\}}.}
+  \li{If #{a\in S}, then #{R(a) = R(\{a\})}.}
+  \li{If #{a\in \frakB}, then \#{R(a) = \langle R^+(a),R^-(a)\rangle} where #{R^+(a) = R(\langle\{a\},\emptyset)} and #{R^-(a) = R(\emptyset,\langle\{a\})}}
+}}
+
+\p{From [[rllr]].}

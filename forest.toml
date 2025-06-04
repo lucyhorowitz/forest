@@ -2,5 +2,5 @@
 prefixes = []
 trees = ["trees"]
 assets = ["assets"]
-url = "http://localhost:8080/"
+url = "https://math.berkeley.edu/~lucy/forest/"
 home = "index"

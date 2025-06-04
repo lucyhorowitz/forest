@@ -14,7 +14,7 @@
             \ul{
                 \li{(re)defined [vocabulary](0001)}
                 \li{defined [material base](0002)}
-                \li{defined [NMMS]()}
+                \li{defined NMMS}
             }}
         }}
     }}
@@ -28,6 +28,13 @@
                 \li{defined [implication space](0006)}
                 \li{defined [implication frame](0008)}
                 \li{defined [[0009]]}
+                \li{defined [[000A]]}
+                \li{defined [[000B]]}
+            }}
+            \li{5.1.2: Conceptual Content and Entailment
+            \ul{
+                \li{defined [[000D]]}
+                \li{defined [[000E]]}
             }}
         }}
     }}

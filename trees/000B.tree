@@ -1,0 +1,11 @@
+\date{2025-06-04T00:38:54Z}
+\taxon{definition}
+\author{lucy}
+\title{implication equivalence}
+\import{macros}
+
+\p{Let #{G} and #{F} be sets of [candidate implications](0006). We say they are \strong{implication equivalent} and write #{G\approx F} iff their [RSRs](000A) are equal.}
+
+\p{It is not hard to see that this is in fact an [[000C]].}
+
+\p{From [[rllr]]}

@@ -3,4 +3,4 @@ prefixes = []
 trees = ["trees"]
 assets = ["assets"]
 url = "https://math.berkeley.edu/~lucy/forest/"
-home = "index"
+home = "index" 

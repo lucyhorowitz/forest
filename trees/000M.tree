@@ -1,0 +1,7 @@
+\date{2025-06-04T17:00:22Z}
+\taxon{definition}
+\author{lucy}
+\title{monoid}
+\import{macros}
+
+\p{A \strong{monoid} is a set #{M} together with an associative binary operation #{\cdot} that has a (right) identity #{e\in M}.}

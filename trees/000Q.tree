@@ -1,0 +1,24 @@
+\date{2025-06-09T16:07:56Z}
+\title{Computing implicational roles}
+\author{lucy}
+\import{macros}
+\import{base-macros}
+
+\p{Computing [implicational roles](0009) is difficult because naively it reuqires dealing with massive powersets.}
+
+\p{The role of a [candidate implication](0006) (or set of candidate implications) is defined as the equivalence classes (really, set) of "things" with the same [[000A]] as that candidate implication (or set thereof). The "things" that can be ascribed #{\RSR}s are exactly \em{sets} of candidate implications. So at first glance, computing the role requires computing the #{\RSR} of every set of candidate implications.}
+
+\p{In the smallest possible example with restriction on the number of times an element can appear in a multiset (e.g. [[000P]]), there are #{2^{81}} sets to check. This is far too many. There are a few easy ways to reduce this number.}
+
+\p{The first is to look closer at the definitions. Suppose we want to compute #{\calR(\ang{P,Q})}. The #{\RSR} of a set of candidate implications is the \em{intersection} of the #{RSR}s of its members, so really we need the #{X\subseteq\bbS} such that #{\bigcap\limits_{\langle p,q\rangle \in X} \RSR(\ang{p,q}) = \RSR(\ang{P,Q})}. We can therefore exclude from consideration any subset of #{\bbS} containing a candidate implication whose #{\RSR} does not contain #{\RSR(\ang{P,Q})}. This doesn't always whittle it down too much, but it certainly helps.}
+
+\p{Let's build on this reduction. Let #{N} be the set of candidate implications whose #{\RSR} contains #{\RSR(\ang{P,Q})} and let ##{\overline N = \bigcup\limits_{\ang{n,m}\in N} \RSR(\ang{n,m}).} Then #{\overline N} is a a set of candidate implications containing #{\RSR(\ang{P,Q})} and a bunch of other stuff.}
+
+\p{Let #{M = \overline N\setminus \RSR(\ang{P,Q})}. For each candidate #{m\in M}, define ##{E_m = \{c \mid c\in N \land m \notin \RSR(c)\}} and let #{E = \bigcup\limits_{m\in M} E_m}. Each #{E_m} consists of all of the candidate implications from #{N} whose #{\RSR} is missing the given #{m} that is not in #{\RSR(\ang{P,Q})}, the thing we are interested in computing.} 
+
+\p{We need to find a "hitting set," or a set that contains at least one element from each #{E_m}. Why does this do the trick? Suppose we had such a set #{H}. We know that #{\RSR(H)\supseteq\RSR(\ang{P,Q})} by construction. To see that #{\RSR(H)\subseteq\RSR(\ang{P,Q})}, note that given #{h\in H}, there is some #{m \in M} such that #{m\notin\RSR(h)}. But since #{\RSR(H) = \bigcap\limits_{h\in H}(\RSR(h))}, it follows that #{\RSR(H)} cannot contain anything in #{M}m which was just all candidate implications not in #{\RSR(\ang{P,Q})}. Now, every superset of #{H} containing elements from #{N} will have the same #{\RSR}. This is because we have already excluded everything we don't want, but we must always contain #{\RSR(\ang{P,Q})}. So the role of #{\ang{P,Q}} is almost going to be the collection of all supsersets of #{H} of elements from #{M}.}
+
+\p{It's possible that there are multiple hitting sets that are disjoint! In all cases where we are computing the role of a set of candidate implications, that set of candidate implications itself is going to be a hitting set. But it is not always the only one. \em{Any} hitting set and any superset of a hitting set will have the same #{\RSR} as our original set. So the upward closure by elements of #{N} of the hitting sets we found will be the implicational role. \strong{The data of role consists then of the hitting sets plus the set #{N} of candidate implications whose #{\RSR} contains the #{RSR} of the thing we are computing the role of.}}
+
+\p{We can efficiently find hitting sets using SAT solving!}
+\transclude{000T}

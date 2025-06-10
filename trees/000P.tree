@@ -1,0 +1,88 @@
+\date{2025-06-06T20:22:23Z}
+\title{Noncontractivity and chocolate bars}
+\author{lucy}
+\taxon{example}
+\import{macros}
+\import{base-macros}
+
+\p{Consider the [[0003]] #{\calL = \{a,b\}} where #{a} represents "one dollar" and #{b} represents "one chocolate bar." Suppose we are in a world where chocolate bars cost $1, and you can eat them, but you cannot steal chocolate bars or dollars. Because dollars and chocolate bars are fungible and we can have many of them, we will need #{a} and #{b} to appear multiple times in our "situations" in order to represent all the possible things that can happen.}
+
+\p{This corresponds to letting the sets of [bearers](0005) in our [candidate implications](0006) be multisets of bearers instead. In the example, we cap our appearances of individual bearers at 2, because otherwise the space would be massive (infinite with no cap). Think of it as: we can have at most 2 dollars in our wallet, and at most 2 chocolate bars in our pocket.}
+
+\p{We can think about an [[0006]] where the reason relation #{\vsim} corresponds to some "legal" sequence of situations. For example, if I have $1, I could trade it for a chocolate bar. If I have a chocolate bar, I could eat it. I can't sell a chocolate bar (no license). But given that aforementioned fungibility and multiplicity, we will need to have our #{a}s and #{b}s appearing multiple times on either side of #{\vsim}. This corresponds to a \strong{noncontractive} sequent calculus, and is a lot like the one that appears in linear logic. But since we are dealing in \em{logical expressivism}, it will be slightly different. There are a few examples through which we can maybe see this difference:} 
+
+\def\RR2[x11][x12][x13][x14][x15][x16][x17][x18][x19][x21][x22][x23][x24][x25][x26][x27][x28][x29][x31][x32][x33][x34][x35][x36][x37][x38][x39][x41][x42][x43][x44][x45][x46][x47][x48][x49][x51][x52][x53][x54][x55][x56][x57][x58][x59][x61][x62][x63][x64][x65][x66][x67][x68][x69][x71][x72][x73][x74][x75][x76][x77][x78][x79][x81][x82][x83][x84][x85][x86][x87][x88][x89][x91][x92][x93][x94][x95][x96][x97][x98][x99]{
+\table{
+\tr{
+\th{#{\bbI}}
+\th{#{\emptyset}}
+\th{#{a}}
+\th{#{b}}
+\th{#{a,a}}
+\th{#{a,b}}
+\th{#{b,b}}
+\th{#{a,a,b}}
+\th{#{a,b,b}}
+\th{#{a,a,b,b}}
+}
+\tr{
+\th{#{\emptyset}}
+\td{#{\x11}}\td{#{\x12}}\td{#{\x13}}\td{#{\x14}}\td{#{\x15}}\td{#{\x16}}\td{#{\x17}}\td{#{\x18}}\td{#{\x19}}
+}
+\tr{
+\th{#{a}}
+\td{#{\x21}}\td{#{\x22}}\td{#{\x23}}\td{#{\x24}}\td{#{\x25}}\td{#{\x26}}\td{#{\x27}}\td{#{\x28}}\td{#{\x29}}
+}
+\tr{
+\th{#{b}}
+\td{#{\x31}}\td{#{\x32}}\td{#{\x33}}\td{#{\x34}}\td{#{\x35}}\td{#{\x36}}\td{#{\x37}}\td{#{\x38}}\td{#{\x39}}
+}
+\tr{
+\th{#{a,a}}
+\td{#{\x41}}\td{#{\x42}}\td{#{\x43}}\td{#{\x44}}\td{#{\x45}}\td{#{\x46}}\td{#{\x47}}\td{#{\x48}}\td{#{\x49}}
+}
+\tr{
+\th{#{a,b}}
+\td{#{\x51}}\td{#{\x52}}\td{#{\x53}}\td{#{\x54}}\td{#{\x55}}\td{#{\x56}}\td{#{\x57}}\td{#{\x58}}\td{#{\x59}}
+}
+\tr{
+\th{#{b,b}}
+\td{#{\x61}}\td{#{\x62}}\td{#{\x63}}\td{#{\x64}}\td{#{\x65}}\td{#{\x66}}\td{#{\x67}}\td{#{\x68}}\td{#{\x69}}
+}
+\tr{
+\th{#{a,a,b}}
+\td{#{\x71}}\td{#{\x72}}\td{#{\x73}}\td{#{\x74}}\td{#{\x75}}\td{#{\x76}}\td{#{\x77}}\td{#{\x78}}\td{#{\x79}}
+}
+\tr{
+\th{#{a,b,b}}
+\td{#{\x81}}\td{#{\x82}}\td{#{\x83}}\td{#{\x84}}\td{#{\x85}}\td{#{\x86}}\td{#{\x87}}\td{#{\x88}}\td{#{\x89}}
+}
+\tr{
+\th{#{a,a,b,b}}
+\td{#{\x91}}\td{#{\x92}}\td{#{\x93}}\td{#{\x94}}\td{#{\x95}}\td{#{\x96}}\td{#{\x97}}\td{#{\x98}}\td{#{\x99}}
+}
+}
+}
+ 
+\p{The following table represents the scenario where you can do any number of actions between one side of the turnstile and the other, including buying a chocolate bar and then eating it. So #{a\vsim \emptyset} is allowed. Note that in this case there is kind of a problem with the truncation, because we should interpret #{a,a,b\vsim b,b} as buying two chocolate bars and then immediately eat one, even though that would have put us over the bag limit. It doesn't quite capture the range of actions that are possible/allowed.}
+\RR2{1}{0}{0}{0}{0}{0}{0}{0}{0}
+    {1}{1}{1}{0}{0}{0}{0}{0}{0}
+    {1}{0}{1}{0}{0}{0}{0}{0}{0}
+    {1}{1}{1}{1}{1}{1}{0}{0}{0}
+    {1}{1}{1}{0}{1}{1}{0}{0}{0}
+    {1}{0}{1}{0}{0}{1}{0}{0}{0}
+    {1}{1}{1}{1}{1}{1}{1}{1}{0}
+    {1}{1}{1}{0}{1}{1}{1}{1}{0}
+    {1}{1}{1}{1}{1}{1}{1}{1}{1}
+
+
+\p{The following table represents the scenario where you can do at most one thing at a time (i.e. you can't immediately eat the chocolate bar you just bought, and you can't eat two chocolate bars at once, and you can only buy one chocolate bar at a time), and you can't drop your money on the ground or anything.}
+\RR2{1}{0}{0}{0}{0}{0}{0}{0}{0}
+    {0}{1}{1}{0}{0}{0}{0}{0}{0}
+    {1}{0}{1}{0}{0}{0}{0}{0}{0}
+    {0}{0}{0}{1}{1}{0}{0}{0}{0}
+    {0}{1}{0}{0}{1}{1}{0}{0}{0}
+    {0}{0}{1}{0}{0}{1}{0}{0}{0}
+    {0}{0}{0}{1}{0}{0}{1}{1}{0}
+    {0}{0}{0}{0}{1}{0}{0}{1}{0}
+    {0}{0}{0}{0}{0}{0}{0}{0}{0}

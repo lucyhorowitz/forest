@@ -3,7 +3,7 @@
 \p{This tree defines some basic notational macros used across my forest.}
 
 % mathcal macros
-
+\usepackage{textcomp}
 \def\calA{#{\mathcal{A}}}
 \def\calB{#{\mathcal{B}}}
 \def\calC{#{\mathcal{C}}}
@@ -148,3 +148,6 @@
 
 \def\vsim{#{|\hspace{-0.06cm}{\sim}}}
 \def\Vsim{#{||\hspace{-0.06cm}{\sim}}}
+
+\def\brack[arg]{#{\lbrack\hspace{-0.15em}\lbrack \arg \rbrack\hspace{-0.15em}\rbrack}}
+\def\ang[arg]{#{\langle \arg \rangle}}

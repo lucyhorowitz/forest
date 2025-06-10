@@ -1,0 +1,7 @@
+\date{2025-06-09T16:17:14Z}
+\taxon{definition}
+\author{lucy}
+\title{conclusory role}
+\import{macros}
+
+\p{The \strong{conclusory role} of #{\varphi} is the collection of sets #{X,Y\subseteq\frakB} for which #{\langle X, Y\cup\{\varphi\}\rangle} is a "good" [[0007]]. In other words, it is the collection of implications in which #{\varphi} is a conclusion. It can also be viewed as the [[000A]] of the pair #{\langle\emptyset,\{\varphi\}\rangle}.}

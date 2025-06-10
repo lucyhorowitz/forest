@@ -2,5 +2,6 @@
 \author{lucy}
 \p{Welcome to your Lucy's tree! This tree is the root of your forest.}
 \ul{
-  [Reasons for Logic, Logic for Reasons](rllr)
+  \li{[Reasons for Logic, Logic for Reasons](rllr)}
+  \li{}
 }

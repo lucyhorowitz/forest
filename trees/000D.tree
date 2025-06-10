@@ -4,8 +4,8 @@
 \title{conceptual content}
 \import{macros}
 
-\p{Let #{F} and #{G} be two sets of [candidate implications](0006). A \strong{conceptual content} is a pair #{\langle \monoa^-,\monoa^-\rangle} of two [implicational roles](0009) #{\monoa^+ = \calR(F)} and #{\monoa^- = \calR(G)}.} 
+\p{Let #{F} and #{G} be two sets of [candidate implications](0006). A \strong{conceptual content} is a pair #{\langle \monoa^+,\monoa^-\rangle} of two [implicational roles](0009) #{\monoa^+ = \calR(F)} and #{\monoa^- = \calR(G)}.} 
 
-\p{"Content" is an [[0009]] that a [bearer][[0005]] \em{could} play.}
+\p{"Content" is an [[0009]] that a [bearer](0005) \em{could} play.}
 
 \p{From [[rllr]].}

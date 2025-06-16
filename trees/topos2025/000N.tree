@@ -1,0 +1,15 @@
+\date{2025-06-04T19:17:56Z}
+\title{Where implication-space and phase-space semantics come apart}
+\author{lucy}
+\taxon{example}
+\import{macros}
+
+\p{As is written in [[ref-0001]], "one way to understand implication-space semantics is to view it as what happens to phase-space sematnics for linear logic if one allows negation and [[logic-000A]] to come apart."}
+
+\p{We want to understand this in terms of a simple, concrete example of something that "works" in implication-space but not in phase-space. To do this we should understand the correspondence between [[000L]] and [[0006]].}
+
+\p{A phase space #{P} corresponds to an [[0008]], where the phases correspond to members of #{\bbS = \calP(\frakB)\times\calP(\frakB)} and the anti-phases #{\bot_P} correspond to the good [implications](0007) #{\bbI}. The identity element #{1\in P} corresponds to #{\ang{\emptyset,\emptyset}}.}
+\p{The dual of subsets of #{P} corresponds to the [[logic-000A]] of subsets of #{\bbS}.}
+\p{Facts are [implicational roles](0009) of [candidate implications](0006) rather than the candidate implications themselves.}
+
+\p{From [[ref-0001]]}

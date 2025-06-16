@@ -1,0 +1,9 @@
+\date{2025-06-04T00:48:35Z}
+\taxon{definition}
+\author{lucy}
+\title{adjunction of implicational roles}
+\import{macros}
+
+\p{Let #{F,G} be members of [[0006]]. Then the \strong{adjunction} of the [implicational roles](0009) of #{F} and #{G} is given by ##{\calR(F)\sqcup \calR(G) := \calR(\{\langle\Gamma \cup\Delta,\Theta\cup\Lambda\rangle\mid \langle\Gamma,\Theta\rangle\in F,\langle\Delta,\Lambda\rangle\in G\}).} We write #{\bigsqcup\limits_{i=1}^n \calR_i} for the adjunction of the roles #{\calR_i}.} 
+
+\p{From [[ref-0001]].}

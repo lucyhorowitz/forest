@@ -1,0 +1,11 @@
+\date{2025-06-04T05:07:21Z}
+\taxon{definition}
+\author{lucy}
+\title{entailment in an implication frame}
+\import{macros}
+
+\p{Let #{\langle \frakB,\bbI\rangle} be an [[0008]]. Let #{\monoG,\monoD} be sets of [conceptual contents](000D) labeled as #{\monoG = \{\monog_i\}_{i=1}^n} and #{\monoD = \{\monod_i\}_{i=1}^m}. Then #{\monoG\Vsim \monoD} holds in #{\langle \frakB,\bbI\rangle} iff ##{\bigcup\left(\bigsqcup_{i=1}^n \monog_i^+ \sqcup \bigsqcup_{i=1}^m \monod_i^-\right)\subseteq \bbI.} This just means that the union of the written [adjunctions](000E) is actually a good [[0007]].}
+
+\p{Note that the entailment holds iff every set #{\langle\Theta,\Lambda\rangle} of [candidate implications](0006) such that [#{RSR}](logic-000A)#{(\Theta,\Lambda) = \RSR(\monoG,\monoD)} is a good [[0007]].}
+
+\p{From [[ref-0001]].}

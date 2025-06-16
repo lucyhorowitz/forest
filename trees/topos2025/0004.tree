@@ -1,0 +1,10 @@
+\date{2025-06-03T23:39:57Z}
+\taxon{definition}
+\author{lucy}
+\title{lexicon}
+\import{macros}
+
+
+
+\p{A \strong{lexicon} is just a set of sentences. It need not follow any rules or have any specific syntactic things going on.}
+\p{From [Reasons for Logic, Logic for Reasons](ref-0001).}

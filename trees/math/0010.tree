@@ -1,0 +1,9 @@
+\date{2025-06-12T18:52:16Z}
+\title{Contraction}
+\taxon{definition}
+\author{lucy}
+\meta{external}{https://ncatlab.org/nlab/show/contraction+rule}
+\import{macros}
+\import{base-macros}
+
+\p{A logical system obeys \strong{Contraction} if any valid deduction that uses a premise more than once is valid using that premise only once. Essentially it requires sets of premises to be exactly that—sets (instead of multisets).}

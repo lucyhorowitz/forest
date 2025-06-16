@@ -1,0 +1,15 @@
+\date{2025-06-03T17:25:05Z}
+\title{Reasons for Logic, Logic for Reasons}
+\taxon{Reference}
+\author{ulf-hlobil}\author{robert-brandom}
+
+\p{A book by Ulf Hlobil and Robert B. Brandom.}
+
+\subtree{\taxon{chapter} \title{Implication-Space Semantics} \number{5} 
+\subtree{\taxon{section} \title{Formulating Implication-Space Semantics}
+\subtree{\taxon{subsection} \title{Implicational Roles}
+\transclude{0005}
+\transclude{0006}
+
+
+}}}

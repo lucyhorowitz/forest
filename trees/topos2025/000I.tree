@@ -1,0 +1,9 @@
+\date{2025-06-04T05:39:39Z}
+\taxon{result}
+\author{lucy}
+\title{symjunction is well-defined on roles}
+\import{macros}
+
+\p{The [symjunction](000H) does not depend on the choice of [bearer](0005): if #{F}, #{F'} are two sets of [candidate implicatons](0006) that play the same [role](0009), i.e. such that #{\calR(F) = \calR(F')}. Let #{G} be another set of [candidate implicatons](0006). Then #{\calR(F)\sqcap \calR(G) = \calR(F')\sqcap \calR(G)}.}
+
+\p{From [[ref-0001]].}

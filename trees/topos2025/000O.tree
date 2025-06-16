@@ -1,0 +1,17 @@
+\date{2025-06-06T20:14:08Z}
+\title{Topos Summer 2025}
+\taxon{Project}
+\author{lucy}
+\import{macros}
+
+\p{In the summer of 2025 I am a research assistant at the Topos Institute under Kris Brown. I am working on logical expressivism, giving it a categorical semantics. There is a bunch of stuff going on.}
+
+\subtree{\title{Reading ref-0001}
+  \p{todo: change the ref-0001 tree to be made of subtrees}
+  \transclude{ref-0001}
+}
+
+\subtree{\title{Pulling apart implication-space and phase-space semantics}
+  \transclude{000N}
+
+}

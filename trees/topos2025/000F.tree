@@ -1,0 +1,9 @@
+\date{2025-06-04T05:01:11Z}
+\taxon{proposition}
+\author{lucy}
+\title{adjunction is well-defined on roles}
+\import{macros}
+
+\p{The [adjunction](000E) does not depend on the choice of [bearer](0005): if #{F}, #{F'} are two sets of [candidate implicatons](0006) that play the same [role](0009), i.e. such that #{\calR(F) = \calR(F')}. Let #{G} be another set of [candidate implicatons](0006). Then #{\calR(F)\sqcup \calR(G) = \calR(F')\sqcup \calR(G)}.}
+
+\p{From [[ref-0001]].}

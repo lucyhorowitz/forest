@@ -1,0 +1,11 @@
+\date{2025-06-03T22:34:32Z}
+\taxon{definition}
+\author{lucy}
+\title{material base}
+\import{macros}
+
+\p{A \strong{material base} #{\frakB} is a [vocabulary](0001) consisting of the [atomic language](0003) #{\calL_\frakB} and a \em{base consequence relation} #{\vsim_\frakB \subseteq \calP(\calL_\frakB) \times \calP(\calL_\frakB)}, interpreted as #{\Gamma\vsim_\frakB \Delta} iff the sentences in #{\Gamma} are a "reason" for the ones in #{\Delta}.}
+
+\p{#{\Gamma,A\vsim_\frakB \emptyset} holds iff the sentences in #{\Gamma} are jointly a reason \em{against} A.}
+
+\p{From [Reasons for Logic, Logic for Reasons](ref-0001)}

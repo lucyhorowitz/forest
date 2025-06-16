@@ -1,0 +1,11 @@
+\date{2025-06-03T23:29:28Z}
+\taxon{definition}
+\author{lucy}
+\title{atomic language}
+\import{macros}
+
+
+
+
+\p{An \strong{atomic language} is a [lexicon](0004) consisting of just atomic sentences.}
+\p{From [Reasons for Logic, Logic for Reasons](ref-0001).}

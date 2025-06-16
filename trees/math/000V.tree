@@ -1,0 +1,10 @@
+\date{2025-06-10T22:00:59Z}
+\title{pairing function}
+\author{lucy}
+\taxon{definition}
+\import{macros}
+\import{base-macros}
+
+\p{A \strong{pairing function} is a (computable) bijection  #{\bbN^n \to \bbN}.}
+
+\transclude{000W}

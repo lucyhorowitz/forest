@@ -1,0 +1,6 @@
+\date{2025-06-16T20:47:48Z}
+\taxon{definition}
+\title{small category}
+\meta{external}{https://ncatlab.org/nlab/show/small+category}
+
+\p{A [[math-0003]] is \strong{small} if its collection of objects and its collection of morphisms are both [small sets](math-0004).}

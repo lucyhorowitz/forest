@@ -1,0 +1,8 @@
+\date{2025-06-16T21:40:57Z}
+
+\title{cover}
+\taxon{Definition}
+\import{macros}
+\import{base-macros}
+
+\p{A \strong{cover} is a [morphism](math-0003) #{f:A\to B} whose [image](math-0005) is all of #{B}.}

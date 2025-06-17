@@ -5,11 +5,9 @@
 
 \p{A book by Ulf Hlobil and Robert B. Brandom.}
 
-\subtree{\taxon{chapter} \title{Implication-Space Semantics} \number{5} 
-\subtree{\taxon{section} \title{Formulating Implication-Space Semantics}
-\subtree{\taxon{subsection} \title{Implicational Roles}
-\transclude{0005}
-\transclude{0006}
-
-
+\subtree{\taxon{Chapter} \title{Implication-Space Semantics} \number{5} 
+\subtree{\taxon{Section} \title{Formulating Implication-Space Semantics}
+\subtree{\taxon{Subsection} \title{Implicational Roles}
+\transclude{0005} 
+\transclude{0006}  
 }}}

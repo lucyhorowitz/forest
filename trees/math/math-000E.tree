@@ -1,0 +1,14 @@
+\date{2025-06-16T22:07:33Z}
+
+\title{kernels in regular Cartesian categories have coequalizers}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Proposition}
+
+\subtree{\taxon{Statement}
+\p{Let #{\calE} be a [[math-000A]]. Then every [[math-000F]] has a [[math-000G]].}
+}  
+
+\subtree{\taxon{Proof}  
+\p{todo}} 

@@ -3,7 +3,7 @@
 \p{This tree defines some basic notational macros used across my forest.}
 
 % mathcal macros
-\usepackage{textcomp}
+#{\usepackage{textcomp}}
 \def\calA{#{\mathcal{A}}}
 \def\calB{#{\mathcal{B}}}
 \def\calC{#{\mathcal{C}}}
@@ -144,10 +144,71 @@
 \def\monoy{#{\texttt{y}}}
 \def\monoz{#{\texttt{z}}}
 
+\def\bfA{#{\mathbf{A}}}
+\def\bfB{#{\mathbf{B}}}
+\def\bfC{#{\mathbf{C}}}
+\def\bfD{#{\mathbf{D}}}
+\def\bfE{#{\mathbf{E}}}
+\def\bfF{#{\mathbf{F}}}
+\def\bfG{#{\mathbf{G}}}
+\def\bfH{#{\mathbf{H}}}
+\def\bfI{#{\mathbf{I}}}
+\def\bfJ{#{\mathbf{J}}}
+\def\bfK{#{\mathbf{K}}}
+\def\bfL{#{\mathbf{L}}}
+\def\bfM{#{\mathbf{M}}}
+\def\bfN{#{\mathbf{N}}}
+\def\bfO{#{\mathbf{O}}}
+\def\bfP{#{\mathbf{P}}}
+\def\bfQ{#{\mathbf{Q}}}
+\def\bfR{#{\mathbf{R}}}
+\def\bfS{#{\mathbf{S}}}
+\def\bfT{#{\mathbf{T}}}
+\def\bfU{#{\mathbf{U}}}
+\def\bfV{#{\mathbf{V}}}
+\def\bfW{#{\mathbf{W}}}
+\def\bfX{#{\mathbf{X}}}
+\def\bfY{#{\mathbf{Y}}}
+\def\bfZ{#{\mathbf{Z}}}
+\def\bfa{#{\mathbf{a}}}
+\def\bfb{#{\mathbf{b}}}
+\def\bfc{#{\mathbf{c}}}
+\def\bfd{#{\mathbf{d}}}
+\def\bfe{#{\mathbf{e}}}
+\def\bff{#{\mathbf{f}}}
+\def\bfg{#{\mathbf{g}}}
+\def\bfh{#{\mathbf{h}}}
+\def\bfi{#{\mathbf{i}}}
+\def\bfj{#{\mathbf{j}}}
+\def\bfk{#{\mathbf{k}}}
+\def\bfl{#{\mathbf{l}}}
+\def\bfm{#{\mathbf{m}}}
+\def\bfn{#{\mathbf{n}}}
+\def\bfo{#{\mathbf{o}}}
+\def\bfp{#{\mathbf{p}}}
+\def\bfq{#{\mathbf{q}}}
+\def\bfr{#{\mathbf{r}}}
+\def\bfs{#{\mathbf{s}}}
+\def\bft{#{\mathbf{t}}}
+\def\bfu{#{\mathbf{u}}}
+\def\bfv{#{\mathbf{v}}}
+\def\bfw{#{\mathbf{w}}}
+\def\bfx{#{\mathbf{x}}}
+\def\bfy{#{\mathbf{y}}}
+\def\bfz{#{\mathbf{z}}}
+
 \def\RSR{#{\texttt{RSR}}}
+
+\def\Cat{#{\mathsf{Cat}}}
+
+\def\rel[arg]{\bbR\bfe \bfl(\arg)}
 
 \def\vsim{#{|\hspace{-0.06cm}{\sim}}}
 \def\Vsim{#{||\hspace{-0.06cm}{\sim}}}
 
 \def\brack[arg]{#{\lbrack\hspace{-0.15em}\lbrack \arg \rbrack\hspace{-0.15em}\rbrack}}
 \def\ang[arg]{#{\langle \arg \rangle}}
+
+\def\quiver[~body]{
+  \tex{\usepackage{quiver, cmll}}{\body{}}
+}

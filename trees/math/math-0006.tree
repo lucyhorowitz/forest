@@ -1,0 +1,14 @@
+\date{2025-06-16T21:27:14Z}
+
+\title{subobject}
+\taxon{Definition}
+\import{macros}
+\import{base-macros}
+\import{rel}
+
+\p{to}
+\current-tree
+
+\example{math-0001}
+
+\examples

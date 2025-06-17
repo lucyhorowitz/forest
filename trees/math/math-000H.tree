@@ -1,0 +1,13 @@
+\date{2025-06-16T22:09:35Z}
+
+\title{regular epimorphisms in regular Cartesian categories are preserved under pullbacks}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Proposition}
+
+\subtree{
+  \taxon{Statement} \p{todo}
+}
+
+\subtree{\taxon{Proof} \p{todo}}

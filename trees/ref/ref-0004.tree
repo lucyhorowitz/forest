@@ -1,0 +1,27 @@
+\date{2025-06-16T21:03:14Z}
+
+\title{Double Categories of Relations}
+\taxon{Reference}
+\author{michael-lambert}
+\import{macros}
+\import{base-macros}
+
+\subtree{\taxon{Section}\title{Introduction}\number{1}
+\ul{
+  \li{This paper gives a double-categorical version of the notion of bicategories of relations
+  \ul{
+    \li{definition of double category of relations}
+    \li{characterization theorem}
+  }}
+  \li{The paper also has a narrative purpose to explain the "naturalness" of the definition of double category of relations}
+  \li{"Throughout, double categories will always be 
+'pseudo,' that is, ???"}
+}
+}
+\subtree{\taxon{Section}\title{Double Category Structure of Relations}
+\transclude{math-0005}
+\transclude{math-0009}
+\transclude{math-000A}
+\transclude{math-000I}
+\transclude{math-000J}
+}

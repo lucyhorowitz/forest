@@ -1,0 +1,35 @@
+\def\relation[r][x][y]{
+  \execute\datalog{
+    \r @{\x} @{\y} -:
+  }
+}
+
+
+% turn any binary relation into its transitive closure
+\def\transitive-closure[r]{
+\execute\datalog{
+\r ?X ?Z -: {\r ?X ?Y} {\r ?Y ?Z}
+}
+}
+
+% Concepts being examples of other concepts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\rel/example{lucy.example}
+\transitive-closure{\rel/example} % make this relation transitively closed
+
+\def\example[y]{\relation{\rel/example}{\current-tree}{\y}}
+
+\def\exampleOf{
+\let\foo{\current-tree}
+\scope{\strong{This is example of...}
+\query\datalog{?X -: {\rel/example @{\foo} ?X}}}
+}
+
+\def\exampleOfThis{\scope{\strong{Examples of this...}
+\query\datalog{?X -: {\rel/example ?X @{\current-tree}}}}
+}
+
+\def\examples{
+  \exampleOf \p{}
+
+  \exampleOfThis} % add to backmatter

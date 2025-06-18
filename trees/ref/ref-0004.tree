@@ -11,17 +11,19 @@
   \li{This paper gives a double-categorical version of the notion of bicategories of relations
   \ul{
     \li{definition of double category of relations}
-    \li{characterization theorem}
+    \li{characterization theorem
   }}
   \li{The paper also has a narrative purpose to explain the "naturalness" of the definition of double category of relations}
   \li{"Throughout, double categories will always be 
-'pseudo,' that is, ???"}
+'[pseudo](math-000D)...'"}
 }
 }
 \subtree{\taxon{Section}\title{Double Category Structure of Relations}
-\transclude{math-0005}
-\transclude{math-0009}
-\transclude{math-000A}
-\transclude{math-000I}
-\transclude{math-000J}
-}
+\transclude{math-0005} % image
+\transclude{math-0009} % cover
+\transclude{math-000A} % regular Cartesian category
+\transclude{math-000I} % relation
+\transclude{math-000J} % double category of relations
+\transclude{math-000U} % equipment
+\transclude{math-000W} % double category of relations is an equipment
+}}

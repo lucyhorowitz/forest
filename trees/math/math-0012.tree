@@ -1,0 +1,28 @@
+\date{2025-06-18T20:34:12Z}
+
+\title{vertical composition of 2-cells}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{Let #{K} be a [2-category](math-000N). Consider the 2-cells #{\alpha} and #{\beta}:}
+
+\quiver{% https://q.uiver.app/#q=WzAsMixbMCwwLCJBIl0sWzIsMCwiQiJdLFswLDEsImZfMiIsMSx7ImxhYmVsX3Bvc2l0aW9uIjozMH1dLFswLDEsImZfMSIsMCx7Im9mZnNldCI6LTEsImN1cnZlIjotNH1dLFswLDEsImZfMyIsMix7Im9mZnNldCI6MSwiY3VydmUiOjR9XSxbMywyLCJcXGFscGhhIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFsyLDQsIlxcYmV0YSIsMCx7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XV0=
+\begin{tikzcd}
+	A && B
+	\arrow[""{name=0, anchor=center, inner sep=0}, "{f_2}"{description, pos=0.3}, from=1-1, to=1-3]
+	\arrow[""{name=1, anchor=center, inner sep=0}, "{f_1}", shift left, curve={height=-24pt}, from=1-1, to=1-3]
+	\arrow[""{name=2, anchor=center, inner sep=0}, "{f_3}"', shift right, curve={height=24pt}, from=1-1, to=1-3]
+	\arrow["\alpha", shorten <=3pt, shorten >=3pt, Rightarrow, from=1, to=0]
+	\arrow["\beta", shorten <=3pt, shorten >=3pt, Rightarrow, from=0, to=2]
+\end{tikzcd}}
+
+\p{Then the \strong{vertical composition} of #{\alpha} and #{\beta} is the 2-cell #{\beta\circ\alpha} given by}
+\quiver{% https://q.uiver.app/#q=WzAsMixbMCwwLCJBIl0sWzIsMCwiQiJdLFswLDEsImZfMyIsMix7ImN1cnZlIjoyfV0sWzAsMSwiZl8xIiwwLHsiY3VydmUiOi0yfV0sWzMsMiwiXFxiZXRhXFxjaXJjXFxhbHBoYSIsMCx7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XV0=
+\begin{tikzcd}
+	A && B
+	\arrow[""{name=0, anchor=center, inner sep=0}, "{f_3}"', curve={height=12pt}, from=1-1, to=1-3]
+	\arrow[""{name=1, anchor=center, inner sep=0}, "{f_1}", curve={height=-12pt}, from=1-1, to=1-3]
+	\arrow["{\beta\circ\alpha}", shorten <=3pt, shorten >=3pt, Rightarrow, from=1, to=0]
+\end{tikzcd}}

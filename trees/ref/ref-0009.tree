@@ -1,0 +1,17 @@
+\date{2025-06-18T17:04:58Z}
+
+\title{Logical Aspects of Virtual Double Categories}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Reference}
+\author{hayato-nasu}
+
+\subtree{\taxon{Chapter}\title{Preliminaries on 2-dimensional Structures}
+\subtree{\taxon{Section} \title{Cartesian Objects in 2-categories}
+  \transclude{math-000Y} % cartesian object
+  \transclude{math-0010} % cartesian arrow
+  \transclude{math-0019} % 2-cat of cartesian objects
+  \transclude{math-001A} % cartesian objects in cat
+}}
+\subtree{\taxon{Chapter}\title{Something else}}

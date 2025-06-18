@@ -1,6 +1,7 @@
 \title{Hello, World!}
+\import{rel}
 \author{lucy}
-\p{Welcome to Lucy's tree! This tree is the root of the forest. Some things I am reading right now:}
+\p{Welcome to Lucy's forest! This tree is the root of the forest, more or lesss. Some things I am reading right now:}
 \ul{
   \li{[[ref-0001]]}
   \li{[[ref-0003]]}

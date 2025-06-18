@@ -4,7 +4,6 @@
   }
 }
 
-
 % turn any binary relation into its transitive closure
 \def\transitive-closure[r]{
 \execute\datalog{
@@ -21,15 +20,51 @@
 
 \def\exampleOf{
 \let\foo{\current-tree}
-\scope{\strong{This is example of...}
+\scope{\strong{This is an example of:}
 \query\datalog{?X -: {\rel/example @{\foo} ?X}}}
 }
 
-\def\exampleOfThis{\scope{\strong{Examples of this...}
+\def\exampleOfThis{\scope{\strong{Examples of this:}
 \query\datalog{?X -: {\rel/example ?X @{\current-tree}}}}
 }
+
+
 
 \def\examples{
   \exampleOf \p{}
 
   \exampleOfThis} % add to backmatter
+
+
+% facts about things
+%%%%%%%%%%%%
+
+\def\rel/fact{lucy.fact}
+\transitive-closure{\rel/fact} % make this relation transitively closed
+
+\def\fact[y]{\relation{\rel/fact}{\current-tree}{\y}}
+
+\def\factAbout{
+\let\foo{\current-tree}
+\scope{\strong{This is a fact about:}
+\query\datalog{?X -: {\rel/fact @{\foo} ?X}}}
+}
+
+\def\factsAboutThis{\scope{\strong{Facts about this:}
+\query\datalog{?X -: {\rel/fact ?X @{\current-tree}}}}
+}
+
+\def\facts{
+  \factAbout \p{}
+
+  \factsAboutThis} % add to backmatter
+
+
+% Source (reference) for a tree
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\rel/source{lucy.source}
+
+\def\source[y]{
+\relation{\rel/source}{\current-tree}{\y}
+\strong{Source} \query\datalog{?X -: {\rel/source @{\current-tree} ?X}}
+}

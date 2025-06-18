@@ -1,0 +1,13 @@
+\date{2025-06-18T00:22:47Z}
+
+\title{double category of relations is an equipment}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Proposition}
+
+\p{[#{\Rel{\calE}}](math-000J) is an [equipment](math-000U).}
+
+\subtree{
+  \taxon{Proof} \p{todo}
+}

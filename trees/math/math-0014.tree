@@ -1,0 +1,17 @@
+\date{2025-06-18T21:24:09Z}
+
+\title{adjunction in a 2-category}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{Let #{K} be a [2-category](math-000N). An \strong{adjunction} in #{K} consists of:
+\ul{
+  \li{a pair of objects #{C} and #{D} in #{K};}
+  \li{a pair of 1-cells #{L:C\to D} and #{R:D\to C}, called the left and right adjoint respectively;}
+  \li{a pair of 2-cells #{\eta: \id_C\to R\circ L} and #{\epsilon: L\circ R \to \id_D} called the \strong{unit} and \strong{counit}, respectively}
+}
+So that either of the two following ([equivalent]) conditions hold:}
+\transclude{math-0015}
+\transclude{math-0016}

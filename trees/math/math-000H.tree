@@ -6,8 +6,7 @@
 \import{rel}
 \taxon{Proposition}
 
-\subtree{
-  \taxon{Statement} \p{todo}
-}
+\p{todo}
 
 \subtree{\taxon{Proof} \p{todo}}
+\fact{math-000A}

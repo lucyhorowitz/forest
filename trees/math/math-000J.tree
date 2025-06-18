@@ -6,9 +6,9 @@
 \import{rel}
 \taxon{Definition}
 
-\p{Let #{\calE} be a [[math-000A]]. Then denote by #{\bbR\bfe \bfl(\calE)} the \strong{double category of relations in #{\calE}}.}
+\p{Let #{\calE} be a [[math-000A]]. Then we get #{\bbR\bfe \bfl(\calE)} the associated \strong{[[math-000D]]} of relations in #{\calE}.}
 
-\p{It has underlying [[math-0003]] #{\rel{\calE}_0 = \calE}.}
+\p{It has underlying [[math-0003]] #{\Rel{\calE}_0 = \calE}.}
 
 \p{The proarrows are [relations](math-000I). The cells #{\theta} are morphisms} 
 
@@ -37,3 +37,9 @@
 	\arrow[from=2-1, to=2-2]
 \end{tikzcd}} 
 \p{commutes.}
+
+\p{Let #{e:\calE \to \Rel{\calE}} be the [functor](math-000S) that sends an object #{X} to the [span](math-000T) consisting of identity arrows on #{X}. Then we get #{s,t: \Rel{\calE} \rightrightarrows \calE} by sending a cell #{\theta} to #{f} and #{g}, respectively.}
+
+\p{Composition (#{c} in the notation of [this definition](math-000D)) is as follows: given #{R\to A\times B} and #{S\to B\times C} two [relations](math-000I), TODO a bunch of stuff to work out.}
+
+\factsAboutThis

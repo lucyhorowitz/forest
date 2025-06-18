@@ -1,0 +1,21 @@
+\date{2025-06-18T21:29:18Z}
+
+\title{triangle identity}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Identity}
+
+\p{The following [diagrams commute](math-000Q) in the hom-categories, where #{\cdot} denotes [horizontal composition](math-0011):
+\quiver{% https://q.uiver.app/#q=WzAsNixbMCwwLCJMIl0sWzIsMCwiTFxcY2lyYyBSXFxjaXJjIEwiXSxbMiwxLCJMIl0sWzMsMCwiUiJdLFs1LDAsIlJcXGNpcmMgTCBcXGNpcmMgUiJdLFs1LDEsIlIiXSxbMCwxLCJMXFxjZG90XFxldGEiXSxbMSwyLCJcXGVwc2lsb25cXGNkb3QgTCJdLFswLDIsIlxccm17aWR9IiwyXSxbMyw1LCJcXHJte2lkfSIsMl0sWzMsNCwiXFxldGFcXGNkb3QgUiJdLFs0LDUsIlJcXGNkb3QgXFxlcHNpbG9uIl1d
+\begin{tikzcd}
+	L && {L\circ R\circ L} & R && {R\circ L \circ R} \\
+	&& L &&& R
+	\arrow["{L\cdot\eta}", from=1-1, to=1-3]
+	\arrow["{\rm{id}}"', from=1-1, to=2-3]
+	\arrow["{\epsilon\cdot L}", from=1-3, to=2-3]
+	\arrow["{\eta\cdot R}", from=1-4, to=1-6]
+	\arrow["{\rm{id}}"', from=1-4, to=2-6]
+	\arrow["{R\cdot \epsilon}", from=1-6, to=2-6]
+\end{tikzcd}}
+}

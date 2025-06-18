@@ -1,0 +1,71 @@
+\date{2025-06-18T18:06:46Z}
+
+\title{Cartesian arrow}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+
+\p{Let #{\bfK} be a [2-category](math-000N) with strict 2-dimensional finite products #{\otimes} and [terminal object](math-000Z) #{\mathsf{1}} is a 1-cell #{f:x\to y} between [Cartesian objects](math-000Y) #{x,y} of #{\bfK} such that the canonical 2-cells obtained by the [mate construction](math-0013) #{\times\circ (f\otimes f) \implies f\circ \times} and #{f\circ 1 \implies 1} are invertible.}
+
+\p{I'm not totally sure what is going on here so I'm going to draw pictures of the 2-cells described: 
+\quiver{% https://q.uiver.app/#q=WzAsNyxbMCwxLCJ4XFxvdGltZXMgeCJdLFsxLDAsInlcXG90aW1lcyB5Il0sWzIsMSwieSJdLFsxLDIsIngiXSxbNCwxLCIxIl0sWzUsMCwieCJdLFs2LDEsInkiXSxbMCwzLCJcXHRpbWVzIiwyXSxbMywyLCJmIiwyXSxbMCwxLCJmXFxvdGltZXMgZiJdLFsxLDIsIlxcdGltZXMiXSxbMSwzLCIiLDEseyJzaG9ydGVuIjp7InNvdXJjZSI6MzAsInRhcmdldCI6MzB9LCJsZXZlbCI6Mn1dLFs0LDUsIjEiXSxbNSw2LCJmIl0sWzQsNiwiMSIsMl0sWzUsMTQsIiIsMix7InNob3J0ZW4iOnsidGFyZ2V0IjoyMH19XV0=
+\begin{tikzcd}
+	& {y\otimes y} &&&& x \\
+	{x\otimes x} && y && 1 && y \\
+	& x
+	\arrow["\times", from=1-2, to=2-3]
+	\arrow[shorten <=10pt, shorten >=10pt, Rightarrow, from=1-2, to=3-2]
+	\arrow["f", from=1-6, to=2-7]
+	\arrow["{f\otimes f}", from=2-1, to=1-2]
+	\arrow["\times"', from=2-1, to=3-2]
+	\arrow["1", from=2-5, to=1-6]
+	\arrow[""{name=0, anchor=center, inner sep=0}, "1"', from=2-5, to=2-7]
+	\arrow["f"', from=3-2, to=2-3]
+	\arrow[shorten >=3pt, Rightarrow, from=1-6, to=0]
+\end{tikzcd}}}
+\p{Let's just do some [mate constructions](math-0013) and see which mates (i.e. #{\lambda} and #{\mu}) we get match the things above. 
+}
+
+\p{Because #{x} and #{y} are [Cartesian objects](math-000Y), we have a few adjunctions to contend with:
+\ul{
+  \li{#{(\eta_x,\epsilon_x):\text{ }!_x\dashv \mathbf 1_x: x\to 1}}
+  \li{#{(\eta_x',\epsilon_x'): \Delta_x\dashv \times_x:x\to x\otimes x}}
+  \li{#{(\eta_y,\epsilon_y):\text{ }!_y\dashv \mathbf 1_y: y\to 1}}
+  \li{#{(\eta_y',\epsilon_y'): \Delta_y\dashv \times_y:y\to y\otimes y}}
+}}
+
+\p{If we take as our pair of adjunctions #{(\eta_x,\epsilon_x)} and #{(\eta_y,\epsilon_y)}, we get 1-cells #{f:x\to y} and #{\rm{id}_1:1\to 1}. Then the #{\mu} that we get matches the leftmost diagram from above once you collapse #{\rm{id}_1}:}
+\quiver{% https://q.uiver.app/#q=WzAsOCxbMCwwLCJ4Il0sWzEsMCwieSJdLFswLDEsIjEiXSxbMSwxLCIxIl0sWzIsMCwiMSJdLFszLDAsIjEiXSxbMiwxLCJ4Il0sWzMsMSwieSJdLFsyLDMsIlxccm17aWR9XzEiLDJdLFswLDIsIiFfeCIsMl0sWzEsMywiIV95Il0sWzAsMSwiZiJdLFsxLDIsIlxcbGFtYmRhIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjMwLCJ0YXJnZXQiOjMwfSwibGV2ZWwiOjJ9XSxbNCw1LCJcXHJte2lkfV8xIl0sWzQsNiwiXFxtYXRoYmYxX3giLDJdLFs1LDcsIlxcbWF0aGJmezF9X3kiXSxbNiw3LCJmIiwyXSxbNiw1LCJcXG11IiwyLHsic2hvcnRlbiI6eyJzb3VyY2UiOjMwLCJ0YXJnZXQiOjMwfSwibGV2ZWwiOjJ9XV0=
+\begin{tikzcd}
+	x & y & 1 & 1 \\
+	1 & 1 & x & y
+	\arrow["f", from=1-1, to=1-2]
+	\arrow["{!_x}"', from=1-1, to=2-1]
+	\arrow["\lambda", shorten <=6pt, shorten >=6pt, Rightarrow, from=1-2, to=2-1]
+	\arrow["{!_y}", from=1-2, to=2-2]
+	\arrow["{\rm{id}_1}", from=1-3, to=1-4]
+	\arrow["{\mathbf1_x}"', from=1-3, to=2-3]
+	\arrow["{\mathbf{1}_y}", from=1-4, to=2-4]
+	\arrow["{\rm{id}_1}"', from=2-1, to=2-2]
+	\arrow["\mu"', shorten <=6pt, shorten >=6pt, Rightarrow, from=2-3, to=1-4]
+	\arrow["f"', from=2-3, to=2-4]
+\end{tikzcd}}
+
+\p{Then if we take as our pair of adjunctions #{(\eta_x',\epsilon_x')} and #{(\eta_y',\epsilon_y')}, we get 1-cells #{f:x\to y} and #{f\otimes f:x\otimes x\to y\otimes y}. Then the #{\mu} that we get matches the \em{inverse} of the rightmost diagram:}
+\quiver{% https://q.uiver.app/#q=WzAsOCxbMCwwLCJ4Il0sWzEsMCwieSJdLFswLDEsInhcXG90aW1lcyB4Il0sWzEsMSwieVxcb3RpbWVzIHkiXSxbMiwwLCJ4XFxvdGltZXMgeCJdLFszLDAsInlcXG90aW1lcyB5Il0sWzIsMSwieCJdLFszLDEsInkiXSxbMCwxLCJmIl0sWzIsMywiZlxcb3RpbWVzIGYiLDJdLFswLDIsIlxcRGVsdGFfeCIsMl0sWzEsMywiXFxEZWx0YV95Il0sWzEsMiwiXFxsYW1iZGEiLDAseyJzaG9ydGVuIjp7InNvdXJjZSI6MzAsInRhcmdldCI6MzB9LCJsZXZlbCI6Mn1dLFs0LDUsImZcXG90aW1lcyBmIl0sWzYsNywiZiIsMl0sWzQsNiwiXFx0aW1lc194IiwyXSxbNSw3LCJcXHRpbWVzX3kiXSxbNiw1LCJcXG11IiwyLHsic2hvcnRlbiI6eyJzb3VyY2UiOjMwLCJ0YXJnZXQiOjMwfSwibGV2ZWwiOjJ9XV0=
+\begin{tikzcd}
+	x & y & {x\otimes x} & {y\otimes y} \\
+	{x\otimes x} & {y\otimes y} & x & y
+	\arrow["f", from=1-1, to=1-2]
+	\arrow["{\Delta_x}"', from=1-1, to=2-1]
+	\arrow["\lambda", shorten <=6pt, shorten >=6pt, Rightarrow, from=1-2, to=2-1]
+	\arrow["{\Delta_y}", from=1-2, to=2-2]
+	\arrow["{f\otimes f}", from=1-3, to=1-4]
+	\arrow["{\times_x}"', from=1-3, to=2-3]
+	\arrow["{\times_y}", from=1-4, to=2-4]
+	\arrow["{f\otimes f}"', from=2-1, to=2-2]
+	\arrow["\mu"', shorten <=6pt, shorten >=6pt, Rightarrow, from=2-3, to=1-4]
+	\arrow["f"', from=2-3, to=2-4]
+\end{tikzcd}}

@@ -5,5 +5,68 @@
 \import{base-macros}
 \import{rel}
 \taxon{Definition}
+\meta{external}{https://ncatlab.org/nlab/show/internal+category}
 
-\p{todo}
+
+\p{Let #{A} be a [[math-0003]] with [pullbacks](math-000R). Then a \strong{[[math-0003]] internal to #{A}} consists of the following:
+\ul{
+  \li{an object of \em{objects} #{C_0\in A};}
+  \li{an object of \em{morphisms} #{C_1\in A};}
+  \li{\em{source} and \em{target} morphisms #{s,t:C_1\to C_0};}
+  \li{an \em{identity-assiging morphism} #{e:C_0\to C_1};}
+  \li{a \em{composition} morphism #{c:C_1}[#{\times_{C_0}}](math-000R)#{C_1\to C_1}}
+}
+such that the following [diagrams commute](math-000Q):
+}
+
+\ul{
+  \li{Diagrams that say what the source and target of the identity is:
+    \quiver{% https://q.uiver.app/#q=WzAsNixbMCwwLCJDXzAiXSxbMSwwLCJDXzEiXSxbMSwxLCJDXzAiXSxbMiwwLCJDXzAiXSxbMywwLCJDXzEiXSxbMywxLCJDXzAiXSxbMSwyLCJzIl0sWzAsMSwiZSJdLFswLDIsImlkIiwyXSxbMyw0LCJlIl0sWzQsNSwidCJdLFszLDUsImlkIiwyXV0=
+\begin{tikzcd}
+	{C_0} & {C_1} & {C_0} & {C_1} \\
+	& {C_0} && {C_0}
+	\arrow["e", from=1-1, to=1-2]
+	\arrow["id"', from=1-1, to=2-2]
+	\arrow["s", from=1-2, to=2-2]
+	\arrow["e", from=1-3, to=1-4]
+	\arrow["id"', from=1-3, to=2-4]
+	\arrow["t", from=1-4, to=2-4]
+\end{tikzcd}}
+  }
+  \li{Diagrams that say the source and target of composites: \quiver{% https://q.uiver.app/#q=WzAsOCxbMCwwLCJDXzFcXHRpbWVzX3tDXzB9Q18xIl0sWzEsMCwiQ18xIl0sWzAsMSwiQ18xIl0sWzEsMSwiQ18wIl0sWzIsMCwiQ18xXFx0aW1lc197Q18wfUNfMSJdLFszLDAsIkNfMSJdLFszLDEsIkNfMCJdLFsyLDEsIkNfMSJdLFswLDEsImMiXSxbMSwzLCJzIl0sWzIsMywicyIsMl0sWzAsMiwiXFxwaV8yIiwyXSxbNCw1LCJjIl0sWzUsNiwidCJdLFs3LDYsInQiLDJdLFs0LDcsIlxccGlfMSIsMl1d
+\begin{tikzcd}
+	{C_1\times_{C_0}C_1} & {C_1} & {C_1\times_{C_0}C_1} & {C_1} \\
+	{C_1} & {C_0} & {C_1} & {C_0}
+	\arrow["c", from=1-1, to=1-2]
+	\arrow["{\pi_2}"', from=1-1, to=2-1]
+	\arrow["s", from=1-2, to=2-2]
+	\arrow["c", from=1-3, to=1-4]
+	\arrow["{\pi_1}"', from=1-3, to=2-3]
+	\arrow["t", from=1-4, to=2-4]
+	\arrow["s"', from=2-1, to=2-2]
+	\arrow["t"', from=2-3, to=2-4]
+\end{tikzcd}}}
+\li{Associativity:} \quiver{% https://q.uiver.app/#q=WzAsNSxbMCwwLCIoQ18xXFx0aW1lc197Q18wfUNfMSlcXHRpbWVzX3tDXzB9Q18xIl0sWzIsMCwiQ18xXFx0aW1lc197Q18wfUNfMSJdLFswLDEsIkNfMVxcdGltZXNfe0NfMH0oQ18xXFx0aW1lc197Q18wfUNfMSkiXSxbMCwyLCJDXzFcXHRpbWVzX3tDXzB9Q18xIl0sWzIsMiwiQ18xIl0sWzAsMSwiY1xcdGltZXNfe0NfMH0xX3tDXzF9Il0sWzEsNCwiYyJdLFszLDQsImMiLDJdLFsyLDMsIjFfe0NfMX1cXHRpbWVzX3tDXzB9YyIsMl0sWzAsMiwiXFxsYW5nbGVcXHBpXzBcXGNpcmNcXHBpXzEsXFxwaV8xXFx0aW1lcyAxX3tDXzF9XFxyYW5nbGUiLDJdXQ==
+\begin{tikzcd}
+	{(C_1\times_{C_0}C_1)\times_{C_0}C_1} && {C_1\times_{C_0}C_1} \\
+	{C_1\times_{C_0}(C_1\times_{C_0}C_1)} \\
+	{C_1\times_{C_0}C_1} && {C_1}
+	\arrow["{c\times_{C_0}1_{C_1}}", from=1-1, to=1-3]
+	\arrow["{\langle\pi_0\circ\pi_1,\pi_1\times 1_{C_1}\rangle}"', from=1-1, to=2-1]
+	\arrow["c", from=1-3, to=3-3]
+	\arrow["{1_{C_1}\times_{C_0}c}"', from=2-1, to=3-1]
+	\arrow["c"', from=3-1, to=3-3]
+\end{tikzcd}}
+  \li{Unit laws:}
+  \quiver{% https://q.uiver.app/#q=WzAsNCxbMiwwLCJDXzFcXHRpbWVzX3tDXzB9Q18xIl0sWzIsMSwiQ18xIl0sWzAsMCwiQ18wXFx0aW1lc197Q18wfUNfMSJdLFs0LDAsIkNfMVxcdGltZXNfe0NfMH1DXzAiXSxbMiwwLCJlXFx0aW1lc197Q18wfTEiXSxbMywwLCIxXFx0aW1lc197Q18wfWUiLDJdLFszLDEsIlxccGlfMSJdLFsyLDEsIlxccGlfMiIsMl0sWzAsMSwiYyIsMl1d
+\begin{tikzcd}
+	{C_0\times_{C_0}C_1} && {C_1\times_{C_0}C_1} && {C_1\times_{C_0}C_0} \\
+	&& {C_1}
+	\arrow["{e\times_{C_0}1}", from=1-1, to=1-3]
+	\arrow["{\pi_2}"', from=1-1, to=2-3]
+	\arrow["c"', from=1-3, to=2-3]
+	\arrow["{1\times_{C_0}e}"', from=1-5, to=1-3]
+	\arrow["{\pi_1}", from=1-5, to=2-3]
+\end{tikzcd}}
+
+}

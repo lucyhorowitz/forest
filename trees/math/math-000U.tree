@@ -1,0 +1,9 @@
+\date{2025-06-18T00:20:45Z}
+
+\title{equipment}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{A [pseudo double category](math-000D) #{\bbD} is an \strong{equipment} if the source-target projection [functor](math-000S) #{\ang{\text{src},\text{tgt}}: \bbD_1\to\bbD_0\times\bbD_0} is a [bifibration](math-000V).}

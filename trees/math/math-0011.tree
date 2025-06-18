@@ -1,0 +1,30 @@
+\date{2025-06-18T20:25:43Z}
+
+\title{horizontal composition of 2-cells}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{Let #{K} be a [2-category](math-000N). Consider the 2-cells #{\alpha} and #{\beta}:}
+
+\quiver{% https://q.uiver.app/#q=WzAsMyxbMCwwLCJBIl0sWzIsMCwiQiJdLFs0LDAsIkMiXSxbMCwxLCJmXzEiLDAseyJjdXJ2ZSI6LTJ9XSxbMCwxLCJnXzEiLDIseyJjdXJ2ZSI6Mn1dLFsxLDIsImZfMiIsMCx7ImN1cnZlIjotMn1dLFsxLDIsImdfMiIsMix7ImN1cnZlIjoyfV0sWzUsNiwiXFxiZXRhIiwyLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFszLDQsIlxcYWxwaGEiLDAseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV1d
+\begin{tikzcd}
+	A && B && C
+	\arrow[""{name=0, anchor=center, inner sep=0}, "{f_1}", curve={height=-12pt}, from=1-1, to=1-3]
+	\arrow[""{name=1, anchor=center, inner sep=0}, "{g_1}"', curve={height=12pt}, from=1-1, to=1-3]
+	\arrow[""{name=2, anchor=center, inner sep=0}, "{f_2}", curve={height=-12pt}, from=1-3, to=1-5]
+	\arrow[""{name=3, anchor=center, inner sep=0}, "{g_2}"', curve={height=12pt}, from=1-3, to=1-5]
+	\arrow["\alpha", shorten <=3pt, shorten >=3pt, Rightarrow, from=0, to=1]
+	\arrow["\beta"', shorten <=3pt, shorten >=3pt, Rightarrow, from=2, to=3]
+\end{tikzcd}}
+
+\p{The \strong{horizontal composition} of #{\alpha} and #{\beta} is the 2-cell #{\beta\circ \alpha} given by}
+
+\quiver{% https://q.uiver.app/#q=WzAsMixbMCwwLCJBIl0sWzIsMCwiQyJdLFswLDEsImdfMlxcY2lyYyBnXzEiLDIseyJvZmZzZXQiOjIsImN1cnZlIjoxfV0sWzAsMSwiZl8yXFxjaXJjIGZfMSIsMCx7Im9mZnNldCI6LTIsImN1cnZlIjotMX1dLFszLDIsIlxcYmV0YVxcY2lyY1xcYWxwaGEiLDAseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV1d
+\begin{tikzcd}
+	A && C
+	\arrow[""{name=0, anchor=center, inner sep=0}, "{g_2\circ g_1}"', shift right=2, curve={height=6pt}, from=1-1, to=1-3]
+	\arrow[""{name=1, anchor=center, inner sep=0}, "{f_2\circ f_1}", shift left=2, curve={height=-6pt}, from=1-1, to=1-3]
+	\arrow["{\beta\circ\alpha}", shorten <=3pt, shorten >=3pt, Rightarrow, from=1, to=0]
+\end{tikzcd}}

@@ -1,0 +1,45 @@
+\date{2025-06-17T16:34:58Z}
+
+\title{enriched category}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{Let #{(\calM,\otimes, I, \alpha,\lambda,\rho)} be a [[math-000P]]. An \strong{enriched category} #{\calC} over #{\calM} consists of the following:
+\ul{
+  \li{a class of objects of #{\calC};}
+  \li{for each pair #{a,b} of objects of #{\calC}, an object #{\calC(a,b)} of #{\calM} used to define an arrow #{f:a\to b} in #{\calC} as an arrow #{f:I\to \calC(a,b)} in #{M};}
+  \li{an arrow #{\text{id}_a:I\to \calC(a,a)} in #{\calM} giving the identity for every object #{a} of #{\calC};}
+  \li{an arrow #{\circ_{abc}:\calC(b,c)\otimes \calC(a,b)\to \calC(a,c)} in #{M} giving the composition of #{f:a\to b} and #{g:b\to c} in #{\calC} as #{c\circ_{\calC} f = \circ_{abc}(g\otimes f)} subject to the [commutative diagram](math-000Q):
+  \quiver{
+% https://q.uiver.app/#q=WzAsNSxbMCwwLCIoXFxtYXRoY2FsIEMoYyxkKVxcb3RpbWVzIFxcbWF0aGNhbCBDKGIsYykpXFxvdGltZXMgXFxtYXRoY2FsIEMoYSxiKSJdLFsyLDAsIlxcbWF0aGNhbCBDKGIsZClcXG90aW1lcyBcXG1hdGhjYWwgQyhhLGIiXSxbMiwxLCJcXG1hdGhjYWwgQyhhLGQpIl0sWzIsMiwiXFxtYXRoY2FsIEMoYyxkKVxcb3RpbWVzXFxjYWwgQyhhLGMpIl0sWzAsMiwiXFxjYWwgQyhjLGQpXFxvdGltZXMoXFxjYWwgQyhiLGMpXFxvdGltZXMgXFxjYWwgQyhhLGIpKSJdLFswLDQsIlxcYWxwaGEiXSxbMCwxLCJcXGNpcmNfe2JjZH1cXG90aW1lcyAxIiwyXSxbMSwyLCJcXGNpcmNfe2FiZH0iLDJdLFszLDIsIlxcY2lyY197YWNkfSJdLFs0LDMsIjFcXG90aW1lcyBcXGNpcmNfe2FiY30iXV0=
+\begin{tikzcd}
+	{(\mathcal C(c,d)\otimes \mathcal C(b,c))\otimes \mathcal C(a,b)} && {\mathcal C(b,d)\otimes \mathcal C(a,b)} \\
+	&& {\mathcal C(a,d)} \\
+	{\mathcal C(c,d)\otimes(\mathcal C(b,c)\otimes \mathcal C(a,b))} && {\mathcal C(c,d)\otimes\mathcal C(a,c)}
+	\arrow["{\circ_{bcd}\otimes 1}"', from=1-1, to=1-3]
+	\arrow["\alpha", from=1-1, to=3-1]
+	\arrow["{\circ_{abd}}"', from=1-3, to=2-3]
+	\arrow["{1\otimes \circ_{abc}}", from=3-1, to=3-3]
+	\arrow["{\circ_{acd}}", from=3-3, to=2-3]
+\end{tikzcd}}}
+\li{and then instead of requiring identities in the usual sense, we have the diagrams 
+\quiver{% https://q.uiver.app/#q=WzAsMyxbMCwwLCJJXFxvdGltZXMgXFxjYWwgQyhhLGIpIl0sWzIsMCwiXFxjYWwgQyhiLGIpXFxvdGltZXMgXFxjYWwgQyhhLGIpIl0sWzEsMSwiXFxjYWwgQyhhLGIpIl0sWzAsMSwiXFx0ZXh0e2lkfV9iXFxvdGltZXMgMSJdLFswLDIsIlxcbGFtYmRhIiwyXSxbMiwxLCJcXGNpcmNfe2FiYn0iLDJdXQ==
+\begin{tikzcd}
+	{I\otimes \mathcal C(a,b)} && {\mathcal C(b,b)\otimes \mathcal C(a,b)} \\
+	& {\mathcal C(a,b)}
+	\arrow["{id_b\otimes 1}", from=1-1, to=1-3]
+	\arrow["\lambda"', from=1-1, to=2-2]
+	\arrow["{\circ_{abb}}"', from=1-3, to=2-2]
+\end{tikzcd}}
+\quiver{% https://q.uiver.app/#q=WzAsMyxbMCwwLCIgXFxtYXRoY2Fse0N9KGEsYilcXG90aW1lcyBJIl0sWzIsMCwiXFxjYWwgQyhhLGIpXFxvdGltZXMgXFxjYWwgQyhhLGEpIl0sWzEsMSwiXFxjYWwgQyhhLGIpIl0sWzAsMSwiXFx0ZXh0e2lkfV9iXFxvdGltZXMgMSJdLFswLDIsIlxccmhvIiwyXSxbMSwyLCJcXGNpcmNfe2FhYn0iXV0=
+\begin{tikzcd}
+	{ \mathcal{C}(a,b)\otimes I} && {\mathcal C(a,b)\otimes \mathcal C(a,a)} \\
+	& {\mathcal C(a,b)}
+	\arrow["{id_b\otimes 1}", from=1-1, to=1-3]
+	\arrow["\rho"', from=1-1, to=2-2]
+	\arrow["{\circ_{aab}}", from=1-3, to=2-2]
+\end{tikzcd}}
+}
+}}

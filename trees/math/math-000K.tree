@@ -1,6 +1,6 @@
 \date{2025-06-16T22:37:45Z}
 
-\title{double category}
+\title{strict double category}
 \import{macros}
 \import{base-macros}
 \import{rel}
@@ -29,3 +29,4 @@
 	\arrow[shorten <=6pt, shorten >=9pt, Rightarrow, from=0, to=1]
 \end{tikzcd}}
 
+\p{But usually these days, people mean [[math-000D]] when they talk about double categories.}

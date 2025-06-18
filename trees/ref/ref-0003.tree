@@ -8,17 +8,18 @@
 \author{michael-lambert}\author{evan-patterson}
 
 \subtree{\taxon{Section} \title{Introduction} \number{1} 
-\subtree{\title{Scheme of the paper}
+\ul{\li{Scheme of the paper:}
 \ul{
   \li{"ontology/database schema" corresponds to a [small category] with extra structure}
   \li{"instance data" corresponds to a structure-preserving [functor] out of the above category to something like [Set]}}
-}
-\subtree{\title{Knowledge representation and databases}
-\p{Two sides of the same coin.}
+
+\li{Knowledge representation and databases are two sides of the same coin:
 \ul{
   \li{"knowledge representation emphasizes rich schemas and expressive schema languages"}
   \li{"databases center the data instances and transformations between them"}
 }}
-\subtree{\title{Benefits of the approach}
-\p{Gives first-class status to \em{both} functions and relations}
-}}
+\li{Benefits of the approach:
+\ul{
+  \li{Gives first-class status to \em{both} functions and relations}
+}
+}}}

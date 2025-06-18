@@ -6,9 +6,9 @@
 \import{rel}
 \taxon{Proposition}
 
-\subtree{\taxon{Statement}
 \p{Let #{\calE} be a [[math-000A]]. Then every [[math-000F]] has a [[math-000G]].}
-}  
 
 \subtree{\taxon{Proof}  
 \p{todo}} 
+
+\fact{math-000A}

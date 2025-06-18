@@ -1,0 +1,17 @@
+\date{2025-06-18T23:14:25Z}
+
+\title{equivalences in #{\bfK_\text{cart}} are equivalences in #{\bfK}}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Lemma}
+
+\p{Let #{\bfK} be a [2-category](math-000N) with strict finite [products](math-0018). Then a 1-cell #{f:x\to y} in [#{\bfK_\text{cart}}](math-0019) is an [equivalence](math-001C) in #{\bfK_\text{cart}} iff it is an equivalence in #{\bfK}.}
+
+\subtree{\taxon{Proof}  \p{If #{f} is an equivalence in #{\bfK_\text{cart}} then it has an inverse, which is still a 1-cell from #{\bfK}. So by the [forgetful functor](math-001D) #{\bfK_\text{cart}\to\bfK}, we still get an inverse in #{\bfK}.}
+
+\p{
+  Now if #{f} is a 1-cell in #{\bfK_\text{cart}} that is an equivalence in #{\bfK}, we need to show that its inverse is also a [Cartesian arrow](math-0010). Take #{g} to be the inverse  of #{f}.
+}
+
+\p{\strong{Question:} am I doing something wrong here by calling these "equivalences" isomorphisms and referring to their inverses rather than their adjoints?}}

@@ -1,0 +1,16 @@
+\date{2025-06-17T16:28:17Z}
+
+\title{2-category}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{A \strong{2-category} is a [[math-0003]] [enriched](math-000O) over [#{\mathsf{Cat}}](math-000M).}
+
+\p{A 2-category has a collection of objects (or 0-cells), for each pair #{a,b} of objects a [[math-0003]] #{\text{Hom}(a,b)} so that the objects of #{\text{Hom}(a,b)} are the 1-morphisms (or 1-cells) of the 2-category, and the morphisms of #{\text{Hom}(a,b)} are the 2-morphisms (or 2-cells) of the 2-categories.}
+
+\p{2-cells can be composed either "vertically" or "horizontally."}
+
+\transclude{math-0011}
+\transclude{math-0012}

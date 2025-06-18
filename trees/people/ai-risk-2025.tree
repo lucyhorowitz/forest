@@ -1,0 +1,30 @@
+\date{2025-06-18T01:57:11Z}
+
+\title{AI Risk Reading Group}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Group}
+\meta{external}{https://docs.google.com/document/d/1nUoFxvsw4TL5VTuIAqVCCtUyvRLmSBa98LYrLOAvu1Y/edit?tab=t.0#heading=h.2nyf3wp52ipk}
+\author{wes-holliday}
+\author{will-fithian}
+
+\p{A biweekly meeting at UC Berkeley to discuss AI risk. Meets Tuesdays 1-2:30.}
+
+\subtree{
+  \title{June 3:  Two divergent views on where we are heading}
+  \p{Readings:}
+  \ul{
+    \li{[[ref-0006]]}
+    \li{[[ref-0005]]}
+  }
+}
+
+\subtree{
+  \title{June 17: Even if near-term risks are averted, will AI gradually disempower humanity?}
+  \p{Readings:}
+  \ul{
+    \li{[[ref-0007]]}
+  }
+  [My thoughts](writing-0001)
+}

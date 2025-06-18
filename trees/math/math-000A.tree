@@ -9,8 +9,4 @@
 
 \p{A [[math-000B]] #{\calE} is \strong{regular} if every morphism has an [image factorization](math-0005) and [covers](math-0009) are [[math-000C]].}
 
-\subtree{\title{Facts about regular Cartesian categories}
-\p{todo}
-\transclude{math-000E}
-\transclude{math-000H}
-}
+\factsAboutThis

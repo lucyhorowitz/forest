@@ -1,0 +1,9 @@
+\date{2025-06-18T23:07:30Z}
+
+\title{2-category of Cartesian objects}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{Let #{\bfK} be a [2-category](math-000N) with strict finite [products](math-0018). Then the [Cartesian objects](math-000Y) of #{\bfK}, together with 1-cells the [Cartesian morphisms](math-0010) from #{K} and 2-cells just the 2-cells from #{\bfK}, forms another [2-category](math-000N) called \strong{2-category of cartesian objects}, denoted #{\bfK_\text{cart}}.}

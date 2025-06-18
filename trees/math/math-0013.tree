@@ -1,0 +1,91 @@
+\date{2025-06-18T20:42:23Z}
+
+\title{mate construction}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Construction}
+
+\p{Let #{K} be a [2-category](math-000N) and consider two [adjoint pairs](math-0014) #{(\eta,\epsilon) : f \dashv u:b\to a} and #{(\eta',\epsilon'):f'\dashv u':b'\to a'} and two 1-cells #{x:a\to a'} and #{y:b\to b'}. Then there is a [bijection](math-0017) ##{K(a,b')(f'x, yf)\cong K(b,a')(xu,u'y)} given by [pasting] the unit of one of the adjunctions and the counit of the other:}
+
+\quiver{% https://q.uiver.app/#q=WzAsMTIsWzAsMCwiYSJdLFsxLDAsImEnIl0sWzAsMSwiYiJdLFsxLDEsImInIl0sWzMsMCwiYiJdLFs0LDAsImEiXSxbNSwwLCJhJyJdLFs2LDAsImEnIl0sWzMsMSwiYiJdLFs0LDEsImIiXSxbNSwxLCJiJyJdLFs2LDEsImEnIl0sWzAsMSwieCJdLFswLDIsImYiLDJdLFsxLDMsImYnIl0sWzIsMywieSIsMl0sWzEsMiwiXFxsYW1iZGEiLDAseyJsZXZlbCI6Mn1dLFs0LDUsInUiXSxbNSw2LCJ4Il0sWzYsNywiXFxybXtpZH0iXSxbNywxMSwiXFxybXtpZH0iXSxbMTAsMTEsInUnIiwyXSxbNiwxMCwiZiciXSxbNywxMCwiXFxldGEiLDAseyJsZXZlbCI6Mn1dLFs1LDksImYiXSxbOSwxMCwieSIsMl0sWzYsOSwiXFxsYW1iZGEiLDAseyJsZXZlbCI6Mn1dLFs4LDksIlxccm17aWR9IiwyXSxbNCw4LCJcXHJte2lkfSIsMl0sWzUsOCwiXFxlcHNpbG9uIiwwLHsibGV2ZWwiOjJ9XSxbMTQsMjgsIiIsMCx7InNob3J0ZW4iOnsic291cmNlIjozMCwidGFyZ2V0IjozMH0sImxldmVsIjoxLCJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJtYXBzIHRvIn19fV1d
+\begin{tikzcd}
+	a & {a'} && b & a & {a'} & {a'} \\
+	b & {b'} && b & b & {b'} & {a'}
+	\arrow["x", from=1-1, to=1-2]
+	\arrow["f"', from=1-1, to=2-1]
+	\arrow["\lambda", Rightarrow, from=1-2, to=2-1]
+	\arrow[""{name=0, anchor=center, inner sep=0}, "{f'}", from=1-2, to=2-2]
+	\arrow["u", from=1-4, to=1-5]
+	\arrow[""{name=1, anchor=center, inner sep=0}, "{\rm{id}}"', from=1-4, to=2-4]
+	\arrow["x", from=1-5, to=1-6]
+	\arrow["\epsilon", Rightarrow, from=1-5, to=2-4]
+	\arrow["f", from=1-5, to=2-5]
+	\arrow["{\rm{id}}", from=1-6, to=1-7]
+	\arrow["\lambda", Rightarrow, from=1-6, to=2-5]
+	\arrow["{f'}", from=1-6, to=2-6]
+	\arrow["\eta", Rightarrow, from=1-7, to=2-6]
+	\arrow["{\rm{id}}", from=1-7, to=2-7]
+	\arrow["y"', from=2-1, to=2-2]
+	\arrow["{\rm{id}}"', from=2-4, to=2-5]
+	\arrow["y"', from=2-5, to=2-6]
+	\arrow["{u'}"', from=2-6, to=2-7]
+	\arrow[shorten <=19pt, shorten >=19pt, maps to, from=0, to=1]
+\end{tikzcd}}
+
+\quiver{% https://q.uiver.app/#q=WzAsMTIsWzAsMCwiYiJdLFsxLDAsImInIl0sWzAsMSwiYSJdLFsxLDEsImEnIl0sWzMsMCwiYSJdLFs0LDAsImIiXSxbNSwwLCJiJyJdLFs2LDAsImInIl0sWzYsMSwiYiciXSxbMywxLCJhIl0sWzQsMSwiYSJdLFs1LDEsImEnIl0sWzAsMSwieSJdLFsxLDMsInUnIl0sWzAsMiwidSIsMl0sWzIsMywieCIsMl0sWzIsMSwiXFxtdSIsMix7ImxldmVsIjoyfV0sWzQsNSwiZiJdLFs1LDYsInkiXSxbNiw3LCJcXHJte2lkfSJdLFs0LDksIlxccm17aWR9IiwyXSxbOSwxMCwiXFxybXtpZH0iLDJdLFs1LDEwLCJ1Il0sWzksNSwiXFxldGEiLDIseyJsZXZlbCI6Mn1dLFsxMCwxMSwieCIsMl0sWzYsMTEsInUnIl0sWzEwLDYsIlxcbXUiLDIseyJsZXZlbCI6Mn1dLFsxMSw4LCJmJyIsMl0sWzcsOCwiXFxybXtpZH0iXSxbMTEsNywiXFxlcHNpbG9uJyIsMix7ImxldmVsIjoyfV0sWzEzLDIwLCIiLDAseyJzaG9ydGVuIjp7InNvdXJjZSI6MzAsInRhcmdldCI6MzB9LCJsZXZlbCI6MSwic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoibWFwcyB0byJ9fX1dXQ==
+\begin{tikzcd}
+	b & {b'} && a & b & {b'} & {b'} \\
+	a & {a'} && a & a & {a'} & {b'}
+	\arrow["y", from=1-1, to=1-2]
+	\arrow["u"', from=1-1, to=2-1]
+	\arrow[""{name=0, anchor=center, inner sep=0}, "{u'}", from=1-2, to=2-2]
+	\arrow["f", from=1-4, to=1-5]
+	\arrow[""{name=1, anchor=center, inner sep=0}, "{\rm{id}}"', from=1-4, to=2-4]
+	\arrow["y", from=1-5, to=1-6]
+	\arrow["u", from=1-5, to=2-5]
+	\arrow["{\rm{id}}", from=1-6, to=1-7]
+	\arrow["{u'}", from=1-6, to=2-6]
+	\arrow["{\rm{id}}", from=1-7, to=2-7]
+	\arrow["\mu"', Rightarrow, from=2-1, to=1-2]
+	\arrow["x"', from=2-1, to=2-2]
+	\arrow["\eta"', Rightarrow, from=2-4, to=1-5]
+	\arrow["{\rm{id}}"', from=2-4, to=2-5]
+	\arrow["\mu"', Rightarrow, from=2-5, to=1-6]
+	\arrow["x"', from=2-5, to=2-6]
+	\arrow["{\epsilon'}"', Rightarrow, from=2-6, to=1-7]
+	\arrow["{f'}"', from=2-6, to=2-7]
+	\arrow[shorten <=19pt, shorten >=19pt, maps to, from=0, to=1]
+\end{tikzcd}}
+
+\p{The 2-cells #{\lambda} and #{\mu} are called \strong{mates} with respect to the adjunctions #{f \dashv u} and #{f'\dashv u'} and the 1-cells #{x} and #{y}.} 
+
+\subtree{\taxon{Proof}\p{To see that this is in fact a bijection, use the [triangle identities] to see that all but the middle cell will "cancel out":}
+\quiver{% https://q.uiver.app/#q=WzAsMTIsWzAsMCwiYSJdLFsxLDAsImEiXSxbMCwxLCJiIl0sWzEsMSwiYSJdLFsyLDEsImEnIl0sWzMsMSwiYSciXSxbMywyLCJhJyJdLFsyLDIsImInIl0sWzMsMywiYiciXSxbMiwzLCJiJyJdLFsxLDIsImIiXSxbMCwyLCJiIl0sWzAsMSwiXFxybXtpZH0iXSxbMCwyLCJmIiwyXSxbMSwzLCJcXHJte2lkfSJdLFsyLDMsInUiLDJdLFsyLDExLCJcXHJte2lkfSIsMl0sWzEsMiwiXFxldGEiLDAseyJsZXZlbCI6Mn1dLFsxMSwxMCwiXFxybXtpZH0iLDJdLFszLDEwLCJmIl0sWzMsMTEsIlxcZXBzaWxvbiIsMCx7ImxldmVsIjoyfV0sWzMsNCwieCJdLFsxMCw3LCJ5IiwyXSxbNCw3LCJmJyJdLFs0LDEwLCJcXGxhbWJkYSIsMCx7ImxldmVsIjoyfV0sWzQsNSwiXFxybXtpZH0iXSxbNSw2LCJcXHJte2lkfSJdLFs3LDYsInUnIiwyXSxbNyw5LCJcXHJte2lkfSIsMl0sWzYsOCwiZiciXSxbOSw4LCJcXHJte2lkfSIsMl0sWzUsNywiXFxldGEnIiwwLHsibGV2ZWwiOjJ9XSxbNiw5LCJcXGVwc2lsb24nIiwwLHsibGV2ZWwiOjJ9XV0=
+\begin{tikzcd}
+	a & a \\
+	b & a & {a'} & {a'} \\
+	b & b & {b'} & {a'} \\
+	&& {b'} & {b'}
+	\arrow["{\rm{id}}", from=1-1, to=1-2]
+	\arrow["f"', from=1-1, to=2-1]
+	\arrow["\eta", Rightarrow, from=1-2, to=2-1]
+	\arrow["{\rm{id}}", from=1-2, to=2-2]
+	\arrow["u"', from=2-1, to=2-2]
+	\arrow["{\rm{id}}"', from=2-1, to=3-1]
+	\arrow["x", from=2-2, to=2-3]
+	\arrow["\epsilon", Rightarrow, from=2-2, to=3-1]
+	\arrow["f", from=2-2, to=3-2]
+	\arrow["{\rm{id}}", from=2-3, to=2-4]
+	\arrow["\lambda", Rightarrow, from=2-3, to=3-2]
+	\arrow["{f'}", from=2-3, to=3-3]
+	\arrow["{\eta'}", Rightarrow, from=2-4, to=3-3]
+	\arrow["{\rm{id}}", from=2-4, to=3-4]
+	\arrow["{\rm{id}}"', from=3-1, to=3-2]
+	\arrow["y"', from=3-2, to=3-3]
+	\arrow["{u'}"', from=3-3, to=3-4]
+	\arrow["{\rm{id}}"', from=3-3, to=4-3]
+	\arrow["{\epsilon'}", Rightarrow, from=3-4, to=4-3]
+	\arrow["{f'}", from=3-4, to=4-4]
+	\arrow["{\rm{id}}"', from=4-3, to=4-4]
+\end{tikzcd}}}

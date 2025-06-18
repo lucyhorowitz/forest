@@ -1,0 +1,9 @@
+\date{2025-06-18T21:42:15Z}
+
+\title{bijection}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{A \strong{bijection} is a function that is both [injective] and [surjective].}

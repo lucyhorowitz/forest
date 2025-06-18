@@ -7,3 +7,9 @@
 \taxon{Example}
 
 \p{todo}
+
+\example{math-0003}
+\example{math-000K}
+\exampleOf
+
+%\exampleOf{math-000K}

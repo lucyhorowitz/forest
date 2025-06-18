@@ -1,0 +1,23 @@
+\date{2025-06-18T06:57:29Z}
+
+\title{Mathematics is divided into three parts...}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Quote}
+\author{vladimir-arnold}
+\meta{external}{https://mathshistory.st-andrews.ac.uk/Biographies/Arnold/quotations/}
+
+\p{"All mathematics is divided into three parts:
+\ul{
+  \li{cryptography (paid for by CIA, KGB and the like)}
+  \li{hydrodynamics (supported by manufacturers of atomic submarines)}
+  \li{celestial mechanics (financed by military and other institutions dealing with missiles, such as NASA).}}}
+
+\p{Cryptography has generated number theory, algebraic geometry over finite fields, algebra, combinatorics and computers.}
+
+\p{Hydrodynamics procreated complex analysis, partial differential equations, Lie groups and algebra theory, cohomology theory and scientific computing.}
+
+\p{Celestial mechanics is the origin of dynamical systems, linear algebra, topology, variational calculus and symplectic geometry.}
+
+\p{The existence of mysterious relations between all these different domains is the most striking and delightful feature of mathematics (having no rational explanation)."}

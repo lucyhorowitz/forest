@@ -1,0 +1,9 @@
+\date{2025-06-18T23:10:24Z}
+
+\title{Cartesian objects in #{\mathsf{Cat}}}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Example}
+
+\p{In [#{\mathsf{Cat}}](math-000M) viewed as a [2-category](math-000N), the [Cartesian objects](math-000Y) are just the [categories](math-0003) with finite [products](math-0018) where the right [adjoints](math-0014) are the [terminal object](math-000Z) [functor](math-000S) and the binary product [functor](math-000S).}

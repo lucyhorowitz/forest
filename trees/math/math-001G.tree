@@ -1,0 +1,9 @@
+\date{2025-06-20T05:27:57Z}
+
+\title{regular epimorphism}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{A \strong{regular epimorphism} is the [coequalizer](math-000G) of some parallel pair of morphisms.}

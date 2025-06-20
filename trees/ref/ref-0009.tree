@@ -13,5 +13,6 @@
   \transclude{math-0010} % cartesian arrow
   \transclude{math-0019} % 2-cat of cartesian objects
   \transclude{math-001A} % cartesian objects in cat
+  \transclude{math-001B} % lemma 1.1.4 
 }}
 \subtree{\taxon{Chapter}\title{Something else}}

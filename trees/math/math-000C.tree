@@ -5,5 +5,14 @@
 \import{macros}
 \import{base-macros}
  
-\p{todo}  
-\current-tree 
+\p{A property of a [morphism](math-0003) #{f:A\to B} is \strong{preserved under pullbacks} if it is also true of the [pullback](math-000R) #{\tilde f:X\times_B A \to X} in the diagram}
+\quiver{% https://q.uiver.app/#q=WzAsNCxbMCwwLCJYXFx0aW1lc19CQSJdLFsxLDAsIkEiXSxbMCwxLCJYIl0sWzEsMSwiQiJdLFsxLDMsImYiXSxbMiwzLCJnIiwyXSxbMCwyLCJcXHRpbGRlIGYiLDJdLFswLDEsIlxcdGlsZGUgZyJdLFswLDMsIiIsMSx7InN0eWxlIjp7Im5hbWUiOiJjb3JuZXIifX1dXQ==
+\begin{tikzcd}
+	{X\times_BA} & A \\
+	X & B
+	\arrow["{\tilde g}", from=1-1, to=1-2]
+	\arrow["{\tilde f}"', from=1-1, to=2-1]
+	\arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=1-1, to=2-2]
+	\arrow["f", from=1-2, to=2-2]
+	\arrow["g"', from=2-1, to=2-2]
+\end{tikzcd}}  

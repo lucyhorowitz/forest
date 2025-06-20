@@ -5,5 +5,19 @@
 \import{base-macros}
 \import{rel}
 \taxon{Definition}
+\meta{external}{https://ncatlab.org/nlab/show/coequalizer}
 
-\p{Todo}
+\p{Let #{\calC} be a [category](math-0003). Then a [diagram]}
+\quiver{https://ncatlab.org/nlab/show/coequalizer}
+\p{is a \strong{coequalizer} diagram if #{p\circ f = p\circ g} and #{p} is [universal]: i.e. if #{q:Y\to W} is another morphism such that #{q\circ f = q\circ g}:}
+
+\quiver{% https://q.uiver.app/#q=WzAsNCxbMCwwLCJYIl0sWzEsMCwiWSJdLFsyLDAsIloiXSxbMSwxLCJXIl0sWzAsMSwiZyIsMix7Im9mZnNldCI6MX1dLFswLDEsImYiLDAseyJvZmZzZXQiOi0xfV0sWzEsMiwicCJdLFsxLDMsInEiXSxbMiwzLCJcXGV4aXN0cyEgcSciLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=
+\begin{tikzcd}
+	X & Y & Z \\
+	& W
+	\arrow["g"', shift right, from=1-1, to=1-2]
+	\arrow["f", shift left, from=1-1, to=1-2]
+	\arrow["p", from=1-2, to=1-3]
+	\arrow["q", from=1-2, to=2-2]
+	\arrow["{\exists! q'}", dashed, from=1-3, to=2-2]
+\end{tikzcd}}

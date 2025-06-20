@@ -6,7 +6,7 @@
 
 \ul{\li{1: The phase semantics
   \ul{
-    \li{\em{Observers} verify \em{facts} via \em{tasks}. Tasks are thought of as \em{phases} between a fact and its verification. A task might verify multiple facts, or a task might have multiple parts, each of which verifies a different fact.}
+    \li{\em{Observers} verify \em{facts} via \em{tasks}. Tasks are thought of as \em{phases} between a fact and its verification. A task might verify multiple facts, or a task might have multiple parts, each of which verifies a different fact.} 
     \li{defined }
   }
 }}

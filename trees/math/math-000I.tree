@@ -6,4 +6,6 @@
 \import{rel}
 \taxon{Definition}
 
-\p{A \strong{relation} in a [[math-000A]] #{\calE} is a [monic](math-0008) #{R\rightarrowtail A\times B} and are denoted #{R:A\nrightarrow B} (todo: make a macro)}
+\p{A \strong{relation} in a [[math-000A]] #{\calE} is a [monic](math-0008) #{R\rightarrowtail A\times B} and are denoted #{R:A\nrightarrow B}}
+
+\p{todo: make a macro}

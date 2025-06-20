@@ -4,5 +4,7 @@
 \taxon{Definition}
 \import{macros}
 \import{base-macros}
+\import{rel}
+\meta{external}{https://ncatlab.org/nlab/show/cartesian+monoidal+category}
 
-\p{todo}
+\p{A \strong{Cartesian category} is a [monoidal category](math-000P) whose product is the regular old [product](math-0018), and thus has a [terminal object](math-000Z) for a unit.}

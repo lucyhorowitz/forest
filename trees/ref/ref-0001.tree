@@ -9,5 +9,5 @@
 \subtree{\taxon{Section} \title{Formulating Implication-Space Semantics}
 \subtree{\taxon{Subsection} \title{Implicational Roles}
 \transclude{0005} 
-\transclude{0006}  
+\transclude{0006}   
 }}}

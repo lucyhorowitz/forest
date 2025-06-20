@@ -28,10 +28,10 @@
 \query\datalog{?X -: {\rel/example ?X @{\current-tree}}}}
 }
 
+\def\thisIsExampleOf{
+  \exampleOf}
 
-
-\def\examples{
-  \exampleOf \p{}
+\def\examplesOfThis{
 
   \exampleOfThis} % add to backmatter
 

@@ -5,5 +5,7 @@
 \import{base-macros}
 \import{rel}
 \taxon{Definition}
+\meta{external}{https://ncatlab.org/nlab/show/monoidal+category}
 
-\p{todo}
+\p{todo
+}

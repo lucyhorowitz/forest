@@ -24,6 +24,7 @@
 \transclude{math-000A} % regular Cartesian category
 \transclude{math-000I} % relation
 \transclude{math-000J} % double category of relations
+\transclude{math-000H} % regular epimorphisms in regular Cartesian categories are preserved under pullbacks
 \transclude{math-000U} % equipment
 \transclude{math-000W} % double category of relations is an equipment
 }}

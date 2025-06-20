@@ -69,3 +69,5 @@
 	\arrow["\mu"', shorten <=6pt, shorten >=6pt, Rightarrow, from=2-3, to=1-4]
 	\arrow["f"', from=2-3, to=2-4]
 \end{tikzcd}}
+
+\p{I think the claim is that \em{all} of the 2-cells I just drew are actually invertible. I'm not sure why the paper only writes one direction of half of them...}

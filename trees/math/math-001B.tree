@@ -1,6 +1,6 @@
 \date{2025-06-18T23:14:25Z}
 
-\title{equivalences in #{\bfK_\text{cart}} are equivalences in #{\bfK}}
+\title{equivalences in #{\mathbf{K}_\text{cart}} are equivalences in #{\mathbf{K}}}
 \import{macros}
 \import{base-macros}
 \import{rel}
@@ -11,7 +11,43 @@
 \subtree{\taxon{Proof}  \p{If #{f} is an equivalence in #{\bfK_\text{cart}} then it has an inverse, which is still a 1-cell from #{\bfK}. So by the [forgetful functor](math-001D) #{\bfK_\text{cart}\to\bfK}, we still get an inverse in #{\bfK}.}
 
 \p{
-  Now if #{f} is a 1-cell in #{\bfK_\text{cart}} that is an equivalence in #{\bfK}, we need to show that its inverse is also a [Cartesian arrow](math-0010). Take #{g} to be the inverse  of #{f}.
+  Now if #{f} is a 1-cell in #{\bfK_\text{cart}} that is an equivalence in #{\bfK}, we need to show that its inverse is also a [Cartesian arrow](math-0010). Take #{g} to be the inverse  of #{f}. Then because #{f} is a [Cartesian arrow](math-0010), the following 2-cells are invertible:
 }
 
-\p{\strong{Question:} am I doing something wrong here by calling these "equivalences" isomorphisms and referring to their inverses rather than their adjoints?}}
+\quiver{% https://q.uiver.app/#q=WzAsNyxbMCwxLCJ4Il0sWzEsMCwieSJdLFsyLDEsIjEiXSxbMywxLCJ4Il0sWzQsMCwieSJdLFs1LDEsInlcXG90aW1lcyB5Il0sWzQsMiwieFxcb3RpbWVzIHgiXSxbMCwxLCJmIl0sWzAsMiwiIV94IiwyXSxbMSwyLCIhX3kiXSxbMyw0LCJmIl0sWzQsNSwiXFxEZWx0YV95Il0sWzMsNiwiXFxEZWx0YV94IiwyXSxbNiw1LCJmXFxvdGltZXMgZiIsMl0sWzQsNiwiIiwxLHsic2hvcnRlbiI6eyJzb3VyY2UiOjMwLCJ0YXJnZXQiOjMwfSwibGV2ZWwiOjIsInN0eWxlIjp7InRhaWwiOnsibmFtZSI6ImFycm93aGVhZCJ9fX1dLFsxLDgsIiIsMix7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjozMH0sInN0eWxlIjp7InRhaWwiOnsibmFtZSI6ImFycm93aGVhZCJ9fX1dXQ==
+\begin{tikzcd}
+	& y &&& y \\
+	x && 1 & x && {y\otimes y} \\
+	&&&& {x\otimes x}
+	\arrow["{!_y}", from=1-2, to=2-3]
+	\arrow["{\Delta_y}", from=1-5, to=2-6]
+	\arrow[shorten <=10pt, shorten >=10pt, Rightarrow, 2tail reversed, from=1-5, to=3-5]
+	\arrow["f", from=2-1, to=1-2]
+	\arrow[""{name=0, anchor=center, inner sep=0}, "{!_x}"', from=2-1, to=2-3]
+	\arrow["f", from=2-4, to=1-5]
+	\arrow["{\Delta_x}"', from=2-4, to=3-5]
+	\arrow["{f\otimes f}"', from=3-5, to=2-6]
+	\arrow[shorten <=3pt, shorten >=5pt, Rightarrow, 2tail reversed, from=1-2, to=0]
+\end{tikzcd}}
+
+\p{Now we have to take "adjoints" (I think just inverses) of all sides to get more invertible 2-cells:}
+
+\quiver{% https://q.uiver.app/#q=WzAsOCxbMCwxLCJ4Il0sWzEsMCwieSJdLFsyLDEsIjEiXSxbMywxLCJ4Il0sWzQsMCwieSJdLFs1LDEsInlcXG90aW1lcyB5Il0sWzQsMiwieFxcb3RpbWVzIHgiXSxbNSwyXSxbMSwwLCJnIiwyXSxbMiwwLCIxX3giXSxbMiwxLCIxX3kiLDJdLFs0LDMsImciLDJdLFs1LDQsIlxcdGltZXNfeSIsMl0sWzYsMywiXFx0aW1lc194Il0sWzUsNiwiZ1xcb3RpbWVzIGciXSxbNCw2LCIiLDEseyJzaG9ydGVuIjp7InNvdXJjZSI6MzAsInRhcmdldCI6MzB9LCJsZXZlbCI6Miwic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiYXJyb3doZWFkIn19fV0sWzEsOSwiIiwyLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjMwfSwic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiYXJyb3doZWFkIn19fV1d
+\begin{tikzcd}
+	& y &&& y \\
+	x && 1 & x && {y\otimes y} \\
+	&&&& {x\otimes x} & {}
+	\arrow["g"', from=1-2, to=2-1]
+	\arrow["g"', from=1-5, to=2-4]
+	\arrow[shorten <=10pt, shorten >=10pt, Rightarrow, 2tail reversed, from=1-5, to=3-5]
+	\arrow["{1_y}"', from=2-3, to=1-2]
+	\arrow[""{name=0, anchor=center, inner sep=0}, "{1_x}", from=2-3, to=2-1]
+	\arrow["{\times_y}"', from=2-6, to=1-5]
+	\arrow["{g\otimes g}", from=2-6, to=3-5]
+	\arrow["{\times_x}", from=3-5, to=2-4]
+	\arrow[shorten <=3pt, shorten >=5pt, Rightarrow, 2tail reversed, from=1-2, to=0]
+\end{tikzcd}}
+
+\p{But that was just the criterion for #{g} to be a [Cartesian arrow](math-0010), so it also lives in #{\bfK_\text{cart}} and is still the inverse of #{f}.}}
+
+\p{\strong{Question:} am I doing something wrong here by calling these "equivalences" isomorphisms and referring to their inverses rather than their adjoints? I don't think so.}

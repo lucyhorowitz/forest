@@ -6,7 +6,7 @@
 \import{rel}
 \taxon{Proposition}
 
-\p{todo}
+\p{In a [regular Cartesian category](math-000A), [regular epimorphisms](math-001G) are [preserved under pullbacks](math-000C).}
 
 \subtree{\taxon{Proof} \p{todo}}
 \fact{math-000A}

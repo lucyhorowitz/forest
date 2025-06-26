@@ -1,0 +1,9 @@
+\date{2025-06-20T16:04:32Z}
+
+\title{image of a functor}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{The \strong{image} of a [functor](math-000S) #{F:A\to B} between [#{n}-categories](math-001P) is the smallest [subcategory](math-001N) containing the #{n}-cells that are "actually" the "images" of #{n}-cells in #{A}.}

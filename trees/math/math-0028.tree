@@ -1,0 +1,20 @@
+\date{2025-06-20T18:51:53Z}
+
+\title{natural transformation}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+\meta{external}{https://ncatlab.org/nlab/show/natural+transformation}
+
+\p{Let #{C} and #{D} be [categories](math-0003) and let #{F,G:C\to D} be two [functors](math-000S). A \strong{natural transformation} #{\alpha:F\to G} consists of an assignment to every object #{x} of #{c} a \em{morphism} #{\alpha_x:F(x)\to G(x)}, called the \strong{component} of #{\alpha} at #{x}, such that for any morphism #{f:x\to y} in #{C}, the following [diagram commutes](math-000Q) in #{D}:
+\quiver{% https://q.uiver.app/#q=WzAsNCxbMCwwLCJGKHgpIl0sWzEsMCwiRih5KSJdLFswLDEsIkcoeCkiXSxbMSwxLCJHKHkpIl0sWzAsMSwiRihmKSJdLFsxLDMsIlxcYWxwaGFfeSJdLFswLDIsIlxcYWxwaGFfeCIsMl0sWzIsMywiRyhmKSIsMl1d
+\begin{tikzcd}
+	{F(x)} & {F(y)} \\
+	{G(x)} & {G(y)}
+	\arrow["{F(f)}", from=1-1, to=1-2]
+	\arrow["{\alpha_x}"', from=1-1, to=2-1]
+	\arrow["{\alpha_y}", from=1-2, to=2-2]
+	\arrow["{G(f)}"', from=2-1, to=2-2]
+\end{tikzcd}}
+}

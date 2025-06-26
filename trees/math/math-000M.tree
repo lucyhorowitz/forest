@@ -6,6 +6,6 @@
 \import{rel}
 \taxon{Example}
 
-\p{#{\mathsf{Cat}} is the [category](math-0003) of categories! Its objects are ([small](small category)) categories and its morphisms are the [functors](math-000S) between them.}
+\p{#{\mathsf{Cat}} is the [category](math-0003) of categories! Its objects are ([small](math-0002)) categories and its morphisms are the [functors](math-000S) between them.}
 
 \p{Note that #{mathsf{Cat}} is now a [large category](math-001I).}

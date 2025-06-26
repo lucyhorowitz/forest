@@ -1,0 +1,9 @@
+\date{2025-06-20T18:24:09Z}
+
+\title{tight category of loosewise opposite of double category is tight category}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Fact}
+
+\p{([#{D^{\mathsf{lop}}}](math-001U))[#{_0}](math-001W)#{= D_0}}

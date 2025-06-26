@@ -1,0 +1,59 @@
+\date{2025-06-20T16:34:43Z}
+
+\title{2-functor}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+\meta{external}{https://ncatlab.org/nlab/show/2-functor}
+
+\p{Apparently the correct notion of 2-functor is that of \strong{pseudofunctor} so that is what I will define here.}
+
+\p{Let #{C} and #{D} be [bicategories]. A \strong{pseudofunctor} #{P:C\to D} consists of the following data:
+\ul{
+  \li{A function #{P:\text{Ob}_C\to \text{Ob}_D}}
+  \li{For each [hom-category] #{C(x,y)} in #{C}, a regular old [functor](math-000S) #{P_{x,y}:C(x,y)\to D(P_x,P_y)};}
+  \li{For each object #{x} in #{C}, an [invertible](math-001C) 2-cell #{P_{\text{id}_x}: \text{id}_{P_x}\implies P_{x,x}(\text{id}_x)};}
+  \li{For each triple #{x,y,z} of objects in #{C}, an [isomorphism](math-001C) ##{P_{f,g}:P_{x,y}(f); P_{y,z}(g)\implies P_{x,z}(f; g)}[natural] in #{f:x\to y} and #{g:y\to z};}
+}
+such that for each [hom-category] #{C(x,y)}, the following [diagrams commute](math-000Q): 
+\quiver{% https://q.uiver.app/#q=WzAsNCxbMSwwLCJcXHRleHRybXtpZH1fe1BfeH1cXGNpcmMgUF97eCx5fShmKSJdLFswLDEsIlBfe3gseH0oXFx0ZXh0cm17aWR9X3gpXFxjaXJjIFBfe3gseX0oZikiXSxbMSwyLCJQX3t4LHl9KFxcdGV4dHJte2lkfV94XFxjaXJjIGYpIl0sWzIsMSwiUF97eCx5fShGKSJdLFswLDEsIlBfe1xcdGV4dHJte2lkfV94fVxcY2lyYyBcXHRleHRybXtpZH1fe1Bfe3gseX0oZil9IiwyLHsibGFiZWxfcG9zaXRpb24iOjgwLCJsZXZlbCI6Mn1dLFsxLDIsIlBfe3gseCx5fShcXHRleHRybXtpZH1feFxcY2lyYyBmKSIsMix7ImxhYmVsX3Bvc2l0aW9uIjoxMCwibGV2ZWwiOjJ9XSxbMiwzLCJQX3t4LHl9KFxcbGFtYmRhX2YpIiwyLHsibGFiZWxfcG9zaXRpb24iOjgwLCJsZXZlbCI6Mn1dLFswLDMsIlxcbGFtYmRhX3tQX3t4LHl9KGYpfSIsMCx7ImxhYmVsX3Bvc2l0aW9uIjo3MCwibGV2ZWwiOjJ9XV0=
+\begin{tikzcd}
+	& {\textrm{id}_{P_x}; P_{x,y}(f)} \\
+	{P_{x,x}(\textrm{id}_x); P_{x,y}(f)} && {P_{x,y}(F)} \\
+	& {P_{x,y}(\textrm{id}_x; f)}
+	\arrow["{P_{\textrm{id}_x}; \textrm{id}_{P_{x,y}(f)}}"'{pos=0.8}, Rightarrow, from=1-2, to=2-1]
+	\arrow["{\lambda_{P_{x,y}(f)}}"{pos=0.7}, Rightarrow, from=1-2, to=2-3]
+	\arrow["{P_{x,x,y}(\textrm{id}_x; f)}"'{pos=0.1}, Rightarrow, from=2-1, to=3-2]
+	\arrow["{P_{x,y}(\lambda_f)}"'{pos=0.8}, Rightarrow, from=3-2, to=2-3]
+\end{tikzcd}}
+\quiver{
+  % https://q.uiver.app/#q=WzAsNCxbMSwwLCJQX3t4LHl9KGYpXFxjaXJjIFxcdGV4dHJte2lkfV97UF95fSJdLFswLDEsIlBfe3gseX0oZilcXGNpcmMgUF97eSx5fShcXHRleHRybXtpZH1feSkiXSxbMSwyLCJQX3t4LHl9KGZcXGNpcmMgXFx0ZXh0cm17aWR9X3kpIl0sWzIsMSwiUF97eCx5fShmKSJdLFswLDEsIlxcdGV4dHJte2lkfV97UF97eCx5fShmKVxcY2lyYyBQX3tcXHRleHRybXtpZH1feX19IiwyLHsibGFiZWxfcG9zaXRpb24iOjgwLCJsZXZlbCI6Mn1dLFsxLDIsIlBfe3gseSx5fShmLFxcdGV4dHJte2lkfV95KSIsMix7ImxhYmVsX3Bvc2l0aW9uIjoyMCwibGV2ZWwiOjJ9XSxbMiwzLCJQX3t4LHl9KFxccmhvX2YpIiwyLHsibGFiZWxfcG9zaXRpb24iOjgwLCJsZXZlbCI6Mn1dLFswLDMsIlxccmhvX3tQX3t4LHl9KGYpfSIsMCx7ImxhYmVsX3Bvc2l0aW9uIjo4MCwibGV2ZWwiOjJ9XV0=
+\begin{tikzcd}
+	& {P_{x,y}(f); \textrm{id}_{P_y}} \\
+	{P_{x,y}(f); P_{y,y}(\textrm{id}_y)} && {P_{x,y}(f)} \\
+	& {P_{x,y}(f; \textrm{id}_y)}
+	\arrow["{\textrm{id}_{P_{x,y}(f); P_{\textrm{id}_y}}}"'{pos=0.8}, Rightarrow, from=1-2, to=2-1]
+	\arrow["{\rho_{P_{x,y}(f)}}"{pos=0.8}, Rightarrow, from=1-2, to=2-3]
+	\arrow["{P_{x,y,y}(f,\textrm{id}_y)}"'{pos=0.2}, Rightarrow, from=2-1, to=3-2]
+	\arrow["{P_{x,y}(\rho_f)}"'{pos=0.8}, Rightarrow, from=3-2, to=2-3]
+\end{tikzcd}
+} and for each \em{quadruple} #{w,x,y,z} of objects in #{C}, 
+\quiver{% https://q.uiver.app/#q=WzAsNixbMCwwLCIoUF97dyx4fShmKVxcY2lyYyBQX3t4LHl9KGcpKVxcY2lyYyBQX3t5LHp9KGgpIl0sWzAsMSwiUF97dyx5fShmXFxjaXJjIGcpXFxjaXJjIFBfe3ksen0oaCkiXSxbMCwyLCJQX3t3LHp9KChmXFxjaXJjIGcpXFxjaXJjIGgpIl0sWzIsMCwiUF97dyx4fShmKVxcY2lyYyhQX3t4LHl9KGcpXFxjaXJjIFBfe3ksen0oaCkpIl0sWzIsMSwiUF97dyx4fShmKVxcY2lyYyBQX3t4LHp9KGdcXGNpcmMgaCkiXSxbMiwyLCJQX3t3LHp9KGZcXGNpcmMoZ1xcY2lyYyBoKSkiXSxbMCwzLCJcXGFscGhhX3tQX3t3LHh9KGYpLFBfe3gseX0oZyksIFBfe3ksen0oaCl9IiwwLHsibGV2ZWwiOjJ9XSxbMCwxLCIiLDIseyJsZXZlbCI6Mn1dLFsxLDIsIiIsMix7ImxldmVsIjoyfV0sWzIsNSwiUF97dyx6fShcXGFscGhhX3tmLGcsaH0pIiwyLHsibGV2ZWwiOjJ9XSxbMyw0LCIiLDAseyJsZXZlbCI6Mn1dLFs0LDUsIiIsMCx7ImxldmVsIjoyfV1d
+\begin{tikzcd}
+	{(P_{w,x}(f); P_{x,y}(g)); P_{y,z}(h)} && {P_{w,x}(f);(P_{x,y}(g); P_{y,z}(h))} \\
+	{P_{w,y}(f; g); P_{y,z}(h)} && {P_{w,x}(f); P_{x,z}(g; h)} \\
+	{P_{w,z}((f; g); h)} && {P_{w,z}(f;(g; h))}
+	\arrow["{\alpha_{P_{w,x}(f),P_{x,y}(g), P_{y,z}(h)}}", Rightarrow, from=1-1, to=1-3]
+	\arrow[Rightarrow, from=1-1, to=2-1]
+	\arrow[Rightarrow, from=1-3, to=2-3]
+	\arrow[Rightarrow, from=2-1, to=3-1]
+	\arrow[Rightarrow, from=2-3, to=3-3]
+	\arrow["{P_{w,z}(\alpha_{f,g,h})}"', Rightarrow, from=3-1, to=3-3]
+\end{tikzcd}}
+
+}
+
+\p{But a pseudofunctor becomes a \strong{strict} 2-functor "if the structural isomorphisms for identities of 1-cells and composites are identity 2-cells."}
+
+\p{Note that the composition with a semicolon #{;} just means we have to switch the order! It's written this way to match with how it would look on a diagram if we were reading it left to right, but that's the opposite order in which the things actually get composed.}

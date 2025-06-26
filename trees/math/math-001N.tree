@@ -1,0 +1,15 @@
+\date{2025-06-20T16:01:54Z}
+
+\title{subcategory}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+\meta{external}{https://ncatlab.org/nlab/show/subcategory}
+
+\p{A \strong{subcategory} #{\calD} of a [category](math-0003) #{\calC} consists of a subcollection of the objects of #{\calC} and a subcollection of morphisms of #{\calC} such that
+\ul{
+  \li{If #{f:x\to y} is in #{\calD} then so are #{x} and #{y};}
+  \li{If two composable morphisms are in #{\calD} then so is their composite;}
+  \li{The identity morphism of any object of #{\calD} is also in #{\calD}.}
+}}

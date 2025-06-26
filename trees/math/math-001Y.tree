@@ -1,0 +1,9 @@
+\date{2025-06-20T18:13:56Z}
+
+\title{loose bicategory of a double category}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{Let #{D} be a [double category](math-000D). Then from the objects, \em{loose} arrows, and [globular cells](math-0026) and get the \strong{loose [bicategory](math-001Z)} of #{D}, written #{\bfL(D)}.}

@@ -1,0 +1,141 @@
+\date{2025-06-24T01:01:09Z}
+
+\title{Tools for software verification: an industrial perspective}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Tutorial}
+\author{k-rustan-m-leino}
+
+% LICS invited tutorial
+
+\subtree{\title{Why verify software}
+\p{NOT that "it's the right thing to do"}
+\p{When to verify software:}
+\ul{ 
+  \li{When testing is too incomplete}
+  \li{When failure is too expensive}
+  \li{When it is a competitive advantage}
+  \li{When code has been statistically generated}
+}
+\p{Other benefits}
+\ul{
+  \li{Writing specs}
+  \li{Thihnking of design before you start coding}
+  \li{Spending more time w/ design and code}
+  \li{Isolating error locations}
+}
+}
+
+\subtree{
+  \title{Brief survey of techniques}
+  \subtree{\title{Testing}
+  \ul{
+    \li{Idea is easy to understand}
+    \li{Unsound (misses bugs)}
+    \li{Requires downward-closed program}
+    \li{May be difficult to set up environment}
+  }
+  }
+  \subtree{\title{Static analysis}
+  \ul{
+    \li{type systems, abstract interp, sata-flow analysis...}
+    \li{sound (finds all bugs)}
+    \li{easy to apply}
+    \li{modular}
+    \li{Type-like properties, coarse-grained}
+    \li{user-extensible}
+  }
+  \p{some successes at [AWS]}
+  \ul{
+    \li{minimum encryption-key width (Java CheckerFramework)}
+    \li{builder idiom parameter initialization (Java CheckerFramework)}
+    \li{typescript type/property recovery (Jitterbug)}
+  }
+  }
+  \subtree{
+    \title{Model checking}
+    \p{bounded model checking, systematic scheduling, runtime monitors...}
+    \ul{
+      \li{Unsound (BMC)}
+      \li{Systematic and detailed (like testing but more thorough)}
+      \li{Modular}
+      \li{Can use specifications}
+      \li{Hands-off}
+      \li{Easy-to-understand error traces}
+    }
+    \p{successes at AWS}
+    \ul{
+      \li{Memory safety (CMBC)}
+      \li{Protocol modeling (P)}
+      \li{Concurrency bugs (Shuttle)}
+    }
+    \p{But it's still really like testing.}
+  }
+  \subtree{
+    \title{Deductive verification}
+    \p{Where [author] tends to sit}
+    \p{interactive theorem/program proving}
+    \ul{
+      \li{Sound}
+      \li{Supports specifications}
+      \li{Requires interaction when automation runs out}
+      \li{Spec/program/proof co-development}
+      \li{Requires expertise and patience (i.e. costly + )}
+    }
+    \p{successes}
+    \ul{
+      \li{AWS Libcrypto (HOL Light)}
+      \li{s2n-bignum (HOL Light)}
+      \li{AWS authentication engine (Dafny)}
+      \li{AWS Encryption SDK, AWS Datatype Encryption SDK (Dafny)}
+    }
+  }
+}
+
+\subtree{
+    \title{Interactive theorm proving}
+    \ul{
+      \li{[dafny](dafny.org)}
+      \li{Programming language :verification aware (proof/oriented)}
+      \li{Constructs for: imperative programming, functional progrmaming, specifications, proofs}
+      \li{VSCode integration}
+    }
+  }
+
+  \subtree{\title{Dafny Demo}
+  \p{InsertionSort, Parition}
+  }
+\subtree{\title{Some AWS uses of Dafny}
+\ul{
+  \li{Correctness of AWS authentication engine: claims "the most impactful verification project on the planet"
+    \ul{
+      \li{The program runs 43 million times/day so people were scared of changing it but they did it}
+      \li{talk at AWS re:Inforce 2024, "Proving the correctness of AWS authorization"}
+      \li{3x faster than the original program bc now people can change algorithms w/o being afraid of totally destroying everything and make it more efficient overall}}
+  \li{Above-mentioned Encryption SDK things}
+}}}
+
+\subtree{\title{Another demo}
+\p{Wildcard match}}
+
+\subtree{\title{How it's done}
+\ul{
+  \li{Interaction at the level of programs: "auto-active verification", Dafny, Java verifier, Verus... i.e. getting engineers on board}
+  \li{In CI (continuous integration) or proof didn't happen—can't just prove something once}
+  \li{Syntax/construct matter}
+  \li{Had to make a decision: Dafny #{\to} Java or Java #{\to} Dafny? Decided to tell people to write Dafny and then it goes to Java}
+}}
+
+\subtree{\title{Yet another demo}
+\p{Didn't get to this: Stream, Semantics (coinductive things)}}
+
+\subtree{\title{Difficulties}
+\ul{
+  \li{Introducing yet anohter language/tool}
+  \li{Training}
+  \li{Keeping up IDE expectations}
+  \li{Libraries need specs}
+  \li{Extern specs are error prone}
+}
+\p{See picture}}

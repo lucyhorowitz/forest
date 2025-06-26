@@ -1,0 +1,9 @@
+\date{2025-06-20T18:10:31Z}
+
+\title{tight category of a double category}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{Given a [double category](math-000D) #{D}, the [category](math-0003) #{D_0} of the tight objects and arrows of #{D} is called the \strong{tight category} of #{D}.}

@@ -9,10 +9,22 @@
 
 \subtree{\taxon{Chapter}\title{Preliminaries on 2-dimensional Structures}
 \subtree{\taxon{Section} \title{Cartesian Objects in 2-categories}
-  \transclude{math-000Y} % cartesian object
-  \transclude{math-0010} % cartesian arrow
-  \transclude{math-0019} % 2-cat of cartesian objects
-  \transclude{math-001A} % cartesian objects in cat
-  \transclude{math-001B} % lemma 1.1.4 
-}}
-\subtree{\taxon{Chapter}\title{Something else}}
+  \transclude{math-000Y}  % cartesian object
+  \transclude{math-0010}  % cartesian arrow
+  \transclude{math-0019}  % 2-cat of cartesian objects
+  \transclude{math-001A}  % cartesian objects in cat
+  \transclude{math-001B}  % lemma 1.1.4 
+  \transclude{math-001K}  % lemma 1.1.5
+  \transclude{math-001R}  % lemma 1.1.6
+}
+\subtree{\taxon{Section}\title{Double Categories}
+  \transclude{math-000D}  % pseudo double category
+  \transclude{math-001U}  % loosewise opposite
+  \transclude{math-001V}  % tightwise opposite
+  \transclude{math-001W}  % tight category
+  \transclude{math-001X}  % 2-category of tight cells
+  \transclude{math-0020}  % facts
+  \transclude{math-0025}  % double functor
+}  
+}
+\subtree{\taxon{Chapter}\title{Categorical Logic Meets Double Categories}}

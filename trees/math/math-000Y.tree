@@ -8,6 +8,7 @@
 
 \p{A \strong{Cartesian object} in a [2-category](math-000N) #{\bfK} with strict 2-dimensional finite [products](math-0018) #{\otimes} and [terminal object](math-000Z) #{\mathsf{1}} is an object #{x} of #{\bfK} such that the canonical 1-cells #{!:x\to 1} and #{\Delta: x\to x\otimes x} have right [adjoints](math-0014) #{1:\mathsf{1} \to x} and #{\times:x\otimes x\to x}, respectively.}
 
-\p{"Strict" means that #{\mathsf{1}} and #{\otimes} have the [2-natural] [isomorphisms] in [2-category of categories] #{\bfK(x,\mathsf{1}) \cong \mathbf 1} and #{\bfK(x,y\otimes z) \cong \bfK(x,y)\times \bfK(x,z)}.}
+\p{"Strict" means that #{\mathsf{1}} and #{\otimes} have the [2-natural] [isomorphisms](math-001C) in [2-category of categories](math-001J) #{\bfK(x,\mathsf{1}) \cong \mathbf 1} and #{\bfK(x,y\otimes z) \cong \bfK(x,y)\times \bfK(x,z)}.}
 
+\p{todo}
 % \source{ref-0009}

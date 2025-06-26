@@ -1,0 +1,10 @@
+\date{2025-06-20T15:58:04Z}
+
+\title{essential image}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+\meta{external}{https://ncatlab.org/nlab/show/essential+image}
+
+\p{The \strong{essential image} of a [functor](math-000S) #{F:A\to B} between [#{n}-categories](math-001P) is the smallest [replete subcategory](math-001M) of #{B} which contains the [image](math-001O) of #{F}.}

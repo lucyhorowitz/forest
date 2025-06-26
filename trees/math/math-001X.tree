@@ -1,0 +1,9 @@
+\date{2025-06-20T18:11:53Z}
+
+\title{2-category of tight cells of a double category}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{Let #{D} be a [double category](math-000D) and consider #{D_0} its [tight category](math-001W). Then the \strong{tight cells} are the cells whose top and bottom \em{loose} arrows are actually identities. From #{D_0} and these cells we get a [2-category](math-000N) #{\bfT(D)}.}

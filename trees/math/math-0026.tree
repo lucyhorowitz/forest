@@ -1,0 +1,9 @@
+\date{2025-06-20T18:41:25Z}
+
+\title{globular cell}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{A \strong{globular cell} in a [double category](math-000D) is a cell whose source and target are identities.}

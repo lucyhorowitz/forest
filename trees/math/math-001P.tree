@@ -1,0 +1,11 @@
+\date{2025-06-20T16:07:00Z}
+
+\title{#{n}-category}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+\meta{external}{https://ncatlab.org/nlab/show/n-category}
+
+\transclude{math-0003}
+\transclude{math-000N}

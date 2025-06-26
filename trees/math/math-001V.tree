@@ -1,0 +1,9 @@
+\date{2025-06-20T18:01:09Z}
+
+\title{tightwise opposite}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{Consider the [oppositization 2-functor] (?) #{(-)^\mathsf{op} :\Cat^{\mathsf{op}}\to \mathsf{Cat}}. Given a [double category](math-000D) #{D}, sending it via this [2-functor](math-001Q) we get another double category. It is called the \strong{tightwise opposite} of #{D} and is denoted #{D^{\mathsf{top}}}. }

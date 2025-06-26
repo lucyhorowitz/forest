@@ -1,0 +1,15 @@
+\date{2025-06-20T18:19:05Z}
+
+\title{facts about double-category opposites}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{List}
+
+\p{Let #{D} be a [double category](math-000D).}
+
+\transclude{math-0021}
+\transclude{math-0023}
+\transclude{math-0024}
+
+\p{Todo: more facts}

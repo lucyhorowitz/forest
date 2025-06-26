@@ -1,0 +1,9 @@
+\date{2025-06-20T18:19:55Z}
+
+\title{tight category of tightwise opposite is opposite of tight category}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Fact}
+
+\p{([#{D^\mathsf{top}}](math-001V))[#{_0}](math-001W) = [#{(D_0)^\mathsf{op}}](math-0022)} 

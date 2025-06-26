@@ -1,0 +1,20 @@
+\date{2025-06-26T01:03:16Z}
+
+\title{Linear Logic and probabilistic programming}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Reference}
+\author/literal{Christine Tasson}
+\meta{external}{[abstract](https://www.ti.inf.uni-due.de/misc/lics2025/preprints/abstract-tasson.html)}
+\meta{external}{[Colab](https://colab.research.google.com/github/gbdrt/mu-ppl/blob/main/notebooks/lics25-ppl.ipynb#scrollTo=XxEN7q5IvK6W)}
+
+\p{Why study semantics?
+\ul{
+  \li{Beauty/nobility}
+  \li{Correctness of programs}
+  \li{Sound transformation of programs}
+  \li{Design new languages}
+}}
+
+\p{Semantics wishlist}

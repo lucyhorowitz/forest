@@ -1,0 +1,15 @@
+\date{2025-06-20T15:52:55Z}
+
+\title{2-functor condition for Cartesian object}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Lemma}
+
+\p{Let #{\bfK} and #{\bfK'} be two [2-categories](math-000N) with strict finite [products](math-0018) and let #{|-| :\bfK'\to\bfK} be a [2-functor](math-001Q) that preserves strict finite products and which is injective on 1-cells and bijective on 2-cells.}
+
+\p{Then an object #{x} of #{\bfK'} is [Cartesian](math-000Y) iff #{|x|} is Cartesian in #{\bfK} and that the 1-cells #{1:\mathbf{1} \to |x|} and #{\times: |x|\otimes |x| \to |x|} right adjoint to the canonical 1-cells are [essentially](math-001L) in the image of #{|-|}.}
+
+\subtree{\taxon{Proof}
+\p{First suppose that #{x} is [Cartesian](math-000Y) in #{\bfK'}. Then surely #{|x|} will also be Cartesian: we have [adjoints](math-0014) for #{!:|x| \to\mathbf{1}} and #{\Delta:|x|\to|x|\otimes |x|} because [2-functors preserve adjoints], [right adjunctions are unique up to isomorphism], and #{|-|} definitionally preserves finite [products](math-0018).  todo
+}}

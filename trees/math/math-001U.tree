@@ -1,0 +1,9 @@
+\date{2025-06-20T17:59:30Z}
+
+\title{loosewise opposite}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{Given a [double category](math-000D) #{D}, swapping #{\mathsf{src}} and #{\mathsf{tgt}} gives another double category called the \strong{loosewise opposite} of ${D}, denoted #{D^\mathsf{lop}}.}

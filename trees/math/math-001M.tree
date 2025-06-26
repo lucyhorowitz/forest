@@ -1,0 +1,9 @@
+\date{2025-06-20T15:59:48Z}
+
+\title{replete subcategory}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{A [subcategory](math-001N) #{\calD} of [#{\calC}](math-0003) is \strong{replete} if for any object #{x} in #{\calD} and any [isomorphism](math-001C) #{f:x\equiv y} in #{\calC}, both #{y} and #{f} are also in #{\calD}.}

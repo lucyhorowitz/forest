@@ -1,0 +1,9 @@
+\date{2025-06-20T17:16:09Z}
+
+\title{isofibration}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{An \strong{isofibration} is a [functor](math-000S) #{p:E\to B} such that for any [object](math-0003) #{e} of ${E} and any [isomorphism](math-001C) #{\phi:p(e)\cong b}, there is an isomorphism #{\psi:e\cong e'} such that #{p(\psi)=\phi}.}

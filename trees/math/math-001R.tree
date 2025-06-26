@@ -1,0 +1,12 @@
+\date{2025-06-20T17:02:47Z}
+
+\title{canonical 2-functor on Cartesian object categories is a 2-equivalence}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Lemma}
+
+\p{Let #{\bfK,\bfL}, and #{\bfM} be [2-categories](math-000N) with strict finite [products](math-0018) and let #{T:\bfK\to\bfM} and #{S:\bfL\to\bfM} be [2-functors](math-001Q) preserving the fintite products strictly and locally [isofibrations](math-001S) (I think this should mean that it is an isofibration on each of the hom-categories?) Then the [canonical](math-0019) 2-functor ##{(\bfK\times_\bfM\bfL)_\text{cart} \to \bfK_\text{cart}\times_{\bfM_\text{cart}}\bfL_\text{cart}} is a [2-equivalence].}
+
+\subtree{\taxon{Proof}
+\p{todo}}

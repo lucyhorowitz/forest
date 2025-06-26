@@ -68,3 +68,16 @@
 \relation{\rel/source}{\current-tree}{\y}
 \strong{Source} \query\datalog{?X -: {\rel/source @{\current-tree} ?X}}
 }
+
+% todo
+\def\rel/todo{lucy.todo}
+\def\todo[text][priority]{%
+  \relation{\rel/todo}{\current-tree}{\text}{\priority}%
+  \p{\strong{TODO:} \text (priority \priority)}
+}
+
+\def\todoList{%
+  \scope{
+    \p{\query\datalog{R ?T ?D -: {\rel/todo ?T ?D}}}
+    }
+}

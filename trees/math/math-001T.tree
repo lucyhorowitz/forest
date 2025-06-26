@@ -1,0 +1,9 @@
+\date{2025-06-20T17:27:28Z}
+
+\title{equivalence of 2-categories}
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+
+\p{An \strong{equivalence} between [2-categories](math-000N) #{C} and #{D} is a pair of [2-functors](math-001Q) #{F:C\to D} and #{G:D\to C} and [pseudonatural transformations] #{G\circ F \to \text{Id}_C} and #{F\circ G\to \text{Id}_D} that are themselves [equivalences] ?}

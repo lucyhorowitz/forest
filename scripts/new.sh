@@ -5,6 +5,7 @@ echo "" >> $var
 echo '\import{macros}' >> $var
 echo '\import{base-macros}' >> $var
 echo '\import{rel}' >> $var
+echo '\title{}' >> $var
 if [ $1 = "ref" ]; then 
   echo '\taxon{Reference}' >> $var
   echo '\author{}' >> $var

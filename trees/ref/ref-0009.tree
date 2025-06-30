@@ -7,8 +7,8 @@
 \taxon{Reference}
 \author/literal{Hayato Nasu}
 
-\subtree{\taxon{Chapter}\title{Preliminaries on 2-dimensional Structures}
-\subtree{\taxon{Section} \title{Cartesian Objects in 2-categories}
+\subtree[ref-0009/1]{\taxon{Chapter}\title{Preliminaries on 2-dimensional Structures}
+\subtree[ref-0009/2]{\taxon{Section} \title{Cartesian Objects in 2-categories}
   \transclude{math-000Y}  % cartesian object
   \transclude{math-0010}  % cartesian arrow
   \transclude{math-0019}  % 2-cat of cartesian objects
@@ -17,7 +17,7 @@
   \transclude{math-001K}  % lemma 1.1.5
   \transclude{math-001R}  % lemma 1.1.6
 }
-\subtree{\taxon{Section}\title{Double Categories}
+\subtree[ref-0009/3]{\taxon{Section}\title{Double Categories}
   \transclude{math-002F}  % pseudo double category
   \transclude{math-001U}  % loosewise opposite
   \transclude{math-001V}  % tightwise opposite
@@ -25,6 +25,17 @@
   \transclude{math-001X}  % 2-category of tight cells
   \transclude{math-0020}  % facts
   \transclude{math-0025}  % double functor
+  \transclude{math-002H}  % double tightwise transformation
+  \transclude{math-002I}  % 2-cat of double cats
+  \transclude{math-002J}  % double category of relations btw sets
+  \transclude{math-002L}  % double category of spans
+  \transclude{math-002M}  % Grothendieck fibration
+  \p{todo: prop 1.2.5. i don't know what to call the result but it makes sense.}
+  \transclude{math-000U}  % equipment
 }  
+
+\subtree[ref-0009/4]{\taxon{Section}\parent{ref-0009}\title{Fibrational Virtual Double Categories}
+  \p{hi}
 }
-\subtree{\taxon{Chapter}\title{Categorical Logic Meets Double Categories}}
+}
+\subtree[ref-0009/5]{\taxon{Chapter}\title{Categorical Logic Meets Double Categories}}

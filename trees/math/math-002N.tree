@@ -1,0 +1,14 @@
+\date{2025-06-30T18:34:12Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\title{virtual double category}
+\taxon{Definition}
+
+\p{A \strong{virtual double category} #{\bbX} consists of the following: 
+\ul{
+  \li{A [category] #{\bbX_t} whose objects are the \em{objects} of #{\bbX} and whose arrows are the \em{tight arrows} of #{\bbX}. The tight arrows are written vertically.}
+  \li{A class of \em{loose arrows} #{\bbX(I,J)_0} for every pair of objects #{I,J\in \bbX_t}. The loose arrows are written horizontally with slashes.}
+  \li{A class of \em{virtual cells} }
+}}

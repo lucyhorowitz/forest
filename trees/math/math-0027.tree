@@ -1,15 +1,9 @@
-\date{2025-06-20T18:48:50Z}
+\date{2025-06-30T17:51:56Z}
 
-\title{double tightwise transformation}
 \import{macros}
 \import{base-macros}
 \import{rel}
+\title{opfibration}
 \taxon{Definition}
 
-\p{A \strong{double tightwise transformation} between [double functors](math-0025) #{F,G:D\to E} consists of the following data:
-\ul{
-  \li{A [natural transformation](math-0028) #{\Gamma_0:F_0\implies G_0};}
-  \li{A family of cells #{\Gamma_{1,\alpha}} in #{E} indexed by the loose arrows #{\alpha:I\nrightarrow J} of #{D}, framed by #{\Gamma_{0,I} and #{\Gamma_{0,J}}} and the images of #{\alpha} under #{F} and #{G} satisfying the following naturality condition:
-  
-  }
-}}
+\p{The opposite of [prone](math-002M) is, of course, \strong{supine}: it is a #{\frakp^\mathsf{op}}-prone arrow. An \strong{opfibration} is a functor admitting supine lifts for every arrow in the base category.}

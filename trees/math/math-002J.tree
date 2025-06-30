@@ -1,0 +1,28 @@
+\date{2025-06-30T17:12:22Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Example}
+\title{double category of relations between sets}
+
+\p{The \strong{[double category](math-000D)} of relations between \em{sets}, written #{\Rel{\mathsf{Set}}}, has as its [tight category](math-001W) [#{\mathsf{Set}}](math-002K). The loose arrows are binary relations between sets, i.e. subsets of #{A\times B} for sets #{A} and #{B}. }
+
+\p{A cell #{\varphi} exists iff for any #{a\in A, b\in B} with #{(a,b\in \alpha)}, #{f(a),g(b)\in \beta}, and there is at most one cell framed by a given pair of tight and loose arrows.}
+
+\quiver{% https://q.uiver.app/#q=WzAsNCxbMCwwLCJJIl0sWzEsMCwiSiJdLFswLDEsIksiXSxbMSwxLCJMIl0sWzAsMSwiXFxhbHBoYSJdLFsyLDMsIlxcYmV0YSIsMl0sWzAsMiwiZiIsMl0sWzEsMywiZyJdLFswLDMsIlxcdmFycGhpIiwxLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoibm9uZSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d
+\begin{tikzcd}
+	A & B \\
+	C & D 
+	\arrow["\alpha", "\shortmid"{marking}, from=1-1, to=1-2]
+	\arrow["f"', from=1-1, to=2-1]
+	\arrow["\varphi"{description}, draw=none, from=1-1, to=2-2]
+	\arrow["g", from=1-2, to=2-2]
+	\arrow["\beta"', "\shortmid"{marking}, from=2-1, to=2-2]
+\end{tikzcd}}
+
+\p{The composite #{\alpha\odot\beta} of relations #{\alpha: A\nrightarrow B},#{\beta:B\nrightarrow C} is defined as the relation where #{(a,c)\in \alpha\odot\beta} iff there is #{b\in B} such that #{(a,b)\in \alpha} and #{(b,c)\in \beta}.}
+
+\p{The identity loose arrow #{\delta_A} is just the diagonal relation #{\{(a,a)\mid a\in A\}.}}
+
+\example{math-000J}

@@ -89,6 +89,33 @@
 \def\frakY{#{\mathfrak{Y}}}
 \def\frakZ{#{\mathfrak{Z}}}
 
+\def\fraka{#{\mathfrak{a}}}
+\def\frakb{#{\mathfrak{b}}}
+\def\frakc{#{\mathfrak{c}}}
+\def\frakd{#{\mathfrak{d}}}
+\def\frake{#{\mathfrak{e}}}
+\def\frakf{#{\mathfrak{f}}}
+\def\frakg{#{\mathfrak{g}}}
+\def\frakh{#{\mathfrak{h}}}
+\def\fraki{#{\mathfrak{i}}}
+\def\frakj{#{\mathfrak{j}}}
+\def\frakk{#{\mathfrak{k}}}
+\def\frakl{#{\mathfrak{l}}}
+\def\frakm{#{\mathfrak{m}}}
+\def\frakn{#{\mathfrak{n}}}
+\def\frako{#{\mathfrak{o}}}
+\def\frakp{#{\mathfrak{p}}}
+\def\frakq{#{\mathfrak{q}}}
+\def\frakr{#{\mathfrak{r}}}
+\def\fraks{#{\mathfrak{s}}}
+\def\frakt{#{\mathfrak{t}}}
+\def\fraku{#{\mathfrak{u}}}
+\def\frakv{#{\mathfrak{v}}}
+\def\frakw{#{\mathfrak{w}}}
+\def\frakx{#{\mathfrak{x}}}
+\def\fraky{#{\mathfrak{y}}}
+\def\frakz{#{\mathfrak{z}}}
+
 % monospace
 
 \def\monoA{#{\texttt{A}}}

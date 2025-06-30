@@ -1,0 +1,11 @@
+\date{2025-06-30T17:02:34Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Example}
+\title{2-category of double categories}
+
+\p{[Double categories](math-000D), [double functors](math-0025), and [tightwise transformations](math-002H) form a [2-category](math-000N).}
+
+\example{math-000N}

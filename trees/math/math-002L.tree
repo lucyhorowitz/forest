@@ -1,0 +1,29 @@
+\date{2025-06-30T17:21:19Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Example}
+\title{double category of spans}
+
+\p{Let #{\calC} be a [category](math-0003) with [pullbacks](math-000R). Then the \strong{double category of spans in #{\calC}} has as its [tight category](math-001W) [spans](math-000T) in #{\cal C} (i.e. pairs of arrows with the same source). The cells are arrows from the vertex of the top loose arrow the the vertex of the bottom loose arrow. That is, they look like this: }
+\quiver{% https://q.uiver.app/#q=WzAsMTAsWzAsMSwiSSJdLFsxLDEsIkoiXSxbMCwyLCJLIl0sWzEsMiwiTCJdLFsyLDEsIkkiXSxbMywwLCJ8XFxhbHBoYXwiXSxbMiwyLCJLIl0sWzMsMSwifFxcYmV0YXwiXSxbNCwxLCJKIl0sWzQsMiwiTCJdLFswLDEsIlxcYWxwaGEiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJiYXJyZWQifX19XSxbMiwzLCJcXGJldGEiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJiYXJyZWQifX19XSxbMCwyLCJmIiwyXSxbMSwzLCJnIl0sWzAsMywiXFx2YXJwaGkiLDEseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJub25lIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbNSw0LCJcXGVsbF9cXGFscGhhIiwyXSxbNSw4LCJyX1xcYWxwaGEiXSxbNSw3LCJcXHZhcnBoaSJdLFs0LDYsImYiLDJdLFs4LDksImciXSxbNyw2LCJcXGVsbF9cXGJldGEiXSxbNyw5LCJyX1xcYmV0YSIsMl1d
+\begin{tikzcd}
+	&&& {|\alpha|} \\
+	I & J & I & {|\beta|} & J \\
+	K & L & K && L
+	\arrow["{\ell_\alpha}"', from=1-4, to=2-3]
+	\arrow["\varphi", from=1-4, to=2-4]
+	\arrow["{r_\alpha}", from=1-4, to=2-5]
+	\arrow["\alpha", "\shortmid"{marking}, from=2-1, to=2-2]
+	\arrow["f"', from=2-1, to=3-1]
+	\arrow["\varphi"{description}, draw=none, from=2-1, to=3-2]
+	\arrow["g", from=2-2, to=3-2]
+	\arrow["f"', from=2-3, to=3-3]
+	\arrow["{\ell_\beta}", from=2-4, to=3-3]
+	\arrow["{r_\beta}"', from=2-4, to=3-5]
+	\arrow["g", from=2-5, to=3-5]
+	\arrow["\beta"', "\shortmid"{marking}, from=3-1, to=3-2]
+\end{tikzcd}}
+
+\p{The identity loose arrow #{\delta_I} is the span #{(\textrm{id}_I,\textrm{id}_I)} and composition of spans is defined by [pullback](math-000R) in #{\calC}.}

@@ -1,0 +1,11 @@
+\date{2025-06-30T17:16:03Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Example}
+\title{#{\mathsf{Set}}}
+
+\p{Sets together with functions form a [category](math-0003).}
+
+\p{todo examples}

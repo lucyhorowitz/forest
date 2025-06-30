@@ -6,4 +6,4 @@
 \import{rel}
 \taxon{Definition}
 
-\p{A [pseudo double category](math-000D) #{\bbD} is an \strong{equipment} if the source-target projection [functor](math-000S) #{\ang{\text{src},\text{tgt}}: \bbD_1\to\bbD_0\times\bbD_0} is a [bifibration](math-000V).}
+\p{A [double category](math-000D) #{\bbD} is an \strong{equipment} if the source-target projection [functor](math-000S) #{\ang{\text{src},\text{tgt}}: \bbD_1\to\bbD_0\times\bbD_0} is a [fibration](math-000V).}

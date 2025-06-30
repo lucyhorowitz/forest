@@ -5,4 +5,5 @@
 \import{base-macros}
 \import{rel}
 \taxon{Definition}
-\p{todo}
+
+\p{A [functor](math-000S) #{\frakp} is a \strong{bifibration} if it is both a [fibration](math-002M) and an [opfibration](math-0027).}

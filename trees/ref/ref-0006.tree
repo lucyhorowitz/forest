@@ -5,6 +5,6 @@
 \import{base-macros}
 \import{rel}
 \taxon{Reference}
-\author{arvind-narayanan}
-\author{sayash-kapoor}
+\author/literal{Arvind Narayanan}
+\author/literal{Sayash Kapoor}
 \meta{external}{https://knightcolumbia.org/content/ai-as-normal-technology}

@@ -16,3 +16,5 @@ _tmp
 *.bak1
 cruft/
 .DS_Store
+trees/priv
+trees/meta

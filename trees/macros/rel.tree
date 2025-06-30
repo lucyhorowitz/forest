@@ -78,6 +78,6 @@
 
 \def\todoList{%
   \scope{
-    \p{\query\datalog{R ?T ?D -: {\rel/todo ?T ?D}}}
+    \p{\query\datalog{?T -: {\rel/todo ?T ?D}}}
     }
 }

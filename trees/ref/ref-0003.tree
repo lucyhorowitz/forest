@@ -5,7 +5,8 @@
 \import{base-macros}
 \import{rel}
 \taxon{Reference}
-\author{michael-lambert}\author{evan-patterson}
+\author/literal{Michael Lambert}
+\author/literal{Evan Patterson}
 
 \subtree{\taxon{Section} \title{Introduction} \number{1} 
 \ul{\li{Scheme of the paper:}

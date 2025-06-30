@@ -1,7 +1,0 @@
-\date{2025-06-04T16:59:54Z}
-\taxon{Definition}
-\author{lucy}
-\title{phase space}
-\import{macros}
-
-\p{A \strong{phase space} is a commutative [[000M]] #{P}, together with a subset #{\bot_P} called the set of \strong{antiphases}.}

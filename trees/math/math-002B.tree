@@ -1,9 +1,12 @@
-\date{2025-06-10T22:02:37Z}
+\date{2025-06-30T03:58:34Z}
+
 \title{Szudzik's pairing function}
 \author{lucy}
 \taxon{example}
 \import{macros}
 \import{base-macros}
+\import{rel}
 \meta{external}{https://github.com/drhagen/pairing}
 
 \p{Implemented in this GitHub repository is a multi-dimensional [[000V]] #{\bbN^n \to\bbN}. }
+\example{000V}

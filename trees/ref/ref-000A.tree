@@ -5,7 +5,7 @@
 \import{base-macros}
 \import{rel}
 \taxon{Tutorial}
-\author{k-rustan-m-leino}
+\author/literal{K. Rustan M. Leino}
 
 % LICS invited tutorial
 
@@ -96,7 +96,7 @@
 \subtree{
     \title{Interactive theorm proving}
     \ul{
-      \li{[dafny](dafny.org)}
+      \li{[dafny](https://dafny.org)}
       \li{Programming language :verification aware (proof/oriented)}
       \li{Constructs for: imperative programming, functional progrmaming, specifications, proofs}
       \li{VSCode integration}

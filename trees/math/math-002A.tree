@@ -1,0 +1,9 @@
+\date{2025-06-30T03:56:11Z}
+
+\title{pairing function}
+\taxon{Concept}
+\import{macros}
+\import{base-macros}
+\import{rel}
+
+\p{A \strong{pairing function} is a (computable) bijection  #{\bbN^n \to \bbN}.}

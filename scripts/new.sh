@@ -16,5 +16,7 @@ elif [ $1 = "def" ]; then
   echo '\taxon{Definition}' >> $var
 elif [ $1 != "def" ]; then
   echo '\taxon{}' >> $var 
+elif [ $1 != "meta" ]; then
+  echo '\taxon{Metanote}' >> $var 
 fi
 echo $var

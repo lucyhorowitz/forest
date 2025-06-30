@@ -5,7 +5,7 @@
 \import{base-macros}
 \import{rel}
 \taxon{Reference}
-\author{hayato-nasu}
+\author/literal{Hayato Nasu}
 
 \subtree{\taxon{Chapter}\title{Preliminaries on 2-dimensional Structures}
 \subtree{\taxon{Section} \title{Cartesian Objects in 2-categories}

@@ -5,10 +5,10 @@
 \import{base-macros}
 \import{rel}
 \taxon{Reference}
-\author{jan-kulveit}
-\author{raymond-douglas}
-\author{nora-ammann}
-\author{deger-turan}
-\author{david-krueger}
-\author{david-duvenaud}
+\author/literal{Jan Kulveit}
+\author/literal{Raymond Douglas}
+\author/literal{Nora Ammann}
+\author/literal{Deger Turan}
+\author/literal{David Krueger}
+\author/literal{David Duvenaud}
 \meta{external}{https://gradual-disempowerment.ai}

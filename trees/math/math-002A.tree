@@ -7,3 +7,5 @@
 \import{rel}
 
 \p{A \strong{pairing function} is a (computable) bijection  #{\bbN^n \to \bbN}.}
+
+\examplesOfThis

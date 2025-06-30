@@ -1,7 +1,7 @@
 \date{2025-06-09T16:16:36Z}
 \taxon{Definition}
-\author{lucy}
+
 \title{premisory role}
 \import{macros}
 
-\p{The \strong{premisory role} of #{\varphi} is the collection of sets #{X,Y\subseteq\frakB} for which #{\langle X\cup\{\varphi\}, Y\rangle} is a "good" [[0007]]. In other words, it is the collection of implications in which #{\varphi} is a premise. It can also be viewed as the [[logic-000A]] of the pair #{\langle\{\varphi\},\emptyset\rangle}.}
+\p{The \strong{premisory role} of #{\varphi} is the collection of sets #{X,Y\subseteq\frakB} for which #{\langle X\cup\{\varphi\}, Y\rangle} is a "good" [[role-0007]]. In other words, it is the collection of implications in which #{\varphi} is a premise. It can also be viewed as the [[role-000A]] of the pair #{\langle\{\varphi\},\emptyset\rangle}.}

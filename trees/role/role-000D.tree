@@ -1,0 +1,10 @@
+\date{2025-06-04T00:45:14Z}
+\taxon{Definition}
+\title{conceptual content}
+\import{macros}
+
+\p{Let #{F} and #{G} be two sets of [candidate implications](role-0006). A \strong{conceptual content} is a pair #{\langle \monoa^+,\monoa^-\rangle} of two [implicational roles](role-0009) #{\monoa^+ = \calR(F)} and #{\monoa^- = \calR(G)}.} 
+
+\p{"Content" is an [[role-0009]] that a [bearer](role-0005) \em{could} play.}
+
+\p{From [[ref-0001]].}

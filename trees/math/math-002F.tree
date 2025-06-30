@@ -1,0 +1,88 @@
+\date{2025-06-30T04:44:35Z}
+
+\title{pesudo double category}
+\import{macros}
+\import{base-macros}
+\import{rel}
+
+\taxon{Definition}\meta{external}{https://www.kurims.kyoto-u.ac.jp/EMIS/journals/JHRS/volumes/2006/n1a3/v1n1a3hl.pdf}\p{A \strong{pseudo double category} is a \em{weakly} [internal category](math-000L) in the 2-category [#{\mathsf{Cat}}](math-000M).}
+
+\p{"Weakness" just refers to associativity and unitality being up to [coherent isomorphism] rather than on-the-nose. That is, given #{\bfC} a [2-category](math-000N), a \strong{pseudo double category (internal to #{\bfC})} consists of the following data:
+\ul{
+  \li{an object #{C_0}, representing the objects of #{\bfC}, whose objects are called objects and whose morphisms are called \em{tight arrows};}
+  \li{an object #{C_1}, representing the morphisms of #{\bfC} (whose objects are called \em{loose arrows});}
+  \li{a morphism #{s:C_1\to C_0} representing the "source" of a morphism in #{\bfC};}
+  \li{a morphism #{t:C_1\to C_0} representing the "target" of a morphism in #{\bfC};}
+  \li{a morphism #{e:C_0\to C_1} representing the identity morphism on an object of #{\bfC};}
+  \li{a morphism #{c:C_1}[#{\times_{C_0}}](math-000R)#{C_1\to C_1} representing composition of morphisms in #{\bfC} where #{C_1\times_{C_0}C_1} is given by the diagram;}
+  \quiver{% https://q.uiver.app/#q=WzAsNCxbMCwwLCJDXzFcXHRpbWVzX3tDXzB9Q18xIl0sWzEsMCwiQ18xIl0sWzAsMSwiQ18xIl0sWzEsMSwiQ18wIl0sWzEsMywidCJdLFsyLDMsInMiLDJdLFswLDIsIlxccGlfMSIsMl0sWzAsMSwiXFxwaV8yIl1d
+\begin{tikzcd}
+	{C_1\times_{C_0}C_1} & {C_1} \\
+	{C_1} & {C_0}
+	\arrow["{\pi_2}", from=1-1, to=1-2]
+	\arrow["{\pi_1}"', from=1-1, to=2-1]
+	\arrow["t", from=1-2, to=2-2]
+	\arrow["s"', from=2-1, to=2-2]
+\end{tikzcd}}
+  \li{the following 2-cells of #{\bfC} that are isomorphisms:
+  \ul{
+    \li{#{\alpha: c(1_{C_1}\times_{C_0}c)\to c(c\times_{C_0}1_{C_1})} which corresponds to "associativity"}
+    \li{#{\lambda: c\ang{et, 1_{C_1}}\to 1_{C_1}} which corresponds to "left unit";}
+    \li{#{\rho: c\ang{1_{C_!},es}\to 1_{C_1}} which corresponds to "right unit"}
+  } }
+  \li{such that the following diagrams all commute:
+  \ul{
+    \li{Diagrams that say what the source and target of the identity is:
+    \quiver{% https://q.uiver.app/#q=WzAsNixbMCwwLCJDXzAiXSxbMSwwLCJDXzEiXSxbMSwxLCJDXzAiXSxbMiwwLCJDXzAiXSxbMywwLCJDXzEiXSxbMywxLCJDXzAiXSxbMSwyLCJzIl0sWzAsMSwiZSJdLFswLDIsImlkIiwyXSxbMyw0LCJlIl0sWzQsNSwidCJdLFszLDUsImlkIiwyXV0=
+\begin{tikzcd}
+	{C_0} & {C_1} & {C_0} & {C_1} \\
+	& {C_0} && {C_0}
+	\arrow["e", from=1-1, to=1-2]
+	\arrow["id"', from=1-1, to=2-2]
+	\arrow["s", from=1-2, to=2-2]
+	\arrow["e", from=1-3, to=1-4]
+	\arrow["id"', from=1-3, to=2-4]
+	\arrow["t", from=1-4, to=2-4]
+\end{tikzcd}}}
+
+  \li{Diagrams that say the source and target of composites: \quiver{% https://q.uiver.app/#q=WzAsOCxbMCwwLCJDXzFcXHRpbWVzX3tDXzB9Q18xIl0sWzEsMCwiQ18xIl0sWzAsMSwiQ18xIl0sWzEsMSwiQ18wIl0sWzIsMCwiQ18xXFx0aW1lc197Q18wfUNfMSJdLFszLDAsIkNfMSJdLFszLDEsIkNfMCJdLFsyLDEsIkNfMSJdLFswLDEsImMiXSxbMSwzLCJzIl0sWzIsMywicyIsMl0sWzAsMiwiXFxwaV8yIiwyXSxbNCw1LCJjIl0sWzUsNiwidCJdLFs3LDYsInQiLDJdLFs0LDcsIlxccGlfMSIsMl1d
+\begin{tikzcd}
+	{C_1\times_{C_0}C_1} & {C_1} & {C_1\times_{C_0}C_1} & {C_1} \\
+	{C_1} & {C_0} & {C_1} & {C_0}
+	\arrow["c", from=1-1, to=1-2]
+	\arrow["{\pi_2}"', from=1-1, to=2-1]
+	\arrow["s", from=1-2, to=2-2]
+	\arrow["c", from=1-3, to=1-4]
+	\arrow["{\pi_1}"', from=1-3, to=2-3]
+	\arrow["t", from=1-4, to=2-4]
+	\arrow["s"', from=2-1, to=2-2]
+	\arrow["t"', from=2-3, to=2-4]
+\end{tikzcd}}}
+  \li{I'm not sure how to draw this diagram (I feel like there shoul dbe a satisfying way to do it but I don't quite get this 2-cell thing yet) but we should have #{s\circ \lambda = 1_s = s \circ \rho} and #{t\circ \lambda = 1_t = t\circ \rho}}
+  \li{Additionally #{s\circ \alpha = 1_{s\pi_3}} and #{t\circ \alpha = 1_{t\pi_1}}}
+  \li{And #{\lambda\circ e = \rho\circ e}}
+  \li{The pentagon commmutes:} \quiver{
+  % https://q.uiver.app/#q=WzAsNSxbMSwwLCJcXGJ1bGxldCJdLFszLDAsIlxcYnVsbGV0Il0sWzAsMiwiXFxidWxsZXQiXSxbNCwyLCJcXGJ1bGxldCJdLFsyLDQsIlxcYnVsbGV0Il0sWzAsMSwiY1xcY2lyYyAoMV97Q18xXFx0aW1lc197Q18wfVxcYWxwaGF9KSJdLFsxLDMsIlxcYWxwaGFcXGNpcmMoMV97Q18xfVxcdGltZXNfe0NfMH1jXFx0aW1lc197Q18wfTFfe0NfMX0pIl0sWzMsNCwiY1xcY2lyYyhcXGFscGhhXFx0aW1lc197Q18wfTFfe0NfMX0pIl0sWzAsMiwiXFxhbHBoYSBcXGNpcmMgKDFfe0NfMX1cXHRpbWVzX3tDXzB9MV97Q18xfVxcdGltZXNfe0NfMH1jKSIsMl0sWzIsNCwiXFxhbHBoYVxcY2lyYyhjXFx0aW1lc197Q18wfTFfe0NfMX1cXHRpbWVzX3tDXzB9MV97Q18xfSkiLDJdXQ==
+\begin{tikzcd}
+	& \bullet && \bullet \\
+	\\
+	\bullet &&&& \bullet \\
+	\\
+	&& \bullet
+	\arrow["{c\circ (1_{C_1\times_{C_0}\alpha})}", from=1-2, to=1-4]
+	\arrow["{\alpha \circ (1_{C_1}\times_{C_0}1_{C_1}\times_{C_0}c)}"', from=1-2, to=3-1]
+	\arrow["{\alpha\circ(1_{C_1}\times_{C_0}c\times_{C_0}1_{C_1})}", from=1-4, to=3-5]
+	\arrow["{\alpha\circ(c\times_{C_0}1_{C_1}\times_{C_0}1_{C_1})}"', from=3-1, to=5-3]
+	\arrow["{c\circ(\alpha\times_{C_0}1_{C_1})}", from=3-5, to=5-3]
+\end{tikzcd}}
+
+\li{The triangle commutes:}\quiver{
+% https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXGJ1bGxldCJdLFsyLDAsIlxcYnVsbGV0Il0sWzEsMSwiXFxidWxsZXQiXSxbMCwxLCJcXGFscGhhXFxjaXJjKDFfe0NfMX1cXHRpbWVzX3tDXzB9XFxsYW5nbGUgZXQsMV97Q18xfVxccmFuZ2xlKSJdLFswLDIsImNcXGNpcmMgKDFfe0NfMX1cXHRpbWVzX3tDXzB9XFxsYW1iZGEpIiwyXSxbMSwyLCJjXFxjaXJjKFxccmhvXFx0aW1lc197Q18wfTFfe0NfMX0pIl1d
+\begin{tikzcd}
+	\bullet && \bullet \\
+	& \bullet
+	\arrow["{\alpha\circ(1_{C_1}\times_{C_0}\langle et,1_{C_1}\rangle)}", from=1-1, to=1-3]
+	\arrow["{c\circ (1_{C_1}\times_{C_0}\lambda)}"', from=1-1, to=2-2]
+	\arrow["{c\circ(\rho\times_{C_0}1_{C_1})}", from=1-3, to=2-2]
+\end{tikzcd}}
+}}}}

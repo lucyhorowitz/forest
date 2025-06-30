@@ -1,18 +1,18 @@
 \date{2025-06-03T23:54:26Z}
 \taxon{Definition}
-\author{lucy}
+
 \title{implicational role}
 \import{macros}
 
-\p{Let #{\varphi} be a [bearer](0005) of an implicational role from the set #{\frakB}. Then its \strong{implicational role} #{R(\varphi)} is comprised of the premisory and conclusory roles.}
+\p{Let #{\varphi} be a [bearer](role-0005) of an implicational role from the set #{\frakB}. Then its \strong{implicational role} #{R(\varphi)} is comprised of the premisory and conclusory roles.}
 
-\transclude{000R}
+\transclude{role-000R}
 
-\transclude{000S}
+\transclude{role-000S}
 
 \p{Note that the premisory and conclusory roles are defined symmetrically with respect to each other!}
 
-\p{Implicational roles can also be defined for sets of [candidate implications](0006). These are completely determined by their [[logic-000A]] class. That is,}
+\p{Implicational roles can also be defined for sets of [candidate implications](role-0006). These are completely determined by their [[role-000A]] class. That is,}
 \ol{
   \li{
     If #{a\subseteq S}, then #{R(a) = \{x\mid x\approx a\} = \{x\mid \RSR(x) = \RSR(a)\}}.

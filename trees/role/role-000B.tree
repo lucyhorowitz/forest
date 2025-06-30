@@ -1,9 +1,9 @@
 \date{2025-06-04T00:38:54Z}
 \taxon{Definition}
-\author{lucy}
+
 \title{implication equivalence}
 \import{macros}
 
-\p{Let #{G} and #{F} be sets of [candidate implications](0006). We say they are \strong{implication equivalent} and write #{G\approx F} iff their [RSRs](logic-000A) are equal.}
+\p{Let #{G} and #{F} be sets of [candidate implications](role-0006). We say they are \strong{implication equivalent} and write #{G\approx F} iff their [RSRs](role-000A) are equal.}
 
 \p{It is not hard to see that this is in fact an [[math-0001]].}

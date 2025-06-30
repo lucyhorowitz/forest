@@ -2,6 +2,6 @@
 \author{lucy}
 \title{Computing non-contractive implication space semantics.}
 
-\p{We want to compute with non-contractive implication spaces. We do this with the broader goal of understanding exactly [[000N]].}
+\p{We want to compute with non-contractive implication spaces. We do this with the broader goal of understanding exactly [[role-000N]].}
 
-\transclude{000Y}
+\transclude{role-000Y}

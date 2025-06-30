@@ -1,8 +1,8 @@
 \date{2025-06-12T18:50:36Z}
 \title{reflexivity}
-\author{lucy}
+
 \taxon{Definition}
 \import{macros}
 \import{base-macros}
 
-\p{We say that an [[0008]] #{\ang{\frakB,\bbI}} obeys \strong{reflexivity} if for any [candidate implication](0006) of the form #{p\vsim p}, it follows that #{\ang{p,p} \in \bbI}.}
+\p{We say that an [[role-0008]] #{\ang{\frakB,\bbI}} obeys \strong{reflexivity} if for any [candidate implication](role-0006) of the form #{p\vsim p}, it follows that #{\ang{p,p} \in \bbI}.}

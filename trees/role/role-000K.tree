@@ -1,7 +1,7 @@
 \date{2025-06-04T16:07:29Z}
 \taxon{Definition}
-\author{lucy}
+
 \title{incompatibility}
 \import{macros}
 
-\p{A set of [bearers](0005) #{\Gamma} is \strong{incompatible} with the bearer #{\varphi} if #{\ang{\Gamma\cup\{\varphi\},\emptyset}\in I}, i.e. if #{\ang{\Gamma\cup\{\varphi\},\emptyset}} is a good [[0007]]. }
+\p{A set of [bearers](role-0005) #{\Gamma} is \strong{incompatible} with the bearer #{\varphi} if #{\ang{\Gamma\cup\{\varphi\},\emptyset}\in I}, i.e. if #{\ang{\Gamma\cup\{\varphi\},\emptyset}} is a good [[role-0007]]. }

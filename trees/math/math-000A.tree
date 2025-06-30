@@ -1,11 +1,10 @@
 \date{2025-06-16T21:42:16Z}
 
 \title{regular Cartesian category}
-\taxon{Definition}
+\taxon{Concept}
 \import{macros}
 \import{rel}
 \import{base-macros}
-\put\transclude/expanded{false}
 
 \p{A [[math-000B]] #{\calE} is \strong{regular} if every morphism has an [image factorization](math-0005) and [covers](math-0009) are [[math-000C]].}
 

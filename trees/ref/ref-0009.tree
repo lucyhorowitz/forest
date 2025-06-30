@@ -18,7 +18,7 @@
   \transclude{math-001R}  % lemma 1.1.6
 }
 \subtree{\taxon{Section}\title{Double Categories}
-  \transclude{math-000D}  % pseudo double category
+  \transclude{math-002F}  % pseudo double category
   \transclude{math-001U}  % loosewise opposite
   \transclude{math-001V}  % tightwise opposite
   \transclude{math-001W}  % tight category

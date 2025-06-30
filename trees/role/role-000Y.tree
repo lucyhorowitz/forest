@@ -5,18 +5,18 @@
 \import{base-macros}
 
 \p{First, what do we mean when we talk about non-Contraction?}
-\transclude{0010}
-\p{So our sets of [bearers](0005) become multisets of bearers. This has an important effect on the computation of roles, etc. It makes our [[0006]] infinite, when before it was finite. The power set of a finite set is finite, so there are only finitely many candidate implications to deal with. When we move to multisets, there are infinitely many candidate implications because there are infinitely many multisets of bearers, even if there are still only finitely many bearers.}
+\p{todo}
+\p{So our sets of [bearers](role-0005) become multisets of bearers. This has an important effect on the computation of roles, etc. It makes our [[role-0006]] infinite, when before it was finite. The power set of a finite set is finite, so there are only finitely many candidate implications to deal with. When we move to multisets, there are infinitely many candidate implications because there are infinitely many multisets of bearers, even if there are still only finitely many bearers.}
 
 
-\p{One assumption we can make is that we can only specify a finite amount of information about the base reason relation. That is, to create an [[0008]] #{\ang{\frakB,\bbI}}, we can only say that a finite number of candidate implications #{\ang{p,q} \in \bbI}. The rest are assumed not to be good (at least for now—it is possible to add implications later). This is helpful for when we want to represent our implication space in a computer, because computers don't do great with arbitrary infinite things.}
+\p{One assumption we can make is that we can only specify a finite amount of information about the base reason relation. That is, to create an [[role-0008]] #{\ang{\frakB,\bbI}}, we can only say that a finite number of candidate implications #{\ang{p,q} \in \bbI}. The rest are assumed not to be good (at least for now—it is possible to add implications later). This is helpful for when we want to represent our implication space in a computer, because computers don't do great with arbitrary infinite things.}
 
 \p{However, for some interpretations of the reason relation #{\vsim} we really do want infinitely many implications to be considered "good." Notably, if we interpret #{p\vsim q} as "it is out-of-bounds to reject everything in #{q} while accepting everything in #{p}, it would probably be nice to have reflexive implications all be considered good.}
 
-\transclude{000Z}
+\transclude{role-000Z}
 
 \p{One way to represent #{\bbI} in this case is as follows: #{\bbI = \bbI_\text{exp} \amalg R}, where #{R} represents the set of reflexive implications. This makes it easy to check if a given implication is good: if it is reflexive, it is good, and if it is not reflexive, we only need to check if it matches one of finitely many things to see whether or not it is good.}
 
-\p{This also makes it possible to compute things like [[logic-000A]].}
+\p{This also makes it possible to compute things like [[role-000A]].}
 
-\transclude{logic-000A}
+\transclude{role-000A}

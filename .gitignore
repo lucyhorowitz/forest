@@ -18,3 +18,4 @@ cruft/
 .DS_Store
 trees/priv
 trees/meta
+trees/daily

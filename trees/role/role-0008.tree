@@ -1,0 +1,7 @@
+\date{2025-06-03T23:51:04Z}
+\taxon{Definition}
+
+\title{implication frame}
+\import{macros}
+
+\p{An \strong{implication frame} is a pair #{\langle\frakB,\bbI\rangle} of a set #{\frakB} of [[role-0005]] and #{\bbI} the [implications](role-0007) among them.}

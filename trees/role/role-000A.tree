@@ -1,12 +1,11 @@
 \date{2025-06-04T00:37:43Z}
 \taxon{Definition}
-\author{lucy}
 \title{range of subjunctive robustness}
 \import{macros}
 \meta{internal}{ref-0001}
 
-\p{Consider an element #{\langle\Gamma,\Delta\rangle} of an [[0006]] #{S}. The \strong{range of subjunctive robustness} of #{\langle\Gamma,\Delta\rangle}, written #{\RSR(\Gamma,\Delta)}, is the set of pairs #{\langle X,Y\rangle} of sets of [[0005]] such that #{\langle\Gamma\cup X,\Delta\cup Y\rangle} are good [implications](0007).}
+\p{Consider an element #{\langle\Gamma,\Delta\rangle} of an [[role-0006]] #{S}. The \strong{range of subjunctive robustness} of #{\langle\Gamma,\Delta\rangle}, written #{\RSR(\Gamma,\Delta)}, is the set of pairs #{\langle X,Y\rangle} of sets of [[role-0005]] such that #{\langle\Gamma\cup X,\Delta\cup Y\rangle} are good [implications](role-0007).}
 
-\p{The RSR of a \em{set} of [candidate implications](0006) is the intersection of the RSRs of its elements.}
+\p{The RSR of a \em{set} of [candidate implications](role-0006) is the intersection of the RSRs of its elements.}
 
-\p{If the implication frame is non-[Contractive](0010), replace the union operation on sets of [[0005]] with multiset \em{sum}.}
+\p{If the implication frame is non-[Contractive](math-002D), replace the union operation on sets of [[role-0005]] with multiset \em{sum}.}

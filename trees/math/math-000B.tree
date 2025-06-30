@@ -1,10 +1,10 @@
 \date{2025-06-16T21:42:37Z}
 
 \title{Cartesian category}
-\taxon{Definition}
+\taxon{Concept}
 \import{macros}
 \import{base-macros}
 \import{rel}
 \meta{external}{https://ncatlab.org/nlab/show/cartesian+monoidal+category}
 
-\p{A \strong{Cartesian category} is a [monoidal category](math-000P) whose product is the regular old [product](math-0018), and thus has a [terminal object](math-000Z) for a unit.}
+\subtree[math-000B/1]{\taxon{Definition}\p{A \strong{Cartesian category} is a [monoidal category](math-000P) whose product is the regular old [product](math-0018), and thus has a [terminal object](math-000Z) for a unit.}}

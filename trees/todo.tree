@@ -2,6 +2,9 @@
 \import{macros}
 \import{base-macros}
 \import{rel}
-\taxon{test}
+\taxon{Metanote}
 
-\todoList
+\query\datalog{
+ ?X -:
+   {\rel/has-taxon ?X '{todo}}
+ }

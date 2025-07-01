@@ -6,4 +6,6 @@
 \import{rel}
 \taxon{Definition}
 
-\p{A \strong{pullback} is a [limit] of a diagram of the shape #{\cdot\to \cdot \ot \cdot}. Todo}
+\p{A \strong{pullback} is a [limit] of a diagram of the shape #{\cdot\to \cdot \ot \cdot}.}
+
+\subtree[todo-0007]{\parent{\current-tree}\taxon{todo}\title{Write note}}

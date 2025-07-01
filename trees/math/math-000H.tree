@@ -8,5 +8,7 @@
 
 \p{In a [regular Cartesian category](math-000A), [regular epimorphisms](math-001G) are [preserved under pullbacks](math-000C).}
 
-\subtree{\taxon{Proof} \p{todo}}
+\subtree[todo-0004]{\parent{\current-tree}\taxon{todo}\title{write proof}}
+
+
 \fact{math-000A}

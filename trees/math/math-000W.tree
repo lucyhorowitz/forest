@@ -8,6 +8,4 @@
 
 \p{[#{\Rel{\calE}}](math-000J) is an [equipment](math-000U).}
 
-\subtree[math-000W/1]{
-  \taxon{Proof}\todo{Write proof}{1}
-}
+\subtree[todo-000A]{\parent{\current-tree}\taxon{todo}\title{Write proof}}

@@ -5,4 +5,4 @@
 \import{base-macros}
 \meta{external}{https://pysathq.github.io/docs/html/api/examples/hitman.html}
 
-\p{TODO}
+\subtree[todo-000P]{\parent{\current-tree}\taxon{todo}\title{Write note}}

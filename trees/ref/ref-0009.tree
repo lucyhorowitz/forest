@@ -30,7 +30,7 @@
   \transclude{math-002J}  % double category of relations btw sets
   \transclude{math-002L}  % double category of spans
   \transclude{math-002M}  % Grothendieck fibration
-  \p{todo: prop 1.2.5. i don't know what to call the result but it makes sense.}
+  \subtree[todo-000O]{\parent{\current-tree}\taxon{todo}\title{Proposition about 2-of-3}}
   \transclude{math-000U}  % equipment
 }  
 

@@ -6,5 +6,5 @@
 \taxon{Definition}
 \meta{external}{https://ncatlab.org/nlab/show/small+set}
 
-\p{todo}
+\subtree[todo-000H]{\parent{\current-tree}\taxon{todo}\title{Write note}}
 

@@ -7,4 +7,4 @@
 \taxon{Definition}
 \meta{external}{https://ncatlab.org/nlab/show/monoidal+category}
 
-\todo{Write note}{1}
+\subtree[todo-0006]{\parent{\current-tree}\taxon{todo}\title{Write note}}

@@ -47,5 +47,5 @@
 	\arrow["\beta"', "\shortmid"{marking}, from=2-1, to=2-2]
 \end{tikzcd}}
 
-\p{TODO finish the defn}
+\subtree[todo-000G]{\parent{\current-tree}\taxon{todo}\title{Finish defn}}
 

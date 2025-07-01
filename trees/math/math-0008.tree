@@ -5,4 +5,4 @@
 \import{macros}
 \import{base-macros}
 
-\p{Todo}
+\subtree[todo-000J]{\parent{\current-tree}\taxon{todo}\title{Write note}}

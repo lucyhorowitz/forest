@@ -5,7 +5,7 @@
 \import{base-macros}
 
 \p{First, what do we mean when we talk about non-Contraction?}
-\p{todo}
+
 \p{So our sets of [bearers](role-0005) become multisets of bearers. This has an important effect on the computation of roles, etc. It makes our [[role-0006]] infinite, when before it was finite. The power set of a finite set is finite, so there are only finitely many candidate implications to deal with. When we move to multisets, there are infinitely many candidate implications because there are infinitely many multisets of bearers, even if there are still only finitely many bearers.}
 
 
@@ -20,3 +20,5 @@
 \p{This also makes it possible to compute things like [[role-000A]].}
 
 \transclude{role-000A}
+
+\subtree[todo-000Q]{\parent{\current-tree}\taxon{todo}\title{Finish note}}

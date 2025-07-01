@@ -10,5 +10,4 @@
 
 \p{"Strict" means that #{\mathsf{1}} and #{\otimes} have the [2-natural] [isomorphisms](math-001C) in [2-category of categories](math-001J) #{\bfK(x,\mathsf{1}) \cong \mathbf 1} and #{\bfK(x,y\otimes z) \cong \bfK(x,y)\times \bfK(x,z)}.}
 
-\p{todo}
-% \source{ref-0009}
+\subtree[todo-0001]{\parent{math-000Y} \taxon{todo} \title{make 2-natural note?}}

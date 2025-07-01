@@ -8,4 +8,5 @@
 
 \p{A \strong{relation} in a [[math-000A]] #{\calE} is a [monic](math-0008) #{R\rightarrowtail A\times B} and are denoted #{R:A\nrightarrow B}}
 
-\todo{make a macro}{1}
+\subtree[todo-0003]{\parent{math-000I}\taxon{todo}\title{Make macro for arrow?}}
+

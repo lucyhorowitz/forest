@@ -12,4 +12,4 @@
 \transclude{math-0023}
 \transclude{math-0024}
 
-\p{Todo: more facts}
+\subtree[todo-000L]{\parent{\current-tree}\taxon{todo}\title{Collect facts or delete note?}}

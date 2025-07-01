@@ -4,4 +4,4 @@
 \title{equivalence relation}
 \import{macros}
 
-\p{TODO}
+\subtree[todo-000B]{\parent{\current-tree}\taxon{todo}\title{Write note}}

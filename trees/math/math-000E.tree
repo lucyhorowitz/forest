@@ -8,7 +8,6 @@
 
 \p{Let #{\calE} be a [[math-000A]]. Then every [[math-000F]] has a [[math-000G]].}
 
-\subtree{\taxon{Proof}  
-\p{todo}} 
+\subtree[todo-0002]{\parent{math-000E}\taxon{todo}\title{Write proof}}
 
 \fact{math-000A}

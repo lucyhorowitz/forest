@@ -6,4 +6,4 @@
 \import{rel}
 \taxon{Fact}
 
-\p{todo}
+\subtree[todo-000N]{\parent{\current-tree}\taxon{todo}\title{Write note}}

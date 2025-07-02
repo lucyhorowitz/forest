@@ -1,0 +1,30 @@
+\date{2025-07-01T16:47:54Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Reference}
+\author/literal{Michael Barr}
+\title{*-Autonomous categories and linear logic}
+
+\subtree{\taxon{Section}\title{Introduction}}
+\subtree{\taxon{Section}\title{*-Autonomous categories}
+  \transclude{math-002S}
+  \transclude{math-002V}
+  \transclude{math-002X}
+  \transclude{math-002Y}
+  \transclude{math-002Z}
+  \transclude{math-0030}
+  \p{...}
+}
+
+\subtree{\taxon{Section}\title{Chu's construction}
+  \subtree{\taxon{Subsection}\title{The setting}
+    \p{Let #{\calV} be a finitely [complete] [autonomous category](math-002S) and fix some object #{\bot}. The plan is to "complete" #{\calV} to a [#{*}-autonomous category](math-002V) #{\calV_\bot} with dualizing object #{\bot}.}
+
+    \p{Note that given an arrow #{f:V\to W} there is an induced map #{f^\bot:W^\bot\to V^\bot}.}
+  }
+  \subtree{\taxon{Subsection}\title{The construction}
+    \transclude{math-0031}
+  }
+}

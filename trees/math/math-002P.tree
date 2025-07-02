@@ -1,0 +1,11 @@
+\date{2025-07-01T16:06:37Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Theorem}
+\title{Shulman's 2-of-3 theorem}
+
+\p{Let {#\bbD} be a [double category](math-000D) and let #{f:I\to J} be a tight arrow and #{\alpha:I\nrightarrow J} and #{\beta:J\nrightarrow I} be loose arrows. Then given any two of the following three things, the third one is...}
+
+\subtree[todo-math-002P]{\parent{\current-tree}\taxon{todo}\title{I don't understand how the theorem from the Shulman paper says the same thing, or what #{\bfL(\bbD)} is}}

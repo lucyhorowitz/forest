@@ -1,0 +1,9 @@
+\date{2025-07-01T16:28:36Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Proposition}
+\title{equipment iff every tight arrow meets 2-of-3 condition}
+
+\subtree[todo-math-002R]{\parent{\current-tree}\taxon{todo}\title{todo}}

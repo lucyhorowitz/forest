@@ -1,0 +1,13 @@
+\date{2025-07-01T16:54:59Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+\title{closed symmetric monoidal caetgory}
+
+\p{A [symmetric monoidal category](math-002T) #{\calC} is \strong{closed} if for all objects #{X} in #{\calC}, the [tensor product functor] #{-\otimes X:\calC\to\calC} has a right [adjoint](math-0014) [functor](math-000S) #{[X,-]:\calC\to\calC}.}
+
+\p{The object #{[X,Y]} is called the [internal hom] of #{X} and #{Y}.}
+
+\subtree[todo-math-002U]{\parent{\current-tree}\taxon{todo}\title{A bunch of new links}}

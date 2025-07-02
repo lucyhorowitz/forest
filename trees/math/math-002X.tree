@@ -1,0 +1,16 @@
+\date{2025-07-01T17:18:23Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Proposition}
+\title{#{\textrm{Hom}(A,B) \cong \textrm{Hom}(B^\bot,A^\bot)} in a *-autonomous category}
+
+\p{Let #{\calC} be a [#{*}-autonomous category](math-002V). Then #{\textrm{Hom}(A,B) \cong \textrm{Hom}(B^\bot,A^\bot)}.}
+
+\p{Apparently it is also particularly true that #{A\multimap B \cong B^\bot \multimap A^\bot}.}
+
+
+\subtree[todo-math-002X]{\parent{\current-tree}\taxon{todo}\title{Write proof}}
+
+\fact{math-002V}

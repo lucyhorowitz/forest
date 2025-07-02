@@ -1,0 +1,13 @@
+\date{2025-07-01T17:21:42Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Proposition}
+\title{#{A\otimes B \cong (A\multimap B^\bot)^\bot} in a #{*}-autonomous category}
+
+\p{Let #{\calC} be [#{*}-autonomous](math-002V) and let #{A,B} be objects. Then #{A\otimes B \cong (A\multimap B)^\bot} and equivalently #{A\multimap B \cong (A\otimes B^\bot)^\bot}}
+
+\subtree[todo-math-002Y]{\parent{\current-tree}\taxon{todo}\title{Write proof}}
+
+\fact{math-002V}

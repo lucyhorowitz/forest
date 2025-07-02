@@ -1,0 +1,11 @@
+\date{2025-07-01T16:12:35Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Corollary}
+\title{equipment iff fibration iff opfibration iff bifibration}
+
+\p{A [double category](math-000D) is an [equipment](math-000U) iff #{\ang{\mathsf{src},\mathsf{tgt}}} is an [opfibration](math-0027) iff it is a [bifibration](math-000V).}
+
+\subtree[todo-math-002Q]{\parent{\current-tree}\taxon{todo}\title{Write proof}}

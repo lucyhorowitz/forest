@@ -30,8 +30,10 @@
   \transclude{math-002J}  % double category of relations btw sets
   \transclude{math-002L}  % double category of spans
   \transclude{math-002M}  % Grothendieck fibration
-  \subtree[todo-000O]{\parent{\current-tree}\taxon{todo}\title{Proposition about 2-of-3}}
+  \transclude{math-002P}  % 2-of-3 theorem
   \transclude{math-000U}  % equipment
+  \transclude{math-002Q}  % bifibration condition for equipment
+  
 }  
 
 \subtree[ref-0009/4]{\taxon{Section}\parent{ref-0009}\title{Fibrational Virtual Double Categories}

@@ -1,0 +1,9 @@
+\date{2025-07-02T05:31:18Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+\title{pushout}
+
+\subtree[todo-math-0032]{\taxon{todo}\title{Write note}\parent{\current-tree}}

@@ -1,0 +1,43 @@
+\date{2025-07-01T16:49:32Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+\title{symmetric monoidal category}
+
+
+\p{A \strong{symmetric monoidal category} is a [monoidal category](math-000P) #{(\calC,\otimes, I)} such that for every pair #{A,B} of objects in #{\calC}, there is an isomorphism #{s_{A,B}: A\otimes B\to B\otimes A} [natural] in both #{A} and #{B} such that the following [diagrams commute](math-000Q):}
+
+
+
+\quiver{% https://q.uiver.app/#q=WzAsMyxbMCwwLCJBXFxvdGltZXMgSSJdLFsyLDAsIklcXG90aW1lcyBBIl0sWzEsMSwiQSJdLFswLDEsIlNfe0EsSX0iXSxbMCwyLCJyX0EiLDJdLFsxLDIsIlxcZWxsX0EiXV0=
+\begin{tikzcd}
+	{A\otimes I} && {I\otimes A} \\
+	& A
+	\arrow["{S_{A,I}}", from=1-1, to=1-3]
+	\arrow["{r_A}"', from=1-1, to=2-2]
+	\arrow["{\ell_A}", from=1-3, to=2-2]
+\end{tikzcd}}
+
+\quiver{% https://q.uiver.app/#q=WzAsNixbMCwwLCIoQVxcb3RpbWVzIEIpXFxvdGltZXMgQyJdLFsyLDAsIihCXFxvdGltZXMgQSlcXG90aW1lcyBDIl0sWzAsMSwiQVxcb3RpbWVzKEJcXG90aW1lcyBDKSJdLFsyLDEsIkJcXG90aW1lcyhBXFxvdGltZXMgQykiXSxbMCwyLCIoQlxcb3RpbWVzIEMpXFxvdGltZXMgQSJdLFsyLDIsIkJcXG90aW1lcyhDXFxvdGltZXMgQSJdLFswLDEsInNfe0EsQn1cXG90aW1lcyBcXHRleHRybXtpZH1fQyJdLFswLDIsIlxcYWxwaGFfe0EsQixDfSIsMl0sWzIsNCwic197QSxCXFxvdGltZXMgQ30iLDJdLFs0LDUsIlxcYWxwaGFfe0IsQyxBfSIsMl0sWzMsNSwiXFx0ZXh0cm17aWR9X0JcXG90aW1lcyBTX3tBLEN9Il0sWzEsMywiXFxhbHBoYV97QixBLEN9Il1d
+\begin{tikzcd}
+	{(A\otimes B)\otimes C} && {(B\otimes A)\otimes C} \\
+	{A\otimes(B\otimes C)} && {B\otimes(A\otimes C)} \\
+	{(B\otimes C)\otimes A} && {B\otimes(C\otimes A)}
+	\arrow["{s_{A,B}\otimes \textrm{id}_C}", from=1-1, to=1-3]
+	\arrow["{\alpha_{A,B,C}}"', from=1-1, to=2-1]
+	\arrow["{\alpha_{B,A,C}}", from=1-3, to=2-3]
+	\arrow["{s_{A,B\otimes C}}"', from=2-1, to=3-1]
+	\arrow["{\textrm{id}_B\otimes S_{A,C}}", from=2-3, to=3-3]
+	\arrow["{\alpha_{B,C,A}}"', from=3-1, to=3-3]
+\end{tikzcd}}
+
+\quiver{% https://q.uiver.app/#q=WzAsMyxbMSwwLCJCXFxvdGltZXMgQSJdLFswLDEsIkFcXG90aW1lcyBCIl0sWzIsMSwiQVxcb3RpbWVzIEIiXSxbMSwyLCIiLDIseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsxLDAsInNfe0EsQn0iXSxbMCwyLCJzX3tCLEF9Il1d
+\begin{tikzcd}
+	& {B\otimes A} \\
+	{A\otimes B} && {A\otimes B}
+	\arrow["{s_{B,A}}", from=1-2, to=2-3]
+	\arrow["{s_{A,B}}", from=2-1, to=1-2]
+	\arrow[equals, from=2-1, to=2-3]
+\end{tikzcd}}

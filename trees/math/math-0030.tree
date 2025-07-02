@@ -1,0 +1,19 @@
+\date{2025-07-01T17:29:47Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Example}
+\title{category of finite-dimensional vector spaces over a field}
+
+\p{The [category] of finite-[dimensional] [vector spaces] over a [field] #{k} is a [category].}
+
+\example{math-0003}
+
+\subtree[math-0030/1]{\parent{\current-tree}\title{as a #{*}-autonomous category}
+  \p{The unique dualizing object is the field as a 1-dimensional vector space over itself.}
+
+  \p{The duality does not extend to infinite-dimensional spaces!! #{V\cong C^{\bot\bot}} iff #{V} is finite-dimensional.}
+  \example{math-002Z}
+  \example{math-002V}
+}

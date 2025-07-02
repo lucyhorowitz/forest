@@ -1,0 +1,21 @@
+\date{2025-07-01T17:01:46Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+\title{*-autonomous category}
+
+\p{A [category](math-0003) is \strong{#{*}-autonomous} if it is [autonomous](math-002S) and has an object #{\bot} called the \strong{dualizing object} such that for any object #{A}, the canonical map to the double-dual of #{A} with respect to #{\bot} is an isomorphism.}
+
+\p{In this context the [internal hom] [functor](math-000S) is denoted #{-\multimap -}. Note that the [adjoint functor](math-002W) situation means that for every object #{A}, for any pair of objects #{B,C} we have the [natural] isomorphisms #{\textrm{Hom}(A\otimes B,C)\cong \textrm{Hom}(B,A\multimap C)}.}
+
+\p{That is, for any object #{X} in an [autonomous category](math-002S) there is the identity arrow #{A\multimap X\to A\multimap X}. By [adjunction](math-002W), we get the arrow #{A\otimes (A\multimap X) \to X}, called \em{evaluation}. By symmetry, we get #{(A\multimap X)\otimes A\to X}, and from the adjunction once again we get an arrow #{A\to (A\multimap X)\multimap X}.}
+
+\p{Finally, we say that #{X} is a \strong{dualizing object} and write it #{\bot} if this last map is an isomorphism for every object #{A}.}
+
+\p{Sometimes we write #{A^\bot} for #{A\multimap \bot}.}
+
+\examplesOfThis
+
+\factsAboutThis

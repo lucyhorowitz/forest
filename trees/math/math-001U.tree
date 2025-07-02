@@ -6,4 +6,4 @@
 \import{rel}
 \taxon{Definition}
 
-\p{Given a [double category](math-000D) #{D}, swapping #{\mathsf{src}} and #{\mathsf{tgt}} gives another double category called the \strong{loosewise opposite} of ${D}, denoted #{D^\mathsf{lop}}.}
+\p{Given a [double category](math-000D) #{D}, swapping #{\mathsf{src}} and #{\mathsf{tgt}} gives another double category called the \strong{loosewise opposite} of #{D}, denoted #{D^\mathsf{lop}}.}

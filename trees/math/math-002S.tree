@@ -1,0 +1,9 @@
+\date{2025-07-01T16:48:49Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+\title{autonomous category}
+
+\p{An \strong{autonomous category} is a [closed symmetric monoidal category](math-002U).}

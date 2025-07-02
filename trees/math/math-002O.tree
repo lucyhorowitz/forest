@@ -1,0 +1,9 @@
+\date{2025-07-01T16:04:17Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Example}
+\title{double category of profunctors}
+
+\subtree[todo-math-0002Os]{\parent{\current-tree}\taxon{todo}\title{Make example}}

@@ -1,0 +1,15 @@
+\date{2025-07-01T17:28:21Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Definition}
+\title{compact #{*}-autonomous category}
+
+\p{A [#{*}-autonomous category](math-002V) is \strong{compact} if either of the following two equivalent conditions hold:
+\ul{
+  \li{#{A\multimap B \cong A^\bot\otimes B}}
+  \li{#{(A\otimes B)^\bot\cong A^\bot\otimes B^\bot}.}
+}}
+
+\examplesOfThis

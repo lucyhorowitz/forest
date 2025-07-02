@@ -1,0 +1,11 @@
+\date{2025-07-02T20:38:30Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Exposition}
+\title{The traditional story about categorical logic}
+
+\p{At its most basic: a "model" of a theory is a [functor](math-000S) from the [Lawvere theory] into some [category](math-0003) with finite [limits]. But this only works for [algebraic theories]? I'll have to write this up nicely and correctly soon.}
+
+\subtree[todo-1-math-0034]{\parent{\current-tree}\title{Write this up correctly} \taxon{todo}}

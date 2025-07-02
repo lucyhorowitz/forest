@@ -9,19 +9,21 @@
 
 \transclude{math-002F}
 
-\subtree[math-000D/2]{\taxon{Definition}\meta{external}{https://ncatlab.org/nlab/show/double+category#pseudo_double_categories}
-\p{A \strong{pseudo double category} consists of two [locally small] [categories](math-0003) #{D_0} and #{D_1} and [functors](math-000S) appearing in the diagram \quiver{% https://q.uiver.app/#q=WzAsMyxbMCwwLCJ7RF8xfSBfXFxtYXRoc2Z7dGd0fVxcdGltZXNfXFxtYXRoc2Z7c3JjfSBEXzEiXSxbMSwwLCJEXzEiXSxbMywwLCJEXzAiXSxbMCwxLCJcXG9kb3QiXSxbMSwyLCJcXGRlbHRhIiwxXSxbMiwxLCJcXG1hdGhzZnt0Z3R9IiwwLHsib2Zmc2V0IjotM31dLFsyLDEsIlxcbWF0aHNme3NyY30iLDIseyJvZmZzZXQiOjN9XV0=
+\subtree[math-000D-2]{\taxon{Definition}\meta{external}{https://ncatlab.org/nlab/show/double+category#pseudo_double_categories}
+\p{A \strong{pseudo double category} consists of two [locally small] [categories](math-0003) #{D_0} and #{D_1} and [functors](math-000S) appearing in the diagram} \quiver{% https://q.uiver.app/#q=WzAsMyxbMCwwLCJ7RF8xfSBfXFxtYXRoc2Z7dGd0fVxcdGltZXNfXFxtYXRoc2Z7c3JjfSBEXzEiXSxbMSwwLCJEXzEiXSxbMywwLCJEXzAiXSxbMCwxLCJcXG9kb3QiXSxbMSwyLCJcXGRlbHRhIiwxXSxbMiwxLCJcXG1hdGhzZnt0Z3R9IiwwLHsib2Zmc2V0IjotM31dLFsyLDEsIlxcbWF0aHNme3NyY30iLDIseyJvZmZzZXQiOjN9XV0=
 \begin{tikzcd}
 	{{D_1} _\mathsf{tgt}\times_\mathsf{src} D_1} & {D_1} && {D_0}
 	\arrow["\odot", from=1-1, to=1-2]
 	\arrow["\delta"{description}, from=1-2, to=1-4]
 	\arrow["{\mathsf{tgt}}", shift left=3, from=1-4, to=1-2]
 	\arrow["{\mathsf{src}}"', shift right=3, from=1-4, to=1-2]
-\end{tikzcd}} with [natural isomorphisms] for associativity and unit laws...}
+\end{tikzcd}} \p{with [natural isomorphisms] for associativity and unit laws...}
 
 \p{The objects of #{D_0} are called objects and the arrows of #{D_0} are called \em{tight} arrows. An object #{\alpha} of #{D_1} s.t. the value of #{\mathsf{src}} and #{\mathsf{tgt}} are respectively #{I} and #{J} is a \em{loose arrow} from #{I} to #{J}. In the notation of  Hayato Nasu, #{\cdot} represents composition of tight arrows, #{\odot} represents composition of loose arrows, and #{\delta_I} gives the identity loose arrow on #{I}.}
 
-\p{An arrow #{\varphi:\alpha\to\beta} in #{D_1} is a \em{double cell} and is represented as follows for #{\mathsf{src}(\varphi) = f} and #{\mathsf{tgt}(\varphi)= g}:\quiver{% https://q.uiver.app/#q=WzAsNCxbMCwwLCJJIl0sWzEsMCwiSiJdLFswLDEsIksiXSxbMSwxLCJMIl0sWzAsMSwiXFxhbHBoYSIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImJhcnJlZCJ9fX1dLFsxLDMsImciXSxbMCwyLCJmIiwyXSxbMiwzLCJcXGJldGEiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJiYXJyZWQifX19XSxbNCw3LCJcXHZhcnBoaSIsMSx7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH0sInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==
+\p{An arrow #{\varphi:\alpha\to\beta} in #{D_1} is a \em{double cell} and is represented as follows for #{\mathsf{src}(\varphi) = f} and #{\mathsf{tgt}(\varphi)= g}:}
+
+\quiver{% https://q.uiver.app/#q=WzAsNCxbMCwwLCJJIl0sWzEsMCwiSiJdLFswLDEsIksiXSxbMSwxLCJMIl0sWzAsMSwiXFxhbHBoYSIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImJhcnJlZCJ9fX1dLFsxLDMsImciXSxbMCwyLCJmIiwyXSxbMiwzLCJcXGJldGEiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJiYXJyZWQifX19XSxbNCw3LCJcXHZhcnBoaSIsMSx7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH0sInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==
 \begin{tikzcd}
 	I & J \\
 	K & L
@@ -30,5 +32,5 @@
 	\arrow["g", from=1-2, to=2-2]
 	\arrow[""{name=1, anchor=center, inner sep=0}, "\beta"', "\shortmid"{marking}, from=2-1, to=2-2]
 	\arrow["\varphi"{description}, draw=none, from=0, to=1]
-\end{tikzcd}}}
+\end{tikzcd}}
 }

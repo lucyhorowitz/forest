@@ -1,0 +1,14 @@
+\date{2025-07-02T20:37:44Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Experiment}
+\title{Trad stuff into trivial VDC world}
+
+\transclude{math-0034}
+
+\p{My current understanding of the task at hand is to reframe the thing about a model being a functor and get a [virtual double functor] instead. Then we should be able to see the traditional stuff as a special ("trivial") case of the VDC version. This is because we want our semantics to live in an [implication frame](role-0008) rather than for example sets, and we don't have a category of implication frames (rather we have a [virtual double category](math-002N)). And if we remember from [[ref-0001]], under certain assumptions we recover classical logic from implciation-space semantics.}
+
+
+

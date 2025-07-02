@@ -1,0 +1,11 @@
+\date{2025-07-02T17:38:13Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Project}
+\title{Autoformalization}
+
+\p{A class project from EECS 219c that turned into a paper}
+
+\subtree[project-0001/1]{\parent{\current-tree}\taxon{todo}\title{Write it up!}}

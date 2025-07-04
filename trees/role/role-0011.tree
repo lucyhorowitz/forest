@@ -1,0 +1,15 @@
+\date{2025-07-02T22:49:39Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Program}
+\title{Julia implementation of noncontractive implication-space semantics}
+
+\subtree{\title{Representing implications}
+  \p{In the [Contractive](math-002D) version of this, [Kris](kris-brown) represented [implications](role-0007) as [BitSets] because they are of fixed length.}
+
+  \p{We can't quite get as low-level as bitsets here, but given that I already know I want to represent implications as "tuples," we have two options in Julia: #{\texttt{SVector}}s or #{\texttt{NTuple}}s. I think I will go with #{\texttt{SVector}} because they are slightly more efficient?}
+
+  \p{Okay, I want to represent an implication as a pair of #{\texttt{SVector}}s, one called #{\texttt{prem}} and one called #{\texttt{conc}}. The fixed length of each will represent the number of [bearers](role-0005) involved. I will need to change the wrapper class I've started to really correspond to an \em{ordered pair} of #{\texttt{SVector}}s. }
+}

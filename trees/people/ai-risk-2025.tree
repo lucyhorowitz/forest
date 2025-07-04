@@ -6,7 +6,7 @@
 \import{rel}
 \taxon{Group}
 \meta{external}{https://docs.google.com/document/d/1nUoFxvsw4TL5VTuIAqVCCtUyvRLmSBa98LYrLOAvu1Y/edit?tab=t.0#heading=h.2nyf3wp52ipk}
-\author/literal{Wes Holliday}
+\author{wes-holliday}
 \author/literal{Will Fithian}
 
 \p{A biweekly meeting at UC Berkeley to discuss AI risk. Meets Tuesdays 1-2:30.}
@@ -30,5 +30,5 @@
 }
 
 \subtree{
-  \title{July 1: }
+  \title{July 1: Timelines}
 }

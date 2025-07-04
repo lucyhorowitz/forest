@@ -1,0 +1,14 @@
+\date{2025-07-03T20:16:12Z}
+
+\import{macros} 
+\import{base-macros}
+\import{rel}  
+\taxon{Experiment}
+\title{Working out [Kevin](kevin-carlson)'s suggestion}
+\author{lucy}
+
+\p{Starting from a [hyperdoctrine](math-0036) #{D:\tau^\op \to \mathsf{Bool}'} get a [double category](math-000D) as follows: \ul{
+  \li{#{\tau} is the [tight category](math-001W) (no opposite situations?)}
+  \li{Remember that loose arrows just belong to some category... and that they have sources and targets. So for any #{s,t} objects of #{\tau}, we get loose arrows from #{D(s\times t)}. There are a bunch of these for each pair #{s,t}.}
+  \li{Then we need all the cells. Is the question which of these cells exist?}
+}} 

@@ -1,0 +1,17 @@
+\date{2025-07-03T20:17:05Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Concept}
+\title{hyperdoctrine}
+
+\p{I've seen a few different definitions of \strong{hyperdoctrine} which mostly differ in the kind of thing they take to be the target of the functor.}
+
+\subtree[math-0036-1]{\taxon{Definition}\meta{external}{https://ncatlab.org/nlab/show/hyperdoctrine} \p{A \strong{hyperdoctrine} on a [category](math-0003) #{T} for a "given notion of logic #{L}" is a [functor](math-000S) #{P:T^\op \to \bfC}  where #{\bfC} is some [2-category](math-000N) whose objects are [categories](math-0003) whose [internal logics] correspond to #{L}.}
+
+\p{There is also the requirement that for each morphism #{f} in #{T}, #{P(f)} has a left and right [adjoint](math-002W), corresponding to quantifiers.}}
+
+\p{How do you know what #{T} is supposed to be??? It's supposed to be the category of "types" and/or "contexts," but this all leaves me wondering where it is you're supposed to "start" when defining a hyperdoctrine. The nLab talks about a hyperdoctrine "on a category #{T}, which makes me think you start with #{T} and maybe a logic which determines #{\bfC} and then you can pick the functor from there. But how do you know what #{T} should have been in the first place? And then I guess the \em{theory} that you're working with determines the specifics of the functor #{P}? }
+
+\p{The most classical situation is when #{\bfC = \mathsf{BoolAlg}'}, the [category of Boolean algebras] with morphisms restricted to those with left/right [adjoints](math-002W).}

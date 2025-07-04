@@ -2,7 +2,7 @@
 \import{macros}
 \import{base-macros}
 \import{rel}
-\taxon{Metanote}
+\taxon{List}
 
 \query\datalog{
  ?X -:

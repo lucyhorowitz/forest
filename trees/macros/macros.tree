@@ -2,6 +2,10 @@
 
 \p{This tree defines some basic notational macros used across my forest.}
 
+\def\bussproofs[~body]{
+  \tex{\usepackage{bussproofs, amsmath,amssymb, oz}}{\body{}}
+}
+
 % mathcal macros
 #{\usepackage{textcomp}}
 \def\calA{#{\mathcal{A}}}
@@ -240,5 +244,7 @@
   \tex{\usepackage{quiver, cmll}}{\body{}}
 }
 
-\def\id{#{\rm{id}}}
+\def\id{#{\textrm{id}}}
+
+\def\op{#{\textrm{op}}}
 

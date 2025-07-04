@@ -1,0 +1,12 @@
+\date{2025-07-03T20:19:23Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\title{Reading List}
+\taxon{List}
+\author{lucy}
+
+\ul{
+  \li{[MathOverflow: What are some interesting hyperdoctrines that are not classical models?](https://mathoverflow.net/questions/405268/what-are-some-interesting-hyperdoctrines-that-are-not-classical-models)}
+}

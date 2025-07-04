@@ -1,0 +1,49 @@
+\date{2025-07-04T00:42:47Z}
+
+\import{macros}
+\import{base-macros}
+\import{rel}
+\taxon{Example}
+\title{Hyperdoctrine of monoids}
+
+\p{Copying the process from [Kris's](kris-brown) [note on hyperdoctrine of equivalence relations](https://www.krisb.org/forest/math-001X/index.xml).}
+
+\p{The syntax:
+\ul{
+  \li{The primitive type: }
+  \bussproofs{
+  \AxiomC{$\quad$}
+  \UnaryInfC{$A$ type}
+  \DisplayProof
+}
+  
+\li{The multiplication function:
+}
+\bussproofs{
+  \AxiomC{$\quad$}
+  \UnaryInfC{$m: A^2\to A$}
+  \DisplayProof
+}
+\li{Associativity:
+}
+\bussproofs{
+  \AxiomC{$(a,b,c): A$}
+  \UnaryInfC{$m(m(a,b),c) = m(a,m(b,c))$}
+  \DisplayProof
+}
+\li{The identity element:
+}
+\bussproofs{
+  \AxiomC{$\quad$}
+  \UnaryInfC{$e:1\to A$}
+  \DisplayProof
+}
+\li{The rules of the identity:?}
+\bussproofs{
+  \AxiomC{$a:A, 1:1$}
+  \UnaryInfC{$m(a,e(1)) = a \land m(e(1),a) = a$}
+  \DisplayProof
+}
+}}
+
+
